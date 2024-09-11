@@ -1,1 +1,0 @@
-	dc.b	"test content"
