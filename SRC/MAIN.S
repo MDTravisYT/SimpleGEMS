@@ -1,21 +1,9 @@
 	include		"src/system/macros.i"
 	include		"src/system/equates.i"
 	include		"src/system/vectors.s"
+	include		"src/system/error.s"
+	include		"src/system/interrupt.s"
 	
-errBus:
-errAddress:
-errIllegal:
-errZeroDiv:
-errChkInst:
-errPriViol:
-errTrace:
-errLine1010:
-errLine1111:
-errTrapV:
-trap:
-VInt:
-HInt:
-	rte
 init:
 	move.w	#$8000+%00000100,(VDPCTRL)		;	MODE REGISTER 1
 	move.w	#$8100+%01110100,(VDPCTRL)      ;	MODE REGISTER 2
@@ -38,7 +26,7 @@ init:
 	move.w	#$9200+%00000000,(VDPCTRL)      ;	WINDOW PLANE VERTICAL
 	
 	move.l	#CRAMWRITE,(VDPCTRL)
-	move.w	#$E,VDPDATA
+	move.w	#$E0,VDPDATA
 	
 .loop:
 	bra.s	.loop
