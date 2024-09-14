@@ -2,10 +2,11 @@
 	include	SRC/equates.i
 	
 	section test
-
 VInt:
+	jsr	_gemsdmastart		; hold z80 from dma
 	rte
 HInt:
+	nop
 	rte
 
 errBus:
