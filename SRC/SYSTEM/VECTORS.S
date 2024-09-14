@@ -10,14 +10,14 @@
 	dc.l	errTrace
 	dc.l	errLine1010
 	dc.l	errLine1111
-	dcb.l	12,0		; Reserved by Motorola
+	dcb.l	12,0					; Reserved by Motorola
 	dc.l	0,		0,		0,		0
 	dc.l	HInt,	0,		VInt,	0
 	dc.l	trap,	trap,	trap,	trap
 	dc.l	trap,	trap,	trap,	trap
 	dc.l	trap,	trap,	trap,	trap
 	dc.l	trap,	trap,	trap,	trap
-	dcb.l	16,0		; Reserved by Motorola
+	dcb.l	16,0					; Reserved by Motorola
 	dc.b	'SEGA MEGA DRIVE '		;	SYSTEM
 	dc.b	'(C)SEGA 1989.JAN'		;	DATE
 	dc.b	'                '		;	DOMESTIC TITLE
