@@ -1,3 +1,8 @@
+	include	SRC/macros.i
+	include	SRC/equates.i
+
+	section	test
+
 	dc.l	InitSP
 	dc.l	init
 	dc.l	errBus
@@ -37,3 +42,6 @@
 	dc.b	'                '
 	dc.b	'                '
 	dc.b	'JUE             '		;	REGION
+	
+	include	SRC/globals.i
+	end

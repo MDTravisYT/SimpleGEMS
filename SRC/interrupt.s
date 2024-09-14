@@ -1,3 +1,13 @@
+	include	SRC/macros.i
+	include	SRC/equates.i
+	
+	section test
+
+VInt:
+	rte
+HInt:
+	rte
+
 errBus:
 errAddress:
 errIllegal:
@@ -13,3 +23,6 @@ trap:
 	move.l	#CRAMWRITE,(VDPCTRL)
 	move.w	#$E,VDPDATA
 	bra.s	.loop
+
+	include	SRC/globals.i
+	end

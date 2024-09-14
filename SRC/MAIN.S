@@ -1,9 +1,8 @@
-	include		"src/system/macros.i"
-	include		"src/system/equates.i"
-	include		"src/system/vectors.s"
-	include		"src/system/error.s"
-	include		"src/system/interrupt.s"
+	include	SRC/macros.i
+	include	SRC/equates.i
 	
+	section test
+
 init:
 	move.w	#$8000+%00000100,(VDPCTRL)		;	MODE REGISTER 1
 	move.w	#$8100+%01110100,(VDPCTRL)      ;	MODE REGISTER 2
@@ -30,3 +29,6 @@ init:
 	
 .loop:
 	bra.s	.loop
+	
+	include	SRC/globals.i
+	end
