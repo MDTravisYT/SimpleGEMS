@@ -1,13 +1,13 @@
 .PHONY:	clean
 
 %.obj:	%.s
-	./asm68k.exe /g /o l+,v+ /k /l /w $<, $@
+	./TOOL/asm68k.exe /g /o l+,v+ /k /l /w $<, $@
 	
-megadrive.bin: vectors.obj main.obj
-	./psylink.exe /m /p @megadrive.lnk,megadrive.gen,megadrive.sym,megadrive.map
+megadrive.bin: SRC/TEMP/vectors.obj SRC/TEMP/main.obj
+	./TOOL/psylink.exe /m /p @linkmap.lnk,OUT/megadrive.gen,OUT/megadrive.sym,OUT/megadrive.map
 	
-vectors.obj: vectors.s globals.i macros.i equates.i
-	./asm68k.exe /g /o l+,v+ /k /l /w $<, $@
+SRC/TEMP/vectors.obj: SRC/vectors.s SRC/globals.i SRC/macros.i SRC/equates.i
+	./TOOL/asm68k.exe /g /o l+,v+ /k /l /w $<, ./$@
 	
-main.obj: main.s globals.i macros.i equates.i
-	./asm68k.exe /g /o l+,v+ /k /l /w $<, $@
+SRC/TEMP/main.obj: SRC/main.s SRC/globals.i SRC/macros.i SRC/equates.i
+	./TOOL/asm68k.exe /g /o l+,v+ /k /l /w $<, ./$@
