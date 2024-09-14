@@ -1,3 +1,4 @@
 	include	SRC/TEMP/vectors.obj
 	include	SRC/TEMP/interrupt.obj
 	include	SRC/TEMP/main.obj
+	include	SRC/TEMP/sound.obj
