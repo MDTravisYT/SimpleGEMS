@@ -1,3 +1,4 @@
 VInt:
+	JSR		READJOYPADS
 HInt:
 	rte

@@ -49,6 +49,8 @@ init:
 	InitTXT	ASCIITXT7,ASCIITXT7_END,$46020002
 	
 	jsr		_sfxinit	;	init GEMS
+	jsr		INITJOYPADS	;	init controller
+	move	#$2300,sr
 	
 	move.l	#0,-(sp)
 	jsr	_gemsstartsong		; start song
@@ -72,9 +74,9 @@ ASCIITXT4:	dc.b	'PRESS LR TO SWITCH SOUND BY 1 '
 	ASCIITXT4_END:
 ASCIITXT5:	dc.b	'PRESS UD TO SWITCH SOUND BY 10'
 	ASCIITXT5_END:
-ASCIITXT6:	dc.b	'SOUND HEX: XX '
+ASCIITXT6:	dc.b	'SOUND HEX: 00 '
 	ASCIITXT6_END:
-ASCIITXT7:	dc.b	'SOUND DEC: XXX'
+ASCIITXT7:	dc.b	'SOUND DEC: 000'
 	ASCIITXT7_END:
 
 loadASCII2
@@ -95,3 +97,5 @@ VSync:	;	code from ProjectFM
     btst.l    #3,d7
     beq.s    .Loop2
     rts                             ; End of subroutine
+	
+	include		"SRC/SYSTEM/JOYPAD.S"
