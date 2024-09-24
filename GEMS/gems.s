@@ -18,40 +18,40 @@
 ;
 ;     OPT  E,CASE
 
-     XDEF _gemsdmastart
-     XDEF _gemsdmaend
-     XDEF _gemsholdz80
-     XDEF _gemsreleasez80
-     XDEF _gemsloadz80
-     XDEF _gemsstartz80
-     XDEF _gemsputcbyte
-     XDEF _gemsputptr
-     XDEF _gemsinit
-     XDEF _gemsstartsong
-     XDEF _gemsstopsong
-     XDEF _gemssettempo
-     XDEF _gemspauseall
-     XDEF _gemsresumeall
-     XDEF _gemsstopall
-     XDEF _gemslockchannel
-     XDEF _gemsunlockchannel
-     XDEF _gemsprogchange
-     XDEF _gemsnoteon
-     XDEF _gemsnoteoff
-     XDEF _gemssetprio
-     XDEF _gemspitchbend
-     XDEF _gemssetenv
-     XDEF _gemsretrigenv
-     XDEF _gemssustain
-     XDEF _gemsmute
-     XDEF _gemsstorembox
-     XDEF _gemsreadmbox
-     XDEF _gemssamprate
-
-     XDEF _patchbank
-     XDEF _envbank
-     XDEF _seqbank
-     XDEF _sampbank
+;     XDEF _gemsdmastart
+;     XDEF _gemsdmaend
+;     XDEF _gemsholdz80
+;     XDEF _gemsreleasez80
+;     XDEF _gemsloadz80
+;     XDEF _gemsstartz80
+;     XDEF _gemsputcbyte
+;     XDEF _gemsputptr
+;     XDEF _gemsinit
+;     XDEF _gemsstartsong
+;     XDEF _gemsstopsong
+;     XDEF _gemssettempo
+;     XDEF _gemspauseall
+;     XDEF _gemsresumeall
+;     XDEF _gemsstopall
+;     XDEF _gemslockchannel
+;     XDEF _gemsunlockchannel
+;     XDEF _gemsprogchange
+;     XDEF _gemsnoteon
+;     XDEF _gemsnoteoff
+;     XDEF _gemssetprio
+;     XDEF _gemspitchbend
+;     XDEF _gemssetenv
+;     XDEF _gemsretrigenv
+;     XDEF _gemssustain
+;     XDEF _gemsmute
+;     XDEF _gemsstorembox
+;     XDEF _gemsreadmbox
+;     XDEF _gemssamprate
+;
+;     XDEF _patchbank
+;     XDEF _envbank
+;     XDEF _seqbank
+;     XDEF _sampbank
 
 
 ; N.B.  in routines in this file, a0 and d0 are freely trashed

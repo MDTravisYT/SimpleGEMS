@@ -12,7 +12,7 @@
 ;{ Parameters:	.							}
 ;{ Returns:	.							}
 ;{----------------------------------------------------------------------}
-	XDEF	_sfxinit
+;	XDEF	_sfxinit
 
 _sfxinit
 		movem.l	d0/a0,-(sp)	; gems uses these registers
@@ -53,7 +53,7 @@ _sfxinit
 ;{ Parameters:	d0 = sound number					}
 ;{ Returns:	.							}
 ;{----------------------------------------------------------------------}
-	XDEF	_sfxstartsound
+;	XDEF	_sfxstartsound
 _sfxstartsound:
 	; start the sound
 		move.l	a0,-(sp)
@@ -71,7 +71,7 @@ _sfxstartsound:
 ;{ Parameters:	d0 = sound number					}
 ;{ Returns:	.							}
 ;{----------------------------------------------------------------------}
-	XDEF	_sfxstopsound
+;	XDEF	_sfxstopsound
 _sfxstopsound:
 	; stop the sound
 		move.l	a0,-(sp)
