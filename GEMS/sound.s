@@ -83,5 +83,3 @@ _sfxstopsound:
 		move.l	(sp)+,a0
 		rts
 
-		end
-

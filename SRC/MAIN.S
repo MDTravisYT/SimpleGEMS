@@ -3,6 +3,10 @@
 	include		"src/system/vectors.s"
 	include		"src/system/error.s"
 	include		"src/system/interrupt.s"
+	include		"GEMS/sound.s"
+ascii:
+	incbin		"src/ascii.art"
+	ascii_end:
 	
 init:
 	move.w	#$8000+%00000100,(VDPCTRL)		;	MODE REGISTER 1
@@ -28,6 +32,24 @@ init:
 	move.l	#CRAMWRITE,(VDPCTRL)
 	move.w	#$E0,VDPDATA
 	
+	lea		ascii,	a0
+	lea		VDPDATA,a1
+	move.l	#(ascii_end-ascii)-1,	d0
+	move.l	#VRAMWRITE+$4000000,(VDPCTRL)
+.loadASCII1
+	move.l	(a0)+,(a1)
+	dbf		d0,	.loadASCII1
+	
+	lea		ASCIITXT1,	a0
+	lea		VDPDATA,a1
+	move.l	#(ASCIITXT1_END-ASCIITXT1)-1,	d0
+	move.l	#VRAMWRITE+2,(VDPCTRL)
+	moveq	#0,	d1
+.loadASCII2
+	move.b	(a0)+,d1
+	move.w	d1,	(a1)
+	dbf		d0,	.loadASCII2
+	
 	jsr		_sfxinit	;	init GEMS
 	
 	move.l	#0,-(sp)
@@ -35,10 +57,15 @@ init:
 	adda.w	#4,sp
 	
 	move.l	#CRAMWRITE,(VDPCTRL)
-	move.w	#$E00,VDPDATA
+	move.l	#$0EEE,VDPDATA
+	move.w	#$0444,VDPDATA
 	
 .loop:
+	jsr		VSync
 	bra.s	.loop
+	
+ASCIITXT1:	dc.b	'GEMS SOURCE SOUND PLAYER'
+	ASCIITXT1_END:
 	
 VSync:	;	code from ProjectFM
     lea     ($C00004),a6
@@ -51,5 +78,3 @@ VSync:	;	code from ProjectFM
     btst.l    #3,d7
     beq.s    .Loop2
     rts                             ; End of subroutine
-	
-	include		"GEMS/sound.s"

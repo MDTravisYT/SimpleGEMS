@@ -19,13 +19,9 @@
 	dc.l	trap,	trap,	trap,	trap
 	dcb.l	16,0					; Reserved by Motorola
 	dc.b	'SEGA MEGA DRIVE '		;	SYSTEM
-	dc.b	'(C)SEGA 1989.JAN'		;	DATE
-	dc.b	'                '		;	DOMESTIC TITLE
-	dc.b	'                '
-	dc.b	'                '
-	dc.b	'                '		;	INTERNATIONAL TITLE
-	dc.b	'                '
-	dc.b	'                '
+	dc.b	'MDTRAVIS2024.SEP'		;	DATE
+	dc.b	'GEMS SOURCE SOUND PLAYER                        '		;	DOMESTIC TITLE
+	dc.b	'GEMS SOURCE SOUND PLAYER                        '		;	INTERNATIONAL TITLE
 	dc.b	'GM 00000000-00',0,0	;	SERIAL
 	dc.b	'J               '		;	I/O SUPPORT JOYPAD
 	dc.l	$00000000				;	ROM START
