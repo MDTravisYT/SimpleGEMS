@@ -150,6 +150,28 @@ DispHex
 	add.w	#$200,	d0
 	move.l	#$45980002,(VDPCTRL)
 	move.w	d0,	VDPDATA
+
+	moveq	#0,	d0
+	move.b	HEXADDR+2,	d0
+	and.b	#$0F,	d0
+	add.w	#$200,	d0
+	move.l	#$46180002,(VDPCTRL)
+	move.w	d0,	VDPDATA
+	
+	moveq	#0,	d0
+	move.b	HEXADDR+3,	d0
+	and.b	#$F0,	d0
+	ror.b	#4,		d0
+	add.w	#$200,	d0
+	move.l	#$461A0002,(VDPCTRL)
+	move.w	d0,	VDPDATA
+
+	moveq	#0,	d0
+	move.b	HEXADDR+3,	d0
+	and.b	#$0F,	d0
+	add.w	#$200,	d0
+	move.l	#$461C0002,(VDPCTRL)
+	move.w	d0,	VDPDATA
 	rts
 	
 VSync:	;	code from ProjectFM
@@ -166,6 +188,7 @@ VSync:	;	code from ProjectFM
 	
 	include		"SRC/SYSTEM/JOYPAD.S"
 	
+; vvv Code by Devon vvv
 ; ----------------------------------------------------------------------
 ; Convert word to BCD format
 ; ----------------------------------------------------------------------
