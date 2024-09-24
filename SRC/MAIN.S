@@ -3,6 +3,7 @@
 	include		"src/system/vectors.s"
 	include		"src/system/error.s"
 	include		"src/system/interrupt.s"
+	include		"GEMS/sound.s"
 	
 init:
 	move.w	#$8000+%00000100,(VDPCTRL)		;	MODE REGISTER 1
