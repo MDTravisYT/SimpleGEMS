@@ -28,5 +28,23 @@ IO_EXT_RX	    =	$A1001A
 IO_EXT_TX	    =	$A1001C
 IO_EXT_SMODE	=	$A1001E
 
+btnStart:	equ %10000000 ; Start button	($80)
+btnA:		equ %01000000 ; A		($40)
+btnC:		equ %00100000 ; C		($20)
+btnB:		equ %00010000 ; B		($10)
+btnR:		equ %00001000 ; Right		($08)
+btnL:		equ %00000100 ; Left		($04)
+btnDn:		equ %00000010 ; Down		($02)
+btnUp:		equ %00000001 ; Up		($01)
+bitStart:	equ 7
+bitA:		equ 6
+bitC:		equ 5
+bitB:		equ 4
+bitR:		equ 3
+bitL:		equ 2
+bitDn:		equ 1
+bitUp:		equ 0
+
+HEXADDR			=	$FF0000
 JOYPAD			=	$FF0010
 JOYPADPRESS		=	$FF0011

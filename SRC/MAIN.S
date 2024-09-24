@@ -7,6 +7,9 @@
 ascii:
 	incbin		"src/ascii.art"
 	ascii_end:
+hex:
+	incbin		"src/hex.art"
+	hex_end:
 	
 init:
 	move.w	#$8000+%00000100,(VDPCTRL)		;	MODE REGISTER 1
@@ -34,11 +37,18 @@ init:
 	
 	lea		ascii,	a0
 	lea		VDPDATA,a1
-	move.l	#(ascii_end-ascii)-1,	d0
+	move.l	#(ascii_end-ascii)/4-1,	d0
 	move.l	#VRAMWRITE+$4000000,(VDPCTRL)
 .loadASCII1
 	move.l	(a0)+,(a1)
 	dbf		d0,	.loadASCII1
+	lea		hex,	a0
+	lea		VDPDATA,a1
+	move.l	#(hex_end-hex)/4-1,	d0
+	move.l	#VRAMWRITE+1,(VDPCTRL)
+.loadhex1
+	move.l	(a0)+,(a1)
+	dbf		d0,	.loadhex1
 	
 	InitTXT	ASCIITXT1,ASCIITXT1_END,$40820002
 	InitTXT	ASCIITXT2,ASCIITXT2_END,$4D020002
@@ -62,6 +72,31 @@ init:
 	
 .loop:
 	jsr		VSync
+	btst	#bitL,	JOYPADPRESS
+	bne.s	.sub1
+	btst	#bitR,	JOYPADPRESS
+	bne.s	.add1
+	btst	#bitUp,	JOYPADPRESS
+	bne.s	.add10
+	btst	#bitDn,	JOYPADPRESS
+	bne.s	.sub10
+	bra.s	.loop
+	
+.sub1
+	sub.b	#1,	HEXADDR
+	bsr.w	DispHex
+	bra.s	.loop
+.add1
+	add.b	#1,	HEXADDR
+	bsr.w	DispHex
+	bra.s	.loop
+.sub10
+	sub.b	#$10,	HEXADDR
+	bsr.w	DispHex
+	bra.s	.loop
+.add10
+	add.b	#$10,	HEXADDR
+	bsr.w	DispHex
 	bra.s	.loop
 	
 ASCIITXT1:	dc.b	'GEMS SOURCE SOUND PLAYER'
@@ -72,7 +107,7 @@ ASCIITXT3:	dc.b	'PRESS ABC TO PLAY SOUND '
 	ASCIITXT3_END:
 ASCIITXT4:	dc.b	'PRESS LR TO SWITCH SOUND BY 1 '
 	ASCIITXT4_END:
-ASCIITXT5:	dc.b	'PRESS UD TO SWITCH SOUND BY 10'
+ASCIITXT5:	dc.b	'PRESS UD TO SWITCH SOUND BY 10 (16) '
 	ASCIITXT5_END:
 ASCIITXT6:	dc.b	'SOUND HEX: 00 '
 	ASCIITXT6_END:
@@ -84,6 +119,23 @@ loadASCII2
 	move.b	(a0)+,d1
 	move.w	d1,	(a1)
 	dbf		d0,	.loop
+	rts
+	
+DispHex
+	moveq	#0,	d0
+	move.b	HEXADDR,	d0
+	and.b	#$0F,	d0
+	add.w	#$200,	d0
+	move.l	#$459A0002,(VDPCTRL)
+	move.w	d0,	VDPDATA
+	
+	moveq	#0,	d0
+	move.b	HEXADDR,	d0
+	and.b	#$F0,	d0
+	ror.b	#4,		d0
+	add.w	#$200,	d0
+	move.l	#$45980002,(VDPCTRL)
+	move.w	d0,	VDPDATA
 	rts
 	
 VSync:	;	code from ProjectFM
