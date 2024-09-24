@@ -80,6 +80,10 @@ init:
 	bne.s	.add10
 	btst	#bitDn,	JOYPADPRESS
 	bne.s	.sub10
+	move.b	JOYPADPRESS,	d0
+	and.b	#btnABC,	d0
+	tst.b	d0
+	bne.s	.playSnd
 	bra.s	.loop
 	
 .sub1
@@ -98,6 +102,14 @@ init:
 	add.b	#$10,	HEXADDR
 	bsr.w	DispHex
 	bra.s	.loop
+.playSnd
+	jsr	_gemsstopall
+	move.l	#0,	d0
+	move.b	HEXADDR,	d0
+	move.l	d0,-(sp)
+	jsr	_gemsstartsong		; start song
+	adda.w	#4,sp
+	bra.w	.loop
 	
 ASCIITXT1:	dc.b	'GEMS SOURCE SOUND PLAYER'
 	ASCIITXT1_END:

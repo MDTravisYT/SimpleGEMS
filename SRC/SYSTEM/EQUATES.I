@@ -32,6 +32,7 @@ btnStart:	equ %10000000 ; Start button	($80)
 btnA:		equ %01000000 ; A		($40)
 btnC:		equ %00100000 ; C		($20)
 btnB:		equ %00010000 ; B		($10)
+btnABC:		equ %01110000 ; ABC
 btnR:		equ %00001000 ; Right		($08)
 btnL:		equ %00000100 ; Left		($04)
 btnDn:		equ %00000010 ; Down		($02)
