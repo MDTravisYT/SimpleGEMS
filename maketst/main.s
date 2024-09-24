@@ -1,10 +1,10 @@
-	include	SRC/macros.i
-	include	SRC/equates.i
+	include	macros.i
+	include	equates.i
 	
 	section test
 
 init:
 	dc.b	"hi this is a test and shouldnt run"
 	
-	include	SRC/globals.i
+	include	globals.i
 	end
