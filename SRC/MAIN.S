@@ -62,10 +62,6 @@ init:
 	jsr		INITJOYPADS	;	init controller
 	move	#$2300,sr
 	
-	move.l	#0,-(sp)
-	jsr	_gemsstartsong		; start song
-	adda.w	#4,sp
-	
 	move.l	#CRAMWRITE,(VDPCTRL)
 	move.l	#$0EEE,VDPDATA
 	move.w	#$0444,VDPDATA
