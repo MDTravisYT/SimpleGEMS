@@ -56,7 +56,7 @@ init:
 	InitTXT	ASCIITXT4,ASCIITXT4_END,$48820002
 	InitTXT	ASCIITXT5,ASCIITXT5_END,$49020002
 	InitTXT	ASCIITXT6,ASCIITXT6_END,$45820002
-;	InitTXT	ASCIITXT7,ASCIITXT7_END,$46020002
+	InitTXT	ASCIITXT7,ASCIITXT7_END,$46020002
 	
 	jsr		_sfxinit	;	init GEMS
 	jsr		INITJOYPADS	;	init controller
@@ -131,6 +131,12 @@ loadASCII2
 	
 DispHex
 	moveq	#0,	d0
+	moveq	#0,	d1
+	move.b	HEXADDR,	d1
+	bsr.w	WordToBcd
+	move.w	d1,	HEXADDR+2
+
+	moveq	#0,	d0
 	move.b	HEXADDR,	d0
 	and.b	#$0F,	d0
 	add.w	#$200,	d0
@@ -159,3 +165,49 @@ VSync:	;	code from ProjectFM
     rts                             ; End of subroutine
 	
 	include		"SRC/SYSTEM/JOYPAD.S"
+	
+; ----------------------------------------------------------------------
+; Convert word to BCD format
+; ----------------------------------------------------------------------
+; PARAMETERS:
+;    d1.w - Number to convert
+; RETURNS:
+;    d1.w - Converted number
+; ----------------------------------------------------------------------
+
+WordToBcd:
+    move.w    d0,-(sp)                ; Save d0
+    
+    andi.l    #$FFFF,d1                ; Get 1st digit
+    divu.w    #10,d1
+    swap    d1
+    move.w    d1,d0
+    clr.w    d1
+    swap    d1
+    
+    divu.w    #10,d1                    ; Get 2nd digit
+    swap    d1
+    lsl.w    #4,d1
+    add.w    d1,d0
+    clr.w    d1
+    swap    d1
+    
+    divu.w    #10,d1                    ; Get 3rd digit
+    swap    d1
+    move.b    d1,-(sp)
+    clr.b    1(sp)
+    add.w    (sp)+,d0
+    clr.w    d1
+    swap    d1
+    
+    divu.w    #10,d1                    ; Get 4th digit
+    swap    d1
+    move.b    d1,-(sp)
+    move.w    (sp)+,d1
+    clr.b    d1
+    lsl.w    #4,d1
+    add.w    d1,d0
+    
+    move.w    d0,d1                    ; Get result
+    move.w    (sp)+,d0                ; Restore d0
+    rts
