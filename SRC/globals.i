@@ -3,38 +3,3 @@
 	global	HInt,VInt
 	global	trap
 	global	init
-	
-	global _gemsdmastart
-	global _gemsdmaend
-	global _gemsholdz80
-	global _gemsreleasez80
-	global _gemsloadz80
-	global _gemsstartz80
-	global _gemsputcbyte
-	global _gemsputptr
-	global _gemsinit
-	global _gemsstartsong
-	global _gemsstopsong
-	global _gemssettempo
-	global _gemspauseall
-	global _gemsresumeall
-	global _gemsstopall
-	global _gemslockchannel
-	global _gemsunlockchannel
-	global _gemsprogchange
-	global _gemsnoteon
-	global _gemsnoteoff
-	global _gemssetprio
-	global _gemspitchbend
-	global _gemssetenv
-	global _gemsretrigenv
-	global _gemssustain
-	global _gemsmute
-	global _gemsstorembox
-	global _gemsreadmbox
-	global _gemssamprate
-
-	global _patchbank
-	global _envbank
-	global _seqbank
-	global _sampbank

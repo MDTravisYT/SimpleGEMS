@@ -1,6 +1,5 @@
 	include	SRC/macros.i
 	include	SRC/equates.i
-	include	SRC/sound.i
 	
 	section test
 
@@ -28,29 +27,8 @@ init:
 	move.l	#CRAMWRITE,(VDPCTRL)
 	move.w	#$E0,VDPDATA
 	
-	jsr		_sfxinit	;	init GEMS
-	
-	move.l	#0,-(sp)
-	jsr	_gemsstartsong		; start song
-	adda.w	#4,sp
-	
 .loop:
-	jsr		VSync
-	move.l	#CRAMWRITE,(VDPCTRL)
-	move.w	#$E00,VDPDATA
 	bra.s	.loop
-	
-VSync:	;	code from ProjectFM
-    lea     ($C00004),a6
-@Loop1:                             ; Wait until current VBlank is over
-    move.w    (a6),d7
-    btst.l    #3,d7
-    bne.s    @Loop1
-@Loop2:                             ; Wait until next VBlank starts
-    move.w    (a6),d7
-    btst.l    #3,d7
-    beq.s    @Loop2
-    rts                             ; End of subroutine
 	
 	include	SRC/globals.i
 	end
