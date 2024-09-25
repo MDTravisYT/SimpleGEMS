@@ -1,4 +1,4 @@
-A simple GEMS player including an external editor. This here uses GEMS 2.5.
+A simple GEMS player including an external editor. This here uses GEMS 2.8.
 
 Go to [the wiki page](https://github.com/MDTravisYT/SimpleGEMS/wiki) to learn how to use the GEMS editor and this player.
 
