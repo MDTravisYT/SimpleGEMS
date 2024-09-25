@@ -1,13 +1,17 @@
 ;
-;    File:          Gems.a - Version 2.5 for MicroTec 5/21/92
+;    File:          Gems.a - Version 2.8 for MicroTec 4/26/94
 ;
 ;    Contains: The library routines and includes for Gems data.
 ;
-;    Written by:    Burt Sloane & Jonathan L. Miller
-;
-;    Copyright:     1991,1992 by Sega of America, Inc., all rights reserved.
+													
+ 
+;    Copyright:     1991-1994 by Sega of America, Inc., all rights reserved.
+																			
 ;
 ;    Change History:
+;         4/26/94 JLM Update for 2.8 - added gemsmasteratn and
+;            gemspitchbendvch. also fixed bugs in gemsreadmbox and
+;            gemspitchbend
 ;         5/21/92 JLM Update for 2.5 - unchaged from 2.2
 ;         3/5/92 JLM Update for 2.2 - new z80 mem map, plus fixed dmastart
 ;         11/19/91 BAS Update for 2.0, several routines didnt disable ints
@@ -18,40 +22,42 @@
 ;
 ;     OPT  E,CASE
 
-;     XDEF _gemsdmastart
-;     XDEF _gemsdmaend
-;     XDEF _gemsholdz80
-;     XDEF _gemsreleasez80
-;     XDEF _gemsloadz80
-;     XDEF _gemsstartz80
-;     XDEF _gemsputcbyte
-;     XDEF _gemsputptr
-;     XDEF _gemsinit
-;     XDEF _gemsstartsong
-;     XDEF _gemsstopsong
-;     XDEF _gemssettempo
-;     XDEF _gemspauseall
-;     XDEF _gemsresumeall
-;     XDEF _gemsstopall
-;     XDEF _gemslockchannel
-;     XDEF _gemsunlockchannel
-;     XDEF _gemsprogchange
-;     XDEF _gemsnoteon
-;     XDEF _gemsnoteoff
-;     XDEF _gemssetprio
-;     XDEF _gemspitchbend
-;     XDEF _gemssetenv
-;     XDEF _gemsretrigenv
-;     XDEF _gemssustain
-;     XDEF _gemsmute
-;     XDEF _gemsstorembox
-;     XDEF _gemsreadmbox
-;     XDEF _gemssamprate
-;
-;     XDEF _patchbank
-;     XDEF _envbank
-;     XDEF _seqbank
-;     XDEF _sampbank
+     XDEF _gemsdmastart
+     XDEF _gemsdmaend
+     XDEF _gemsholdz80
+     XDEF _gemsreleasez80
+     XDEF _gemsloadz80
+     XDEF _gemsstartz80
+     XDEF _gemsputcbyte
+     XDEF _gemsputptr
+     XDEF _gemsinit
+     XDEF _gemsstartsong
+     XDEF _gemsstopsong
+     XDEF _gemssettempo
+     XDEF _gemsmasteratn
+     XDEF _gemspauseall
+     XDEF _gemsresumeall
+     XDEF _gemsstopall
+     XDEF _gemslockchannel
+     XDEF _gemsunlockchannel
+     XDEF _gemsprogchange
+     XDEF _gemsnoteon
+     XDEF _gemsnoteoff
+     XDEF _gemssetprio
+     XDEF _gemspitchbend
+     XDEF _gemspitchbendvch
+     XDEF _gemssetenv
+     XDEF _gemsretrigenv
+     XDEF _gemssustain
+     XDEF _gemsmute
+     XDEF _gemsstorembox
+     XDEF _gemsreadmbox
+     XDEF _gemssamprate
+
+     XDEF _patchbank
+     XDEF _envbank
+     XDEF _seqbank
+     XDEF _sampbank
 
 
 ; N.B.  in routines in this file, a0 and d0 are freely trashed
@@ -251,7 +257,7 @@ stdcleanup
 ;  a1 - Z80RAM+$1B40(fifo)
 ;
 stdcmdwrite
-          move.b    #-1,0(a1,d1.w)          ; write into fifo
+          move.b    #-1,(0,a1,d1.w)          ; write into fifo
 
           addq.b    #1,d1               ; increment write index mod 64
           andi.b    #$3F,d1
@@ -265,7 +271,7 @@ stdcmdwrite
 ;  a1 - Z80RAM+$1B40(fifo)
 ;
 stdwrite
-          move.b    d0,0(a1,d1.w)      ; write into fifo
+          move.b    d0,(0,a1,d1.w)      ; write into fifo
 
           addq.b    #1,d1               ; increment write index mod 64
           andi.b    #$3F,d1
@@ -402,7 +408,7 @@ _gemsstopsong
           jsr  stdsetup
 
           moveq     #18,d0
-          bra.s     com1arg
+          bra.w     com1arg
 
 ;
 ; gemssettempo - set tempo
@@ -420,7 +426,16 @@ _gemssettempo
           jsr  stdsetup
 
           moveq     #5,d0
-          bra.s     com1arg
+          bra.w     com1arg
+
+;
+; gemsmasteratn - set the master attenuator (0=loudest)
+;
+_gemsmasteratn
+          jsr  stdsetup
+
+          moveq     #32,d0
+          bra.w     com1arg
 
 ;
 ; gemspauseall - pause all songs currently running
@@ -494,7 +509,7 @@ _gemslockchannel
           jsr  stdsetup
 
           moveq     #28,d0
-          bra.s     com1arg
+          bra.w     com1arg
 
 ;
 ; gemsunlockchannel - unlock a sound effects channel
@@ -512,7 +527,7 @@ _gemsunlockchannel
           jsr  stdsetup
 
           moveq     #29,d0
-          bra.s     com1arg
+          bra.w     com1arg
 
 ;
 ; gemsprogchange - program change
@@ -562,7 +577,7 @@ _gemsnoteon
           jsr  stdsetup
 
           moveq     #0,d0
-          bra.s     com2arg
+          bra.w     com2arg
 
 ;
 ; gemsnoteoff - turn note off
@@ -582,7 +597,7 @@ _gemsnoteoff
           jsr  stdsetup
 
           moveq     #1,d0
-          bra.s     com2arg
+          bra.w     com2arg
 
 ;
 ; gemssetprio - set channel priority
@@ -602,7 +617,7 @@ _gemssetprio
           jsr  stdsetup
 
           moveq     #20,d0
-          bra.s     com2arg
+          bra.w     com2arg
 
 ;
 ; gemspitchbend - pitch bend
@@ -621,13 +636,49 @@ _gemssetprio
 _gemspitchbend
           jsr  stdsetup
 
-          moveq     #5,d0
+          moveq     #4,d0
           jsr  stdcmdwrite
 
           move.l    8(A6),d0
           jsr  stdwrite
 
           move.l    12(A6),d0
+          jsr  stdwrite
+
+          asr.l     #8,d0
+          jsr  stdwrite
+
+          jmp  stdcleanup
+
+;
+; gemspitchbendvch - pitch bend by seq/ch #
+;
+; stack frame after the link:
+;    +------------------+
+;    +  bend amt (long) +  0000bbbb  signed 8-bit frac is # semi-tones
+;  +16    +------------------+
+;    +  channel (long)  +  000000cc
+;  +12    +------------------+
+;    +  sequence (long)  +  000000ss
+;  +8     +------------------+
+;    +  return address  +
+;  +4     +------------------+
+;    +    previous a6   +
+;  a6-> +------------------+
+
+_gemspitchbendvch
+          jsr  stdsetup
+
+          moveq     #30,d0
+          jsr  stdcmdwrite
+
+          move.l    8(A6),d0
+          jsr  stdwrite
+
+          move.l    12(A6),d0
+          jsr  stdwrite
+
+          move.l    16(A6),d0
           jsr  stdwrite
 
           asr.l     #8,d0
@@ -653,7 +704,7 @@ _gemssetenv
           jsr  stdsetup
 
           moveq     #6,d0
-          bra.s     com2arg
+          bra.w     com2arg
 
 ;
 ; gemsretrigenv - turn on retrig mode if val is 80h, off if 0h
@@ -673,7 +724,7 @@ _gemsretrigenv
           jsr  stdsetup
 
           moveq     #7,d0
-          bra     com2arg
+          bra.w     com2arg
 
 ;
 ; gemssustain - turn on sustain mode if val is 80h, off if 0h
@@ -693,7 +744,7 @@ _gemssustain
           jsr  stdsetup
 
           moveq     #14,d0
-          bra     com2arg
+          bra.w     com2arg
 
 ;
 ; gemsmute - mute song/channel if val is 1, enable if 0
@@ -770,7 +821,7 @@ _gemsreadmbox
 
           jsr  _gemsholdz80
           moveq     #0,d0
-          move.b    11(a7),d0
+          move.b    9(a7),d0
           lea  Z80MBOXBASE,a0
           move.b    0(a0,d0.w),d0
           jsr  _gemsreleasez80
@@ -803,4 +854,3 @@ _gemssamprate
 
 
 
-

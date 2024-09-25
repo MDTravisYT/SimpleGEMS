@@ -2,2292 +2,1588 @@
 ; Sequence Offset Table
 ;
 
-	dc.b	$3C,$00		; Offset to sequence #0: 60
-	dc.b	$5D,$00		; Offset to sequence #1: 93
-	dc.b	$7E,$00		; Offset to sequence #2: 126
-	dc.b	$8F,$00		; Offset to sequence #3: 143
-	dc.b	$96,$00		; Offset to sequence #4: 150
-	dc.b	$99,$00		; Offset to sequence #5: 153
-	dc.b	$9E,$00		; Offset to sequence #6: 158
-	dc.b	$AF,$00		; Offset to sequence #7: 175
-	dc.b	$BC,$00		; Offset to sequence #8: 188
-	dc.b	$C9,$00		; Offset to sequence #9: 201
-	dc.b	$EA,$00		; Offset to sequence #10: 234
-	dc.b	$0B,$01		; Offset to sequence #11: 267
-	dc.b	$2C,$01		; Offset to sequence #12: 300
-	dc.b	$4D,$01		; Offset to sequence #13: 333
-	dc.b	$54,$01		; Offset to sequence #14: 340
-	dc.b	$5B,$01		; Offset to sequence #15: 347
-	dc.b	$62,$01		; Offset to sequence #16: 354
-	dc.b	$6D,$01		; Offset to sequence #17: 365
-	dc.b	$76,$01		; Offset to sequence #18: 374
-	dc.b	$7F,$01		; Offset to sequence #19: 383
-	dc.b	$84,$01		; Offset to sequence #20: 388
-	dc.b	$8B,$01		; Offset to sequence #21: 395
-	dc.b	$8E,$01		; Offset to sequence #22: 398
-	dc.b	$91,$01		; Offset to sequence #23: 401
-	dc.b	$94,$01		; Offset to sequence #24: 404
-	dc.b	$97,$01		; Offset to sequence #25: 407
-	dc.b	$98,$01		; Offset to sequence #26: 408
-	dc.b	$9B,$01		; Offset to sequence #27: 411
-	dc.b	$9E,$01		; Offset to sequence #28: 414
-	dc.b	$A1,$01		; Offset to sequence #29: 417
+	dc.b	$0E,$00		; Offset to sequence #0: 14
+	dc.b	$24,$00		; Offset to sequence #1: 36
+	dc.b	$34,$00		; Offset to sequence #2: 52
+	dc.b	$4A,$00		; Offset to sequence #3: 74
+	dc.b	$60,$00		; Offset to sequence #4: 96
+	dc.b	$61,$00		; Offset to sequence #5: 97
+	dc.b	$6B,$00		; Offset to sequence #6: 107
 ;
 ; Sequence Descriptors
 ;
 
-; Sequence 0 "FUNKY MAIN MENU"
-	dc.b	$10			; channel count = 16
-	dc.b	$A4,$01		; offset to channel 0 = 420
-	dc.b	$5A,$06		; offset to channel 1 = 1626
-	dc.b	$36,$07		; offset to channel 2 = 1846
-	dc.b	$34,$08		; offset to channel 3 = 2100
-	dc.b	$0C,$09		; offset to channel 4 = 2316
-	dc.b	$1C,$09		; offset to channel 5 = 2332
-	dc.b	$30,$09		; offset to channel 6 = 2352
-	dc.b	$44,$09		; offset to channel 7 = 2372
-	dc.b	$4E,$09		; offset to channel 8 = 2382
-	dc.b	$58,$09		; offset to channel 9 = 2392
-	dc.b	$62,$09		; offset to channel 10 = 2402
-	dc.b	$6C,$09		; offset to channel 11 = 2412
-	dc.b	$76,$09		; offset to channel 12 = 2422
-	dc.b	$80,$09		; offset to channel 13 = 2432
-	dc.b	$8A,$09		; offset to channel 14 = 2442
-	dc.b	$94,$09		; offset to channel 15 = 2452
-; Sequence 1 "funky, main menu"
-	dc.b	$10			; channel count = 16
-	dc.b	$9E,$09		; offset to channel 0 = 2462
-	dc.b	$01,$0C		; offset to channel 1 = 3073
-	dc.b	$54,$0C		; offset to channel 2 = 3156
-	dc.b	$09,$0D		; offset to channel 3 = 3337
-	dc.b	$CF,$0E		; offset to channel 4 = 3791
-	dc.b	$5E,$0F		; offset to channel 5 = 3934
-	dc.b	$78,$0F		; offset to channel 6 = 3960
-	dc.b	$9A,$0F		; offset to channel 7 = 3994
-	dc.b	$4C,$10		; offset to channel 8 = 4172
-	dc.b	$5D,$11		; offset to channel 9 = 4445
-	dc.b	$62,$11		; offset to channel 10 = 4450
-	dc.b	$6C,$11		; offset to channel 11 = 4460
-	dc.b	$76,$11		; offset to channel 12 = 4470
-	dc.b	$80,$11		; offset to channel 13 = 4480
-	dc.b	$8A,$11		; offset to channel 14 = 4490
-	dc.b	$94,$11		; offset to channel 15 = 4500
-; Sequence 2 "Fast, stimulating,sim"
-	dc.b	$08			; channel count = 8
-	dc.b	$9E,$11		; offset to channel 0 = 4510
-	dc.b	$FA,$12		; offset to channel 1 = 4858
-	dc.b	$5D,$13		; offset to channel 2 = 4957
-	dc.b	$46,$15		; offset to channel 3 = 5446
-	dc.b	$F4,$15		; offset to channel 4 = 5620
-	dc.b	$21,$16		; offset to channel 5 = 5665
-	dc.b	$26,$17		; offset to channel 6 = 5926
-	dc.b	$3A,$17		; offset to channel 7 = 5946
-; Sequence 3 "LOGO 1"
-	dc.b	$03			; channel count = 3
-	dc.b	$66,$17		; offset to channel 0 = 5990
-	dc.b	$74,$17		; offset to channel 1 = 6004
-	dc.b	$8C,$17		; offset to channel 2 = 6028
-; Sequence 4 "LOGO 2"
-	dc.b	$01			; channel count = 1
-	dc.b	$98,$17		; offset to channel 0 = 6040
-; Sequence 5 "LOGO 3"
-	dc.b	$02			; channel count = 2
-	dc.b	$BD,$17		; offset to channel 0 = 6077
-	dc.b	$CB,$17		; offset to channel 1 = 6091
-; Sequence 6 "Sci-Fi,ethereal,RPG"
-	dc.b	$08			; channel count = 8
-	dc.b	$DA,$17		; offset to channel 0 = 6106
-	dc.b	$1D,$1A		; offset to channel 1 = 6685
-	dc.b	$9B,$1A		; offset to channel 2 = 6811
-	dc.b	$77,$1B		; offset to channel 3 = 7031
-	dc.b	$53,$1C		; offset to channel 4 = 7251
-	dc.b	$63,$1C		; offset to channel 5 = 7267
-	dc.b	$77,$1C		; offset to channel 6 = 7287
-	dc.b	$96,$1C		; offset to channel 7 = 7318
-; Sequence 7 "Tense,militaristic"
-	dc.b	$06			; channel count = 6
-	dc.b	$C3,$1C		; offset to channel 0 = 7363
-	dc.b	$FB,$1D		; offset to channel 1 = 7675
-	dc.b	$C4,$1E		; offset to channel 2 = 7876
-	dc.b	$85,$1F		; offset to channel 3 = 8069
-	dc.b	$93,$1F		; offset to channel 4 = 8083
-	dc.b	$B8,$1F		; offset to channel 5 = 8120
-; Sequence 8 "Fast, dramatic, action"
-	dc.b	$06			; channel count = 6
-	dc.b	$CA,$1F		; offset to channel 0 = 8138
-	dc.b	$49,$23		; offset to channel 1 = 9033
-	dc.b	$84,$23		; offset to channel 2 = 9092
-	dc.b	$89,$24		; offset to channel 3 = 9353
-	dc.b	$0F,$26		; offset to channel 4 = 9743
-	dc.b	$65,$26		; offset to channel 5 = 9829
-; Sequence 9 ""Pink P", fun, discovry"
-	dc.b	$10			; channel count = 16
-	dc.b	$D8,$26		; offset to channel 0 = 9944
-	dc.b	$BB,$27		; offset to channel 1 = 10171
-	dc.b	$D8,$28		; offset to channel 2 = 10456
-	dc.b	$84,$29		; offset to channel 3 = 10628
-	dc.b	$9E,$29		; offset to channel 4 = 10654
-	dc.b	$AF,$29		; offset to channel 5 = 10671
-	dc.b	$BF,$29		; offset to channel 6 = 10687
-	dc.b	$C9,$29		; offset to channel 7 = 10697
-	dc.b	$D3,$29		; offset to channel 8 = 10707
-	dc.b	$DD,$29		; offset to channel 9 = 10717
-	dc.b	$E7,$29		; offset to channel 10 = 10727
-	dc.b	$F1,$29		; offset to channel 11 = 10737
-	dc.b	$FB,$29		; offset to channel 12 = 10747
-	dc.b	$05,$2A		; offset to channel 13 = 10757
-	dc.b	$0F,$2A		; offset to channel 14 = 10767
-	dc.b	$19,$2A		; offset to channel 15 = 10777
-; Sequence 10 "Back beat, funk"
-	dc.b	$10			; channel count = 16
-	dc.b	$23,$2A		; offset to channel 0 = 10787
-	dc.b	$21,$2B		; offset to channel 1 = 11041
-	dc.b	$B2,$2C		; offset to channel 2 = 11442
-	dc.b	$AE,$2D		; offset to channel 3 = 11694
-	dc.b	$F3,$2D		; offset to channel 4 = 11763
-	dc.b	$C1,$2E		; offset to channel 5 = 11969
-	dc.b	$49,$30		; offset to channel 6 = 12361
-	dc.b	$0F,$31		; offset to channel 7 = 12559
-	dc.b	$6F,$31		; offset to channel 8 = 12655
-	dc.b	$79,$31		; offset to channel 9 = 12665
-	dc.b	$83,$31		; offset to channel 10 = 12675
-	dc.b	$8D,$31		; offset to channel 11 = 12685
-	dc.b	$97,$31		; offset to channel 12 = 12695
-	dc.b	$A1,$31		; offset to channel 13 = 12705
-	dc.b	$AB,$31		; offset to channel 14 = 12715
-	dc.b	$B5,$31		; offset to channel 15 = 12725
-; Sequence 11 "Light, soft, strategy"
-	dc.b	$10			; channel count = 16
-	dc.b	$BF,$31		; offset to channel 0 = 12735
-	dc.b	$E7,$31		; offset to channel 1 = 12775
-	dc.b	$A2,$32		; offset to channel 2 = 12962
-	dc.b	$59,$33		; offset to channel 3 = 13145
-	dc.b	$BD,$33		; offset to channel 4 = 13245
-	dc.b	$D4,$33		; offset to channel 5 = 13268
-	dc.b	$E4,$33		; offset to channel 6 = 13284
-	dc.b	$F6,$33		; offset to channel 7 = 13302
-	dc.b	$00,$34		; offset to channel 8 = 13312
-	dc.b	$0A,$34		; offset to channel 9 = 13322
-	dc.b	$14,$34		; offset to channel 10 = 13332
-	dc.b	$1E,$34		; offset to channel 11 = 13342
-	dc.b	$28,$34		; offset to channel 12 = 13352
-	dc.b	$32,$34		; offset to channel 13 = 13362
-	dc.b	$3C,$34		; offset to channel 14 = 13372
-	dc.b	$46,$34		; offset to channel 15 = 13382
-; Sequence 12 "Challenging, Sports"
-	dc.b	$10			; channel count = 16
-	dc.b	$50,$34		; offset to channel 0 = 13392
-	dc.b	$77,$35		; offset to channel 1 = 13687
-	dc.b	$D3,$35		; offset to channel 2 = 13779
-	dc.b	$E1,$35		; offset to channel 3 = 13793
-	dc.b	$F4,$35		; offset to channel 4 = 13812
-	dc.b	$05,$36		; offset to channel 5 = 13829
-	dc.b	$1A,$36		; offset to channel 6 = 13850
-	dc.b	$24,$36		; offset to channel 7 = 13860
-	dc.b	$2E,$36		; offset to channel 8 = 13870
-	dc.b	$38,$36		; offset to channel 9 = 13880
-	dc.b	$42,$36		; offset to channel 10 = 13890
-	dc.b	$4C,$36		; offset to channel 11 = 13900
-	dc.b	$56,$36		; offset to channel 12 = 13910
-	dc.b	$60,$36		; offset to channel 13 = 13920
-	dc.b	$6A,$36		; offset to channel 14 = 13930
-	dc.b	$74,$36		; offset to channel 15 = 13940
-; Sequence 13 "Channel LOGO #4"
-	dc.b	$03			; channel count = 3
-	dc.b	$7E,$36		; offset to channel 0 = 13950
-	dc.b	$8C,$36		; offset to channel 1 = 13964
-	dc.b	$AA,$36		; offset to channel 2 = 13994
-; Sequence 14 "Channel LOGO #5"
-	dc.b	$03			; channel count = 3
-	dc.b	$B9,$36		; offset to channel 0 = 14009
-	dc.b	$C7,$36		; offset to channel 1 = 14023
-	dc.b	$E6,$36		; offset to channel 2 = 14054
-; Sequence 15 "Channel LOGO #6"
-	dc.b	$03			; channel count = 3
-	dc.b	$F3,$36		; offset to channel 0 = 14067
-	dc.b	$01,$37		; offset to channel 1 = 14081
-	dc.b	$22,$37		; offset to channel 2 = 14114
-; Sequence 16 "AQUA channel"
+; Sequence 0 "Metal Drumania"
+	dc.b	$07			; channel count = 7
+	dc.b	$75,$00,$00		; offset to channel 0 = 117
+	dc.b	$0D,$02,$00		; offset to channel 1 = 525
+	dc.b	$0A,$09,$00		; offset to channel 2 = 2314
+	dc.b	$75,$09,$00		; offset to channel 3 = 2421
+	dc.b	$48,$0A,$00		; offset to channel 4 = 2632
+	dc.b	$EB,$0A,$00		; offset to channel 5 = 2795
+	dc.b	$00,$10,$00		; offset to channel 6 = 4096
+; Sequence 1 "Mystery Beat"
 	dc.b	$05			; channel count = 5
-	dc.b	$2F,$37		; offset to channel 0 = 14127
-	dc.b	$49,$37		; offset to channel 1 = 14153
-	dc.b	$99,$37		; offset to channel 2 = 14233
-	dc.b	$E7,$37		; offset to channel 3 = 14311
-	dc.b	$10,$38		; offset to channel 4 = 14352
-; Sequence 17 "Intro FX"
-	dc.b	$04			; channel count = 4
-	dc.b	$2C,$38		; offset to channel 0 = 14380
-	dc.b	$3E,$38		; offset to channel 1 = 14398
-	dc.b	$4A,$38		; offset to channel 2 = 14410
-	dc.b	$52,$38		; offset to channel 3 = 14418
-; Sequence 18 "Intro FX+"
-	dc.b	$04			; channel count = 4
-	dc.b	$69,$38		; offset to channel 0 = 14441
-	dc.b	$7B,$38		; offset to channel 1 = 14459
-	dc.b	$87,$38		; offset to channel 2 = 14471
-	dc.b	$8F,$38		; offset to channel 3 = 14479
-; Sequence 19 "Intro FX 2"
-	dc.b	$02			; channel count = 2
-	dc.b	$97,$38		; offset to channel 0 = 14487
-	dc.b	$AB,$38		; offset to channel 1 = 14507
-; Sequence 20 "Intro FX 2+"
-	dc.b	$03			; channel count = 3
-	dc.b	$C1,$38		; offset to channel 0 = 14529
-	dc.b	$D1,$38		; offset to channel 1 = 14545
-	dc.b	$E2,$38		; offset to channel 2 = 14562
-; Sequence 21 "SFX 1"
-	dc.b	$01			; channel count = 1
-	dc.b	$EA,$38		; offset to channel 0 = 14570
-; Sequence 22 "SFX 2"
-	dc.b	$01			; channel count = 1
-	dc.b	$F7,$38		; offset to channel 0 = 14583
-; Sequence 23 "SFX 3"
-	dc.b	$01			; channel count = 1
-	dc.b	$01,$39		; offset to channel 0 = 14593
-; Sequence 24 "SFX 4"
-	dc.b	$01			; channel count = 1
-	dc.b	$0B,$39		; offset to channel 0 = 14603
-; Sequence 25 "<Unused #25>"
+	dc.b	$B6,$10,$00		; offset to channel 0 = 4278
+	dc.b	$2B,$11,$00		; offset to channel 1 = 4395
+	dc.b	$AF,$13,$00		; offset to channel 2 = 5039
+	dc.b	$C8,$13,$00		; offset to channel 3 = 5064
+	dc.b	$18,$14,$00		; offset to channel 4 = 5144
+; Sequence 2 "Hey Common"
+	dc.b	$07			; channel count = 7
+	dc.b	$49,$14,$00		; offset to channel 0 = 5193
+	dc.b	$4F,$17,$00		; offset to channel 1 = 5967
+	dc.b	$F5,$19,$00		; offset to channel 2 = 6645
+	dc.b	$38,$1A,$00		; offset to channel 3 = 6712
+	dc.b	$51,$1A,$00		; offset to channel 4 = 6737
+	dc.b	$45,$1B,$00		; offset to channel 5 = 6981
+	dc.b	$E2,$1C,$00		; offset to channel 6 = 7394
+; Sequence 3 "Orient Wind"
+	dc.b	$07			; channel count = 7
+	dc.b	$43,$1E,$00		; offset to channel 0 = 7747
+	dc.b	$5E,$1E,$00		; offset to channel 1 = 7774
+	dc.b	$A4,$1E,$00		; offset to channel 2 = 7844
+	dc.b	$63,$21,$00		; offset to channel 3 = 8547
+	dc.b	$3B,$24,$00		; offset to channel 4 = 9275
+	dc.b	$22,$26,$00		; offset to channel 5 = 9762
+	dc.b	$57,$26,$00		; offset to channel 6 = 9815
+; Sequence 4 "<Unused #4>"
 	dc.b	$00			; channel count = 0
-; Sequence 26 "intro test"
-	dc.b	$01			; channel count = 1
-	dc.b	$15,$39		; offset to channel 0 = 14613
-; Sequence 27 "intro test 2"
-	dc.b	$01			; channel count = 1
-	dc.b	$1D,$39		; offset to channel 0 = 14621
-; Sequence 28 "intro test 3"
-	dc.b	$01			; channel count = 1
-	dc.b	$25,$39		; offset to channel 0 = 14629
-; Sequence 29 "intro test 4"
-	dc.b	$01			; channel count = 1
-	dc.b	$2D,$39		; offset to channel 0 = 14637
+; Sequence 5 "King Richard's Faire"
+	dc.b	$03			; channel count = 3
+	dc.b	$13,$29,$00		; offset to channel 0 = 10515
+	dc.b	$BE,$29,$00		; offset to channel 1 = 10686
+	dc.b	$E1,$29,$00		; offset to channel 2 = 10721
+; Sequence 6 "Looped Rock"
+	dc.b	$03			; channel count = 3
+	dc.b	$47,$2A,$00		; offset to channel 0 = 10823
+	dc.b	$5E,$2A,$00		; offset to channel 1 = 10846
+	dc.b	$25,$2C,$00		; offset to channel 2 = 11301
 ;
 ; Sequence Channel Data
 ;
 
 ; Sequence 0, Channel 0:
-	dc.b	$C0,$68,$46,$61,$1C,$64,$7F,$C0
-	dc.b	$63,$88,$D3,$1F,$82,$C5,$1F,$85
-	dc.b	$C7,$29,$E4,$2B,$83,$C5,$21,$8F
-	dc.b	$C4,$22,$C1,$6C,$20,$00,$6C,$50
-	dc.b	$00,$C0,$6C,$70,$00,$C1,$6C,$90
-	dc.b	$00,$6C,$A0,$00,$C0,$6C,$90,$00
-	dc.b	$C1,$6C,$30,$00,$6C,$10,$00,$C3
-	dc.b	$6C,$00,$00,$C0,$6C,$20,$00,$C1
-	dc.b	$6C,$60,$00,$6C,$90,$00,$6C,$B0
-	dc.b	$00,$6C,$A0,$00,$C0,$6C,$60,$00
-	dc.b	$C1,$6C,$50,$00,$C2,$6C,$30,$00
-	dc.b	$C1,$6C,$10,$00,$C3,$6C,$00,$00
-	dc.b	$86,$D3,$1F,$82,$C5,$1F,$84,$C7
-	dc.b	$29,$85,$D8,$2B,$83,$C4,$1F,$88
-	dc.b	$CD,$1C,$86,$CB,$1D,$88,$CD,$1E
-	dc.b	$D3,$1F,$81,$C5,$1F,$85,$C7,$29
-	dc.b	$84,$E4,$2B,$82,$C5,$21,$8F,$C4
-	dc.b	$22,$C1,$6C,$30,$00,$6C,$60,$00
-	dc.b	$6C,$70,$00,$6C,$20,$00,$C3,$6C
-	dc.b	$00,$00,$C0,$6C,$10,$00,$C1,$6C
-	dc.b	$30,$00,$6C,$60,$00,$C0,$6C,$A0
-	dc.b	$00,$C1,$6C,$B0,$00,$6C,$80,$00
-	dc.b	$C0,$6C,$40,$00,$C1,$6C,$10,$00
-	dc.b	$C2,$6C,$00,$00,$C0,$6C,$20,$00
-	dc.b	$C2,$6C,$30,$00,$C4,$6C,$00,$00
-	dc.b	$86,$D3,$1F,$82,$C5,$1F,$84,$C7
-	dc.b	$29,$85,$D8,$2B,$83,$C4,$1F,$88
-	dc.b	$CD,$1C,$86,$CB,$1D,$88,$CD,$1E
-	dc.b	$D3,$1F,$82,$C5,$1F,$85,$C7,$29
-	dc.b	$E4,$2B,$83,$C5,$21,$8F,$C4,$22
-	dc.b	$C1,$6C,$20,$00,$6C,$50,$00,$C0
-	dc.b	$6C,$70,$00,$C1,$6C,$90,$00,$6C
-	dc.b	$A0,$00,$C0,$6C,$90,$00,$C1,$6C
-	dc.b	$30,$00,$6C,$10,$00,$C3,$6C,$00
-	dc.b	$00,$C0,$6C,$20,$00,$C1,$6C,$60
-	dc.b	$00,$6C,$90,$00,$6C,$B0,$00,$6C
-	dc.b	$A0,$00,$C0,$6C,$60,$00,$C1,$6C
-	dc.b	$50,$00,$C2,$6C,$30,$00,$C1,$6C
-	dc.b	$10,$00,$C3,$6C,$00,$00,$86,$D3
-	dc.b	$1F,$82,$C5,$1F,$84,$C7,$29,$85
-	dc.b	$D8,$2B,$83,$C4,$1F,$88,$CD,$1C
-	dc.b	$86,$CB,$1D,$88,$CD,$1E,$D3,$1F
-	dc.b	$81,$C5,$1F,$85,$C7,$29,$84,$E4
-	dc.b	$2B,$82,$C5,$21,$8F,$C4,$22,$C1
-	dc.b	$6C,$30,$00,$6C,$60,$00,$6C,$70
-	dc.b	$00,$6C,$20,$00,$C3,$6C,$00,$00
-	dc.b	$C0,$6C,$10,$00,$C1,$6C,$30,$00
-	dc.b	$6C,$60,$00,$C0,$6C,$A0,$00,$C1
-	dc.b	$6C,$B0,$00,$6C,$80,$00,$C0,$6C
-	dc.b	$40,$00,$C1,$6C,$10,$00,$C2,$6C
-	dc.b	$00,$00,$C0,$6C,$20,$00,$C2,$6C
-	dc.b	$30,$00,$C4,$6C,$00,$00,$86,$D3
-	dc.b	$1F,$81,$C5,$1F,$85,$C7,$29,$86
-	dc.b	$D8,$2B,$82,$C4,$1F,$87,$CD,$22
-	dc.b	$88,$CB,$25,$CD,$26,$86,$CB,$27
-	dc.b	$C8,$24,$E4,$25,$81,$C4,$20,$86
-	dc.b	$CD,$22,$87,$CB,$25,$88,$CD,$26
-	dc.b	$85,$CB,$27,$86,$C8,$24,$85,$E4
-	dc.b	$25,$81,$C4,$1F,$89,$CD,$21,$87
-	dc.b	$CB,$22,$88,$CD,$24,$86,$F7,$27
-	dc.b	$82,$C4,$27,$8A,$CD,$22,$87,$CB
-	dc.b	$25,$CD,$26,$86,$F7,$27,$84,$C4
-	dc.b	$27,$88,$CD,$25,$CB,$22,$CD,$20
-	dc.b	$D3,$1F,$82,$C5,$1F,$85,$C7,$29
-	dc.b	$E4,$2B,$83,$C5,$21,$8F,$C4,$22
-	dc.b	$C1,$6C,$20,$00,$6C,$50,$00,$C0
-	dc.b	$6C,$70,$00,$C1,$6C,$90,$00,$6C
-	dc.b	$A0,$00,$C0,$6C,$90,$00,$C1,$6C
-	dc.b	$30,$00,$6C,$10,$00,$C3,$6C,$00
-	dc.b	$00,$C0,$6C,$20,$00,$C1,$6C,$60
-	dc.b	$00,$6C,$90,$00,$6C,$B0,$00,$6C
-	dc.b	$A0,$00,$C0,$6C,$60,$00,$C1,$6C
-	dc.b	$50,$00,$C2,$6C,$30,$00,$C1,$6C
-	dc.b	$10,$00,$C3,$6C,$00,$00,$86,$D3
-	dc.b	$1F,$82,$C5,$1F,$84,$C7,$29,$85
-	dc.b	$D8,$2B,$82,$C4,$1F,$88,$CD,$1C
-	dc.b	$86,$CB,$1D,$88,$CD,$1E,$D3,$1F
-	dc.b	$81,$C5,$1F,$85,$C7,$29,$84,$E4
-	dc.b	$2B,$82,$C5,$21,$8F,$C4,$22,$C1
-	dc.b	$6C,$30,$00,$6C,$60,$00,$6C,$70
-	dc.b	$00,$6C,$20,$00,$C3,$6C,$00,$00
-	dc.b	$C0,$6C,$10,$00,$C1,$6C,$30,$00
-	dc.b	$6C,$60,$00,$C0,$6C,$A0,$00,$C1
-	dc.b	$6C,$B0,$00,$6C,$80,$00,$C0,$6C
-	dc.b	$40,$00,$C1,$6C,$10,$00,$C2,$6C
-	dc.b	$00,$00,$C0,$6C,$20,$00,$C3,$6C
-	dc.b	$30,$00,$6C,$00,$00,$86,$D3,$1F
-	dc.b	$81,$C5,$1F,$85,$C7,$29,$86,$CC
-	dc.b	$2B,$82,$2E,$83,$DC,$2B,$88,$CD
-	dc.b	$1D,$D3,$1F,$82,$C5,$1F,$85,$C7
-	dc.b	$29,$E4,$2B,$83,$C5,$21,$8F,$C4
-	dc.b	$22,$C1,$6C,$20,$00,$6C,$50,$00
-	dc.b	$C0,$6C,$70,$00,$C1,$6C,$90,$00
-	dc.b	$6C,$A0,$00,$C0,$6C,$90,$00,$C1
-	dc.b	$6C,$30,$00,$6C,$10,$00,$C3,$6C
-	dc.b	$00,$00,$C0,$6C,$20,$00,$C1,$6C
-	dc.b	$60,$00,$6C,$90,$00,$6C,$B0,$00
-	dc.b	$6C,$A0,$00,$C0,$6C,$60,$00,$C1
-	dc.b	$6C,$50,$00,$C2,$6C,$30,$00,$C1
-	dc.b	$6C,$10,$00,$C3,$6C,$00,$00,$86
-	dc.b	$D3,$1F,$82,$C5,$1F,$84,$C7,$29
-	dc.b	$85,$D8,$2B,$83,$C4,$1F,$88,$CD
-	dc.b	$1C,$86,$CB,$1D,$88,$CD,$1E,$D3
-	dc.b	$1F,$81,$C5,$1F,$85,$C7,$29,$E4
-	dc.b	$2B,$82,$C5,$21,$8F,$C4,$22,$C1
-	dc.b	$6C,$30,$00,$6C,$60,$00,$6C,$70
-	dc.b	$00,$6C,$20,$00,$C3,$6C,$00,$00
-	dc.b	$C0,$6C,$10,$00,$C1,$6C,$30,$00
-	dc.b	$6C,$60,$00,$C0,$6C,$A0,$00,$C1
-	dc.b	$6C,$B0,$00,$6C,$80,$00,$C0,$6C
-	dc.b	$40,$00,$C1,$6C,$10,$00,$C2,$6C
-	dc.b	$00,$00,$C0,$6C,$20,$00,$C3,$6C
-	dc.b	$30,$00,$6C,$00,$00,$86,$D3,$1F
-	dc.b	$81,$C5,$1F,$85,$C7,$29,$86,$D8
-	dc.b	$2B,$82,$C4,$1F,$87,$CD,$22,$88
-	dc.b	$CB,$25,$CD,$26,$86,$CB,$27,$C8
-	dc.b	$24,$E4,$25,$81,$C4,$20,$87,$CD
-	dc.b	$22,$CB,$25,$88,$CD,$26,$85,$CB
-	dc.b	$27,$86,$C8,$24,$85,$E4,$25,$81
-	dc.b	$C4,$1F,$89,$CD,$21,$88,$CB,$22
-	dc.b	$CD,$24,$86,$F7,$27,$82,$C4,$27
-	dc.b	$89,$CD,$22,$87,$CB,$25,$CD,$26
-	dc.b	$86,$F7,$27,$84,$C4,$27,$88,$CD
-	dc.b	$25,$CB,$22,$CD,$20,$D3,$1F,$82
-	dc.b	$C5,$1F,$85,$C7,$29,$E4,$2B,$83
-	dc.b	$C5,$21,$8F,$C4,$22,$C1,$6C,$20
-	dc.b	$00,$6C,$50,$00,$C0,$6C,$70,$00
-	dc.b	$C1,$6C,$90,$00,$6C,$A0,$00,$C0
-	dc.b	$6C,$90,$00,$C1,$6C,$30,$00,$6C
-	dc.b	$10,$00,$C3,$6C,$00,$00,$C0,$6C
-	dc.b	$20,$00,$C1,$6C,$60,$00,$6C,$90
-	dc.b	$00,$6C,$B0,$00,$6C,$A0,$00,$C0
-	dc.b	$6C,$60,$00,$C1,$6C,$50,$00,$C2
-	dc.b	$6C,$30,$00,$C1,$6C,$10,$00,$C3
-	dc.b	$6C,$00,$00,$86,$D3,$1F,$82,$C5
-	dc.b	$1F,$84,$C7,$29,$85,$D8,$2B,$83
-	dc.b	$C4,$1F,$88,$CD,$1C,$86,$CB,$1D
-	dc.b	$88,$CD,$1E,$D3,$1F,$81,$C5,$1F
-	dc.b	$85,$C7,$29,$84,$E4,$2B,$82,$C5
-	dc.b	$21,$8F,$C4,$22,$C1,$6C,$30,$00
-	dc.b	$6C,$60,$00,$6C,$70,$00,$6C,$20
-	dc.b	$00,$C3,$6C,$00,$00,$C0,$6C,$10
-	dc.b	$00,$C1,$6C,$30,$00,$6C,$60,$00
-	dc.b	$C0,$6C,$A0,$00,$C1,$6C,$B0,$00
-	dc.b	$6C,$80,$00,$C0,$6C,$40,$00,$C1
-	dc.b	$6C,$10,$00,$C2,$6C,$00,$00,$C0
-	dc.b	$6C,$20,$00,$C2,$6C,$30,$00,$C4
-	dc.b	$6C,$00,$00,$86,$D3,$1F,$81,$C5
-	dc.b	$1F,$85,$C7,$29,$86,$D8,$2B,$83
-	dc.b	$C4,$2B,$87,$CD,$29,$88,$CB,$26
-	dc.b	$86,$CD,$29,$C0,$65,$60
+	dc.b	$C0,$68,$64,$61,$34,$D8,$C0,$72
+	dc.b	$05,$00,$64,$7F,$F0,$C0,$63,$86
+	dc.b	$C6,$37,$2B,$32,$2B,$37,$2B,$32
+	dc.b	$2B,$37,$2B,$32,$2B,$37,$32,$2B
+	dc.b	$37,$35,$29,$30,$29,$35,$29,$30
+	dc.b	$29,$35,$29,$30,$29,$35,$30,$29
+	dc.b	$35,$37,$2B,$32,$2B,$37,$2B,$32
+	dc.b	$2B,$37,$2B,$32,$2B,$37,$32,$2B
+	dc.b	$37,$35,$29,$30,$29,$35,$29,$30
+	dc.b	$29,$35,$29,$30,$29,$39,$37,$35
+	dc.b	$32,$37,$2B,$32,$2B,$37,$2B,$32
+	dc.b	$2B,$37,$2B,$32,$2B,$3A,$39,$37
+	dc.b	$2B,$35,$29,$30,$29,$35,$29,$30
+	dc.b	$29,$35,$29,$30,$35,$39,$37,$35
+	dc.b	$32,$37,$2B,$32,$2B,$37,$2B,$32
+	dc.b	$2B,$37,$2B,$32,$2B,$3A,$39,$37
+	dc.b	$32,$35,$29,$30,$29,$35,$29,$30
+	dc.b	$37,$35,$30,$2B,$29,$35,$30,$35
+	dc.b	$37,$39,$2D,$34,$2D,$39,$2D,$34
+	dc.b	$2D,$39,$2D,$34,$2D,$39,$34,$2D
+	dc.b	$39,$37,$2B,$32,$2B,$37,$2B,$32
+	dc.b	$2B,$37,$2B,$32,$2B,$37,$32,$2B
+	dc.b	$37,$39,$2D,$34,$2D,$39,$2D,$34
+	dc.b	$2D,$39,$2D,$34,$2D,$39,$34,$2D
+	dc.b	$39,$37,$2B,$32,$2B,$37,$2B,$32
+	dc.b	$2B,$37,$2B,$32,$2B,$3B,$39,$37
+	dc.b	$34,$39,$2D,$34,$2D,$39,$2D,$34
+	dc.b	$2D,$39,$2D,$34,$2D,$3C,$3B,$39
+	dc.b	$2D,$37,$2B,$32,$2B,$37,$2B,$32
+	dc.b	$2B,$37,$2B,$32,$37,$3B,$39,$37
+	dc.b	$34,$39,$2D,$34,$2D,$39,$2D,$34
+	dc.b	$2D,$39,$2D,$34,$2D,$3C,$3B,$39
+	dc.b	$34,$37,$2B,$32,$2B,$37,$2B,$32
+	dc.b	$39,$37,$32,$2D,$2B,$37,$32,$37
+	dc.b	$39,$37,$2B,$32,$2B,$37,$2B,$32
+	dc.b	$2B,$37,$2B,$32,$2B,$37,$32,$2B
+	dc.b	$37,$35,$29,$30,$29,$35,$29,$30
+	dc.b	$29,$35,$29,$30,$29,$35,$30,$29
+	dc.b	$35,$37,$2B,$32,$2B,$37,$2B,$32
+	dc.b	$2B,$37,$2B,$32,$2B,$37,$32,$2B
+	dc.b	$37,$35,$29,$30,$29,$35,$29,$30
+	dc.b	$29,$35,$29,$30,$29,$39,$37,$35
+	dc.b	$32,$37,$2B,$32,$2B,$37,$2B,$32
+	dc.b	$2B,$37,$2B,$32,$2B,$3A,$39,$37
+	dc.b	$2B,$35,$29,$30,$29,$35,$29,$30
+	dc.b	$29,$35,$29,$30,$35,$39,$37,$35
+	dc.b	$32,$37,$2B,$32,$2B,$37,$2B,$32
+	dc.b	$2B,$37,$2B,$32,$2B,$3A,$39,$37
+	dc.b	$32,$CC,$35,$C6,$30,$C0,$29,$C6
+	dc.b	$29,$35,$29,$30,$37,$35,$30,$2B
+	dc.b	$29,$35,$30,$35,$37,$C0,$65,$60
 ; Sequence 0, Channel 1:
-	dc.b	$64,$7F,$C0,$63,$C6,$C0,$61,$32
-	dc.b	$88,$C6,$2F,$87,$30,$C7,$2F,$86
-	dc.b	$C5,$30,$88,$C7,$2F,$85,$CB,$30
-	dc.b	$CC,$2F,$87,$D2,$2B,$88,$CC,$29
-	dc.b	$86,$CD,$2B,$8A,$D0,$2F,$D1,$30
-	dc.b	$D2,$32,$D1,$35,$89,$DB,$37,$84
-	dc.b	$C6,$2F,$86,$30,$85,$C5,$2F,$87
-	dc.b	$C6,$30,$C7,$2F,$86,$CB,$30,$85
-	dc.b	$2F,$86,$D3,$2B,$CD,$29,$84,$C7
-	dc.b	$2B,$C1,$E5,$2B,$87,$C6,$2E,$30
-	dc.b	$85,$2E,$87,$30,$C7,$2E,$86,$CB
-	dc.b	$30,$85,$CD,$2E,$D1,$2B,$87,$CC
-	dc.b	$29,$85,$2B,$8A,$D2,$2E,$88,$D1
-	dc.b	$30,$8B,$D2,$35,$89,$D4,$34,$87
-	dc.b	$CB,$30,$85,$CD,$32,$86,$C5,$2E
-	dc.b	$87,$C6,$30,$85,$2E,$86,$30,$85
-	dc.b	$2E,$87,$CC,$30,$85,$CD,$2E,$87
-	dc.b	$D2,$2B,$86,$CB,$29,$84,$C7,$2B
-	dc.b	$C1,$E5,$2B,$85,$C5,$2F,$87,$C6
-	dc.b	$30,$C7,$2F,$86,$C5,$30,$87,$C7
-	dc.b	$2F,$86,$CB,$30,$85,$CD,$2F,$D2
-	dc.b	$2B,$86,$CC,$29,$85,$2B,$8B,$D2
-	dc.b	$2F,$88,$D1,$30,$D2,$32,$D4,$35
-	dc.b	$CB,$37,$85,$CC,$35,$C6,$2F,$86
-	dc.b	$30,$85,$2F,$86,$30,$C7,$2F,$85
-	dc.b	$CB,$30,$84,$CD,$2F,$86,$D3,$2B
-	dc.b	$CB,$29,$83,$C6,$2B,$84,$D3,$E5
-	dc.b	$2B,$C0,$65,$60
+	dc.b	$C0,$61,$46,$84,$C6,$2B,$CC,$1F
+	dc.b	$85,$C6,$1F,$83,$CC,$2B,$86,$C6
+	dc.b	$2B,$84,$CC,$1F,$C6,$1F,$82,$22
+	dc.b	$22,$83,$24,$84,$24,$82,$26,$26
+	dc.b	$85,$29,$84,$CC,$1D,$86,$C6,$1D
+	dc.b	$84,$CC,$29,$86,$C6,$29,$84,$F6
+	dc.b	$1D,$85,$C6,$2B,$CC,$1F,$86,$C6
+	dc.b	$1F,$CC,$2B,$84,$C6,$2B,$85,$CC
+	dc.b	$1F,$83,$C6,$1F,$82,$22,$83,$22
+	dc.b	$24,$24,$82,$26,$26,$86,$29,$85
+	dc.b	$CC,$1D,$86,$C6,$1D,$83,$CC,$29
+	dc.b	$87,$C6,$29,$84,$F6,$1D,$87,$C6
+	dc.b	$2B,$84,$CC,$1F,$85,$C6,$1F,$84
+	dc.b	$CC,$2B,$C6,$2B,$85,$CC,$1F,$C6
+	dc.b	$1F,$82,$22,$22,$83,$24,$82,$24
+	dc.b	$83,$26,$82,$26,$85,$29,$CC,$1D
+	dc.b	$86,$C6,$1D,$84,$CC,$29,$85,$C6
+	dc.b	$29,$F6,$1D,$86,$C6,$2B,$85,$CC
+	dc.b	$1F,$C6,$1F,$84,$CC,$2B,$85,$C6
+	dc.b	$2B,$CC,$1F,$C6,$1F,$82,$22,$22
+	dc.b	$83,$24,$84,$24,$82,$26,$26,$84
+	dc.b	$CC,$29,$85,$29,$84,$1D,$85,$C6
+	dc.b	$1D,$DE,$29,$94,$C1,$29,$C0,$6C
+	dc.b	$A2,$00,$C1,$6C,$E2,$00,$C0,$6C
+	dc.b	$04,$01,$6C,$44,$01,$6C,$A6,$01
+	dc.b	$6C,$B6,$01,$C1,$6C,$18,$02,$C0
+	dc.b	$6C,$38,$02,$6C,$58,$02,$6C,$78
+	dc.b	$02,$C1,$6C,$9A,$02,$C0,$6C,$BA
+	dc.b	$02,$6C,$CA,$02,$C1,$6C,$EA,$02
+	dc.b	$C0,$6C,$FA,$02,$6C,$0C,$03,$C1
+	dc.b	$6C,$1C,$03,$6C,$2C,$03,$6C,$3C
+	dc.b	$03,$C2,$6C,$4C,$03,$C1,$6C,$3C
+	dc.b	$03,$C0,$6C,$2C,$03,$6C,$0C,$03
+	dc.b	$6C,$FA,$02,$C1,$6C,$CA,$02,$C0
+	dc.b	$6C,$BA,$02,$6C,$78,$02,$6C,$38
+	dc.b	$02,$6C,$34,$01,$CC,$6C,$00,$00
+	dc.b	$C0,$6C,$00,$00,$64,$03,$C0,$63
+	dc.b	$84,$C6,$2B,$CC,$1F,$85,$C6,$1F
+	dc.b	$83,$CC,$2B,$86,$C6,$2B,$84,$CC
+	dc.b	$1F,$C6,$1F,$82,$22,$22,$83,$24
+	dc.b	$84,$24,$82,$26,$26,$85,$29,$84
+	dc.b	$CC,$1D,$86,$C6,$1D,$84,$CC,$29
+	dc.b	$86,$C6,$29,$84,$CC,$1D,$83,$C6
+	dc.b	$1D,$1D,$84,$1D,$24,$1D,$26,$1D
+	dc.b	$85,$2B,$CC,$1F,$86,$C6,$1F,$CC
+	dc.b	$2B,$84,$C6,$2B,$85,$CC,$1F,$83
+	dc.b	$C6,$1F,$82,$22,$83,$22,$24,$24
+	dc.b	$82,$26,$26,$86,$29,$85,$CC,$1D
+	dc.b	$86,$C6,$1D,$83,$CC,$29,$87,$C6
+	dc.b	$29,$84,$CC,$1D,$C6,$1D,$82,$27
+	dc.b	$27,$26,$83,$26,$82,$24,$24,$87
+	dc.b	$2B,$84,$CC,$1F,$85,$C6,$1F,$84
+	dc.b	$CC,$2B,$C6,$2B,$85,$CC,$1F,$C6
+	dc.b	$1F,$82,$22,$22,$83,$24,$82,$24
+	dc.b	$83,$26,$82,$26,$85,$29,$CC,$1D
+	dc.b	$86,$C6,$1D,$84,$CC,$29,$85,$C6
+	dc.b	$29,$CC,$1D,$84,$C6,$1D,$82,$21
+	dc.b	$83,$21,$82,$22,$22,$24,$24,$86
+	dc.b	$2B,$85,$CC,$1F,$C6,$1F,$84,$CC
+	dc.b	$2B,$85,$C6,$2B,$CC,$1F,$C6,$1F
+	dc.b	$82,$22,$22,$83,$24,$84,$24,$82
+	dc.b	$26,$26,$84,$CC,$29,$85,$29,$84
+	dc.b	$1D,$85,$C6,$1D,$DE,$29,$94,$C1
+	dc.b	$29,$C0,$6C,$A2,$00,$C1,$6C,$E2
+	dc.b	$00,$C0,$6C,$24,$01,$6C,$64,$01
+	dc.b	$6C,$A6,$01,$C1,$6C,$F6,$01,$C0
+	dc.b	$6C,$18,$02,$6C,$48,$02,$6C,$68
+	dc.b	$02,$C1,$6C,$8A,$02,$C0,$6C,$BA
+	dc.b	$02,$C1,$6C,$DA,$02,$C0,$6C,$FA
+	dc.b	$02,$C2,$6C,$1C,$03,$C3,$6C,$3C
+	dc.b	$03,$C1,$6C,$3C,$03,$C0,$6C,$1C
+	dc.b	$03,$6C,$FA,$02,$C1,$6C,$CA,$02
+	dc.b	$C0,$6C,$9A,$02,$6C,$38,$02,$6C
+	dc.b	$34,$01,$CC,$6C,$00,$00,$C0,$6C
+	dc.b	$00,$00,$65,$64,$7F,$C0,$63,$84
+	dc.b	$C6,$2D,$CC,$21,$85,$C6,$21,$83
+	dc.b	$CC,$2D,$86,$C6,$2D,$84,$CC,$21
+	dc.b	$C6,$21,$82,$24,$24,$83,$26,$84
+	dc.b	$26,$82,$28,$28,$85,$2B,$84,$CC
+	dc.b	$1F,$86,$C6,$1F,$84,$CC,$2B,$86
+	dc.b	$C6,$2B,$84,$CC,$1F,$83,$C6,$1F
+	dc.b	$1F,$84,$1F,$26,$1F,$28,$1F,$85
+	dc.b	$2D,$CC,$21,$86,$C6,$21,$CC,$2D
+	dc.b	$84,$C6,$2D,$85,$CC,$21,$83,$C6
+	dc.b	$21,$82,$24,$83,$24,$26,$26,$82
+	dc.b	$28,$28,$86,$2B,$85,$CC,$1F,$86
+	dc.b	$C6,$1F,$83,$CC,$2B,$87,$C6,$2B
+	dc.b	$84,$CC,$1F,$C6,$1F,$82,$29,$29
+	dc.b	$28,$83,$28,$82,$26,$26,$87,$2D
+	dc.b	$84,$CC,$21,$85,$C6,$21,$84,$CC
+	dc.b	$2D,$C6,$2D,$85,$CC,$21,$C6,$21
+	dc.b	$82,$24,$24,$83,$26,$82,$26,$83
+	dc.b	$28,$82,$28,$85,$2B,$CC,$1F,$86
+	dc.b	$C6,$1F,$84,$CC,$2B,$85,$C6,$2B
+	dc.b	$CC,$1F,$84,$C6,$1F,$82,$23,$83
+	dc.b	$23,$82,$24,$24,$26,$26,$86,$2D
+	dc.b	$85,$CC,$21,$C6,$21,$84,$CC,$2D
+	dc.b	$85,$C6,$2D,$CC,$21,$C6,$21,$82
+	dc.b	$24,$24,$83,$26,$84,$26,$82,$28
+	dc.b	$28,$84,$CC,$2B,$85,$2B,$84,$1F
+	dc.b	$85,$C6,$1F,$DE,$2B,$94,$C1,$2B
+	dc.b	$C0,$6C,$50,$00,$6C,$A2,$00,$C1
+	dc.b	$6C,$E2,$00,$C0,$6C,$24,$01,$6C
+	dc.b	$64,$01,$6C,$A6,$01,$C1,$6C,$F6
+	dc.b	$01,$C0,$6C,$18,$02,$6C,$68,$02
+	dc.b	$C1,$6C,$8A,$02,$C0,$6C,$BA,$02
+	dc.b	$C1,$6C,$DA,$02,$C0,$6C,$FA,$02
+	dc.b	$C2,$6C,$1C,$03,$C3,$6C,$3C,$03
+	dc.b	$C1,$6C,$3C,$03,$C0,$6C,$1C,$03
+	dc.b	$6C,$FA,$02,$C1,$6C,$CA,$02,$C0
+	dc.b	$6C,$38,$02,$6C,$34,$01,$CC,$6C
+	dc.b	$00,$00,$C0,$6C,$00,$00,$64,$02
+	dc.b	$C0,$63,$84,$C6,$2B,$CC,$1F,$85
+	dc.b	$C6,$1F,$83,$CC,$2B,$86,$C6,$2B
+	dc.b	$84,$CC,$1F,$C6,$1F,$82,$22,$22
+	dc.b	$83,$24,$84,$24,$82,$26,$26,$85
+	dc.b	$29,$84,$CC,$1D,$86,$C6,$1D,$84
+	dc.b	$CC,$29,$86,$C6,$29,$84,$CC,$1D
+	dc.b	$83,$C6,$1D,$1D,$84,$1D,$24,$1D
+	dc.b	$26,$1D,$85,$2B,$CC,$1F,$86,$C6
+	dc.b	$1F,$CC,$2B,$84,$C6,$2B,$85,$CC
+	dc.b	$1F,$83,$C6,$1F,$82,$22,$83,$22
+	dc.b	$24,$24,$82,$26,$26,$86,$29,$85
+	dc.b	$CC,$1D,$86,$C6,$1D,$83,$CC,$29
+	dc.b	$87,$C6,$29,$84,$CC,$1D,$C6,$1D
+	dc.b	$82,$27,$27,$26,$83,$26,$82,$24
+	dc.b	$24,$87,$2B,$84,$CC,$1F,$85,$C6
+	dc.b	$1F,$84,$CC,$2B,$C6,$2B,$85,$CC
+	dc.b	$1F,$C6,$1F,$82,$22,$22,$83,$24
+	dc.b	$82,$24,$83,$26,$82,$26,$85,$29
+	dc.b	$CC,$1D,$86,$C6,$1D,$84,$CC,$29
+	dc.b	$85,$C6,$29,$CC,$1D,$84,$C6,$1D
+	dc.b	$82,$21,$83,$21,$82,$22,$22,$24
+	dc.b	$24,$86,$2B,$85,$CC,$1F,$C6,$1F
+	dc.b	$84,$CC,$2B,$85,$C6,$2B,$CC,$1F
+	dc.b	$C6,$1F,$82,$22,$22,$83,$24,$84
+	dc.b	$24,$82,$26,$26,$84,$CC,$29,$85
+	dc.b	$29,$84,$1D,$85,$C6,$1D,$DE,$29
+	dc.b	$94,$C1,$29,$C0,$6C,$50,$00,$6C
+	dc.b	$A2,$00,$C1,$6C,$E2,$00,$C0,$6C
+	dc.b	$24,$01,$6C,$64,$01,$6C,$A6,$01
+	dc.b	$C1,$6C,$F6,$01,$C0,$6C,$18,$02
+	dc.b	$6C,$68,$02,$C1,$6C,$8A,$02,$C0
+	dc.b	$6C,$BA,$02,$C1,$6C,$DA,$02,$C0
+	dc.b	$6C,$FA,$02,$C2,$6C,$1C,$03,$C3
+	dc.b	$6C,$3C,$03,$C1,$6C,$3C,$03,$C0
+	dc.b	$6C,$1C,$03,$6C,$FA,$02,$C1,$6C
+	dc.b	$CA,$02,$C0,$6C,$38,$02,$6C,$34
+	dc.b	$01,$CC,$6C,$00,$00,$C0,$6C,$00
+	dc.b	$00,$65,$84,$C6,$2D,$CC,$21,$85
+	dc.b	$C6,$21,$83,$CC,$2D,$86,$C6,$2D
+	dc.b	$84,$CC,$21,$C6,$21,$82,$24,$24
+	dc.b	$83,$26,$84,$26,$82,$28,$28,$85
+	dc.b	$2B,$84,$CC,$1F,$86,$C6,$1F,$84
+	dc.b	$CC,$2B,$86,$C6,$2B,$84,$CC,$1F
+	dc.b	$83,$C6,$1F,$1F,$84,$1F,$26,$1F
+	dc.b	$28,$1F,$85,$2D,$CC,$21,$86,$C6
+	dc.b	$21,$CC,$2D,$84,$C6,$2D,$85,$CC
+	dc.b	$21,$83,$C6,$21,$82,$24,$83,$24
+	dc.b	$26,$26,$82,$28,$28,$86,$2B,$85
+	dc.b	$CC,$1F,$86,$C6,$1F,$83,$CC,$2B
+	dc.b	$87,$C6,$2B,$84,$CC,$1F,$C6,$1F
+	dc.b	$82,$29,$29,$28,$83,$28,$82,$26
+	dc.b	$26,$87,$2D,$84,$CC,$21,$85,$C6
+	dc.b	$21,$84,$CC,$2D,$C6,$2D,$85,$CC
+	dc.b	$21,$C6,$21,$82,$24,$24,$83,$26
+	dc.b	$82,$26,$83,$28,$82,$28,$85,$2B
+	dc.b	$CC,$1F,$86,$C6,$1F,$84,$CC,$2B
+	dc.b	$85,$C6,$2B,$CC,$1F,$84,$C6,$1F
+	dc.b	$82,$23,$83,$23,$82,$24,$24,$26
+	dc.b	$26,$86,$2D,$85,$CC,$21,$C6,$21
+	dc.b	$84,$CC,$2D,$85,$C6,$2D,$CC,$21
+	dc.b	$C6,$21,$82,$24,$24,$83,$26,$84
+	dc.b	$26,$82,$28,$28,$84,$CC,$2B,$85
+	dc.b	$2B,$84,$1F,$85,$C6,$1F,$DE,$2B
+	dc.b	$94,$C1,$2B,$C0,$6C,$A2,$00,$C1
+	dc.b	$6C,$E2,$00,$C0,$6C,$24,$01,$6C
+	dc.b	$64,$01,$6C,$A6,$01,$C1,$6C,$F6
+	dc.b	$01,$C0,$6C,$18,$02,$6C,$68,$02
+	dc.b	$C1,$6C,$8A,$02,$C0,$6C,$BA,$02
+	dc.b	$C1,$6C,$DA,$02,$C0,$6C,$FA,$02
+	dc.b	$C2,$6C,$1C,$03,$C3,$6C,$3C,$03
+	dc.b	$C1,$6C,$3C,$03,$C0,$6C,$1C,$03
+	dc.b	$6C,$FA,$02,$C1,$6C,$CA,$02,$C0
+	dc.b	$6C,$9A,$02,$6C,$38,$02,$6C,$34
+	dc.b	$01,$CC,$6C,$00,$00,$C0,$6C,$00
+	dc.b	$00,$64,$03,$C0,$63,$84,$C6,$2B
+	dc.b	$CC,$1F,$85,$C6,$1F,$83,$CC,$2B
+	dc.b	$86,$C6,$2B,$84,$CC,$1F,$C6,$1F
+	dc.b	$82,$22,$22,$83,$24,$84,$24,$82
+	dc.b	$26,$26,$85,$29,$84,$CC,$1D,$86
+	dc.b	$C6,$1D,$84,$CC,$29,$86,$C6,$29
+	dc.b	$84,$CC,$1D,$83,$C6,$1D,$1D,$84
+	dc.b	$1D,$24,$1D,$26,$1D,$85,$2B,$CC
+	dc.b	$1F,$86,$C6,$1F,$CC,$2B,$84,$C6
+	dc.b	$2B,$85,$CC,$1F,$83,$C6,$1F,$82
+	dc.b	$22,$83,$22,$24,$24,$82,$26,$26
+	dc.b	$86,$29,$85,$CC,$1D,$86,$C6,$1D
+	dc.b	$83,$CC,$29,$87,$C6,$29,$84,$CC
+	dc.b	$1D,$C6,$1D,$82,$27,$27,$26,$83
+	dc.b	$26,$82,$24,$24,$87,$2B,$84,$CC
+	dc.b	$1F,$85,$C6,$1F,$84,$CC,$2B,$C6
+	dc.b	$2B,$85,$CC,$1F,$C6,$1F,$82,$22
+	dc.b	$22,$83,$24,$82,$24,$83,$26,$82
+	dc.b	$26,$85,$29,$CC,$1D,$86,$C6,$1D
+	dc.b	$84,$CC,$29,$85,$C6,$29,$CC,$1D
+	dc.b	$84,$C6,$1D,$82,$21,$83,$21,$82
+	dc.b	$22,$22,$24,$24,$86,$2B,$85,$CC
+	dc.b	$1F,$C6,$1F,$84,$CC,$2B,$85,$C6
+	dc.b	$2B,$CC,$1F,$C6,$1F,$82,$22,$22
+	dc.b	$83,$24,$84,$24,$82,$26,$26,$84
+	dc.b	$CC,$29,$85,$29,$84,$1D,$85,$C6
+	dc.b	$1D,$DE,$29,$94,$C1,$29,$C0,$6C
+	dc.b	$50,$00,$6C,$A2,$00,$C1,$6C,$E2
+	dc.b	$00,$C0,$6C,$24,$01,$6C,$64,$01
+	dc.b	$6C,$A6,$01,$C1,$6C,$F6,$01,$C0
+	dc.b	$6C,$18,$02,$6C,$68,$02,$C1,$6C
+	dc.b	$8A,$02,$6C,$DA,$02,$C0,$6C,$FA
+	dc.b	$02,$6C,$BA,$02,$C2,$6C,$1C,$03
+	dc.b	$C3,$6C,$3C,$03,$C1,$6C,$3C,$03
+	dc.b	$C0,$6C,$1C,$03,$6C,$FA,$02,$C1
+	dc.b	$6C,$CA,$02,$C0,$6C,$9A,$02,$6C
+	dc.b	$38,$02,$6C,$34,$01,$CC,$6C,$00
+	dc.b	$00,$C0,$65,$65,$60
 ; Sequence 0, Channel 2:
-	dc.b	$C0,$61,$2A,$64,$7F,$C7,$63,$83
-	dc.b	$C5,$2B,$C8,$34,$C1,$D4,$35,$C5
-	dc.b	$2B,$C7,$34,$CC,$35,$C1,$C7,$3A
-	dc.b	$C5,$2B,$C7,$34,$C1,$D4,$35,$C6
-	dc.b	$2B,$C7,$34,$CC,$35,$F4,$3A,$D3
-	dc.b	$26,$C5,$2B,$C8,$34,$C1,$D4,$35
-	dc.b	$C5,$2B,$C7,$34,$CC,$35,$C1,$C7
-	dc.b	$3A,$C5,$2B,$C7,$34,$C1,$D4,$35
-	dc.b	$C6,$2B,$C7,$34,$CC,$35,$F4,$3A
-	dc.b	$CB,$26,$C8,$27,$CC,$37,$C4,$27
-	dc.b	$C8,$31,$C5,$27,$C7,$30,$E9,$31
-	dc.b	$CB,$1A,$C1,$D5,$1B,$CC,$24,$C7
-	dc.b	$27,$CC,$37,$C5,$27,$C7,$31,$C4
-	dc.b	$27,$C7,$30,$EA,$31,$CB,$1A,$C1
-	dc.b	$E8,$1B,$C6,$2B,$C7,$34,$C1,$D3
-	dc.b	$35,$C6,$2B,$C7,$34,$CB,$35,$C1
-	dc.b	$C8,$3A,$C5,$2B,$C8,$34,$C1,$D3
-	dc.b	$35,$C6,$2B,$C8,$34,$CB,$35,$C1
-	dc.b	$C7,$3A,$C5,$2B,$C8,$34,$C1,$D4
-	dc.b	$35,$C5,$2B,$C7,$34,$CC,$35,$C1
-	dc.b	$C7,$3A,$C5,$2B,$C7,$34,$C1,$D4
-	dc.b	$35,$C6,$2B,$C7,$34,$CC,$35,$F4
-	dc.b	$3A,$CB,$26,$C8,$27,$CC,$37,$C4
-	dc.b	$27,$C8,$31,$C5,$27,$C7,$30,$E9
-	dc.b	$31,$CB,$1A,$C1,$D5,$1B,$CC,$24
-	dc.b	$C7,$27,$CC,$37,$C5,$27,$C7,$31
-	dc.b	$C4,$27,$C7,$30,$EA,$31,$CB,$1A
-	dc.b	$C1,$E8,$1B,$C6,$2B,$C7,$34,$C1
-	dc.b	$D3,$35,$C6,$2B,$C7,$34,$CB,$35
-	dc.b	$C1,$C8,$3A,$C5,$2B,$C8,$34,$C1
-	dc.b	$D3,$35,$C6,$2B,$C8,$34,$CB,$35
-	dc.b	$C1,$C0,$3A,$C0,$65,$60
+	dc.b	$C0,$61,$5C,$CC,$C0,$72,$05,$00
+	dc.b	$85,$D8,$18,$84,$18,$18,$18,$85
+	dc.b	$18,$18,$84,$18,$18,$85,$18,$84
+	dc.b	$18,$85,$18,$86,$18,$18,$18,$85
+	dc.b	$18,$18,$18,$18,$18,$18,$84,$18
+	dc.b	$18,$18,$18,$18,$18,$18,$85,$18
+	dc.b	$18,$18,$84,$18,$83,$18,$64,$7F
+	dc.b	$C0,$63,$85,$D8,$18,$84,$18,$18
+	dc.b	$18,$85,$18,$18,$84,$18,$18,$85
+	dc.b	$18,$84,$18,$85,$18,$86,$18,$18
+	dc.b	$18,$85,$18,$18,$18,$18,$18,$18
+	dc.b	$84,$18,$18,$18,$18,$18,$18,$18
+	dc.b	$85,$18,$18,$18,$84,$18,$83,$18
+	dc.b	$C0,$65,$60
 ; Sequence 0, Channel 3:
-	dc.b	$C0,$61,$10,$64,$7F,$D8,$D7,$63
-	dc.b	$83,$C0,$45,$CC,$4A,$C0,$4C,$C8
-	dc.b	$47,$C0,$4A,$FC,$45,$C0,$4A,$D1
-	dc.b	$45,$C0,$45,$CB,$4A,$C1,$4C,$C7
-	dc.b	$47,$C0,$45,$CC,$4A,$C0,$45,$C1
-	dc.b	$C0,$4A,$C0,$4A,$CD,$45,$C0,$47
-	dc.b	$C7,$4C,$C0,$4A,$FD,$45,$C0,$45
-	dc.b	$D0,$4A,$C0,$45,$CB,$4A,$C1,$4C
-	dc.b	$C7,$47,$C0,$4A,$CC,$45,$C0,$45
-	dc.b	$D0,$4A,$C1,$4F,$EF,$4A,$C1,$41
-	dc.b	$CC,$46,$C0,$43,$C6,$48,$C1,$41
-	dc.b	$FE,$46,$C1,$41,$CB,$46,$C1,$41
-	dc.b	$CC,$46,$C0,$43,$C8,$48,$C1,$41
-	dc.b	$CB,$46,$C0,$46,$FE,$41,$C1,$41
-	dc.b	$CD,$46,$C0,$43,$C8,$48,$C1,$41
-	dc.b	$C1,$C8,$46,$C0,$3D,$C5,$41,$C1
-	dc.b	$3F,$C6,$43,$C1,$3D,$C4,$41,$C1
-	dc.b	$3F,$C6,$43,$C0,$3D,$C1,$CC,$41
-	dc.b	$C1,$45,$CC,$4A,$C0,$47,$C7,$4C
-	dc.b	$C0,$45,$FB,$4A,$C1,$45,$D1,$4A
-	dc.b	$C0,$4A,$CB,$45,$C1,$47,$C7,$4C
-	dc.b	$C0,$45,$CC,$4A,$C0,$4A,$C1,$C0
-	dc.b	$45,$C1,$45,$CB,$4A,$C1,$47,$C7
-	dc.b	$4C,$C0,$45,$FC,$4A,$C0,$45,$D1
-	dc.b	$4A,$C1,$45,$CA,$4A,$C0,$47,$C8
-	dc.b	$4C,$C0,$45,$CB,$4A,$C0,$45,$D2
-	dc.b	$4A,$C0,$4A,$D8,$4F,$C0,$65,$60
+	dc.b	$C0,$61,$5A,$D2,$C0,$72,$05,$00
+	dc.b	$82,$CC,$18,$83,$D8,$18,$82,$18
+	dc.b	$C6,$18,$84,$D2,$18,$82,$CC,$18
+	dc.b	$18,$85,$D8,$18,$82,$18,$C6,$18
+	dc.b	$84,$D2,$18,$82,$CC,$18,$83,$18
+	dc.b	$85,$D8,$18,$83,$18,$82,$C6,$18
+	dc.b	$84,$D2,$18,$82,$CC,$18,$84,$18
+	dc.b	$D8,$18,$82,$18,$C6,$18,$84,$D2
+	dc.b	$18,$82,$C6,$18,$83,$18,$64,$7F
+	dc.b	$C0,$63,$64,$03,$C0,$63,$84,$CC
+	dc.b	$18,$86,$D8,$18,$82,$18,$C6,$18
+	dc.b	$84,$D2,$18,$82,$CC,$18,$81,$18
+	dc.b	$83,$D8,$18,$82,$18,$C6,$18,$83
+	dc.b	$D2,$18,$82,$CC,$18,$83,$18,$84
+	dc.b	$D8,$18,$82,$18,$C6,$18,$83,$D2
+	dc.b	$18,$84,$CC,$18,$83,$18,$84,$D8
+	dc.b	$18,$83,$18,$82,$C6,$18,$83,$D2
+	dc.b	$18,$81,$CC,$18,$82,$18,$83,$D8
+	dc.b	$18,$82,$18,$C6,$18,$84,$D2,$18
+	dc.b	$82,$CC,$18,$18,$85,$D8,$18,$82
+	dc.b	$18,$C6,$18,$84,$D2,$18,$82,$CC
+	dc.b	$18,$83,$18,$85,$D8,$18,$83,$18
+	dc.b	$82,$C6,$18,$84,$D2,$18,$82,$CC
+	dc.b	$18,$84,$18,$D8,$18,$82,$18,$C6
+	dc.b	$18,$84,$D2,$18,$82,$C6,$18,$83
+	dc.b	$18,$C0,$65,$C1,$C8,$C0,$69,$03
+	dc.b	$C0,$65,$60
 ; Sequence 0, Channel 4:
-	dc.b	$C0,$61,$16,$64,$7F,$C0,$63,$83
-	dc.b	$D8,$3D,$3D,$3D,$3D,$C0,$65,$60
+	dc.b	$C2,$F4,$61,$62,$85,$C4,$34,$84
+	dc.b	$34,$85,$30,$83,$C2,$DC,$32,$C4
+	dc.b	$34,$32,$86,$30,$84,$CC,$34,$83
+	dc.b	$C4,$34,$32,$85,$30,$84,$C2,$F4
+	dc.b	$34,$83,$C4,$34,$32,$86,$30,$85
+	dc.b	$C2,$DC,$34,$83,$C4,$34,$32,$85
+	dc.b	$30,$83,$CC,$34,$84,$C4,$34,$83
+	dc.b	$32,$84,$30,$64,$7F,$C0,$63,$84
+	dc.b	$C1,$D4,$32,$C4,$34,$32,$85,$30
+	dc.b	$84,$C1,$D4,$32,$C4,$34,$83,$32
+	dc.b	$85,$30,$C1,$D4,$32,$83,$C4,$34
+	dc.b	$84,$32,$86,$30,$85,$FC,$32,$83
+	dc.b	$C4,$34,$32,$86,$30,$84,$CC,$32
+	dc.b	$83,$C4,$34,$32,$85,$30,$84,$C1
+	dc.b	$D4,$32,$82,$C4,$34,$83,$32,$85
+	dc.b	$30,$C1,$D4,$32,$83,$C4,$34,$32
+	dc.b	$86,$30,$85,$C1,$D4,$32,$83,$C4
+	dc.b	$34,$84,$32,$86,$30,$85,$FC,$32
+	dc.b	$83,$C4,$34,$32,$85,$30,$83,$CC
+	dc.b	$32,$84,$C4,$34,$83,$32,$84,$30
+	dc.b	$C0,$65,$60
 ; Sequence 0, Channel 5:
-	dc.b	$C0,$61,$08,$64,$7F,$CB,$63,$83
-	dc.b	$D8,$2D,$2D,$2D,$2D,$2D,$2D,$CD
-	dc.b	$2D,$C0,$65,$60
+	dc.b	$C0,$61,$58,$6A,$09,$D6,$D0,$72
+	dc.b	$05,$00,$C4,$72,$05,$41,$83,$C6
+	dc.b	$30,$84,$C0,$30,$C6,$72,$05,$3C
+	dc.b	$82,$C3,$30,$72,$05,$37,$84,$C6
+	dc.b	$30,$82,$C1,$30,$C5,$72,$05,$31
+	dc.b	$83,$30,$C1,$72,$05,$2C,$C6,$30
+	dc.b	$84,$C2,$30,$C4,$72,$05,$26,$82
+	dc.b	$C6,$30,$84,$C0,$30,$C6,$72,$05
+	dc.b	$21,$83,$C3,$30,$72,$05,$1C,$84
+	dc.b	$C6,$30,$82,$C1,$30,$C5,$72,$05
+	dc.b	$16,$84,$30,$C1,$72,$05,$11,$82
+	dc.b	$C6,$30,$84,$C2,$30,$C4,$72,$05
+	dc.b	$0B,$82,$C6,$30,$84,$C0,$30,$C6
+	dc.b	$72,$05,$06,$64,$7F,$C0,$63,$81
+	dc.b	$C6,$32,$82,$32,$81,$32,$83,$CC
+	dc.b	$32,$32,$32,$32,$C6,$32,$81,$34
+	dc.b	$82,$34,$30,$83,$30,$82,$32,$83
+	dc.b	$32,$81,$32,$83,$CC,$32,$32,$C6
+	dc.b	$32,$81,$35,$82,$35,$35,$35,$81
+	dc.b	$34,$83,$34,$82,$30,$84,$30,$81
+	dc.b	$32,$82,$32,$32,$CC,$32,$32,$83
+	dc.b	$32,$32,$81,$C6,$32,$34,$82,$34
+	dc.b	$30,$84,$30,$81,$32,$32,$82,$32
+	dc.b	$83,$CC,$32,$32,$84,$2D,$2D,$C6
+	dc.b	$2D,$82,$30,$30,$81,$30,$82,$30
+	dc.b	$32,$32,$32,$83,$CC,$32,$32,$32
+	dc.b	$32,$81,$C6,$32,$34,$82,$34,$83
+	dc.b	$30,$84,$30,$82,$32,$32,$83,$32
+	dc.b	$CC,$32,$32,$84,$35,$35,$82,$C6
+	dc.b	$35,$34,$34,$83,$30,$30,$82,$32
+	dc.b	$32,$32,$83,$CC,$32,$32,$32,$32
+	dc.b	$82,$C6,$32,$34,$34,$30,$30,$32
+	dc.b	$32,$83,$32,$CC,$32,$84,$32,$83
+	dc.b	$32,$84,$32,$82,$C6,$32,$81,$34
+	dc.b	$82,$34,$35,$35,$C0,$30,$85,$C4
+	dc.b	$37,$C8,$72,$05,$00,$84,$CC,$37
+	dc.b	$82,$C6,$37,$83,$CC,$37,$37,$81
+	dc.b	$C6,$37,$82,$37,$37,$81,$37,$39
+	dc.b	$82,$39,$39,$83,$CC,$35,$84,$35
+	dc.b	$82,$C6,$35,$83,$CC,$35,$35,$C6
+	dc.b	$35,$82,$3A,$3A,$81,$3A,$82,$39
+	dc.b	$39,$39,$86,$CC,$37,$85,$37,$82
+	dc.b	$C6,$37,$83,$CC,$37,$37,$82,$C6
+	dc.b	$37,$37,$37,$39,$39,$35,$35,$84
+	dc.b	$CC,$35,$35,$83,$C6,$35,$84,$CC
+	dc.b	$34,$86,$35,$83,$C6,$34,$34,$34
+	dc.b	$34,$34,$84,$35,$83,$34,$84,$CC
+	dc.b	$32,$83,$32,$C6,$32,$82,$32,$32
+	dc.b	$83,$CC,$32,$32,$84,$C6,$32,$82
+	dc.b	$34,$83,$34,$30,$84,$30,$CC,$32
+	dc.b	$83,$32,$82,$C6,$32,$CC,$32,$83
+	dc.b	$32,$82,$C6,$32,$81,$32,$83,$32
+	dc.b	$82,$35,$35,$34,$C0,$34,$C6,$32
+	dc.b	$83,$CC,$32,$32,$82,$C6,$32,$83
+	dc.b	$CC,$32,$32,$82,$C6,$32,$32,$32
+	dc.b	$34,$83,$34,$30,$84,$30,$CC,$32
+	dc.b	$83,$32,$84,$32,$82,$C6,$32,$83
+	dc.b	$F6,$32,$81,$C6,$34,$82,$34,$81
+	dc.b	$34,$83,$CC,$34,$34,$34,$34,$C6
+	dc.b	$34,$81,$36,$82,$36,$32,$83,$32
+	dc.b	$82,$34,$83,$34,$81,$34,$83,$CC
+	dc.b	$34,$34,$C6,$34,$81,$37,$82,$37
+	dc.b	$37,$37,$81,$36,$83,$36,$82,$32
+	dc.b	$84,$32,$81,$34,$82,$34,$34,$CC
+	dc.b	$34,$34,$83,$34,$34,$81,$C6,$34
+	dc.b	$36,$82,$36,$32,$84,$32,$81,$34
+	dc.b	$34,$82,$34,$83,$CC,$34,$34,$84
+	dc.b	$2F,$2F,$C6,$2F,$82,$32,$32,$81
+	dc.b	$32,$82,$32,$34,$34,$34,$83,$CC
+	dc.b	$34,$34,$34,$34,$81,$C6,$34,$36
+	dc.b	$82,$36,$83,$32,$84,$32,$82,$34
+	dc.b	$34,$83,$34,$CC,$34,$34,$84,$37
+	dc.b	$37,$82,$C6,$37,$36,$36,$83,$32
+	dc.b	$32,$82,$34,$34,$34,$83,$CC,$34
+	dc.b	$34,$34,$34,$82,$C6,$34,$36,$36
+	dc.b	$32,$32,$34,$34,$83,$34,$CC,$34
+	dc.b	$84,$34,$83,$34,$84,$34,$82,$C6
+	dc.b	$34,$81,$34,$82,$34,$34,$34,$81
+	dc.b	$32,$82,$32,$81,$32,$83,$CC,$32
+	dc.b	$32,$32,$32,$C6,$32,$81,$34,$82
+	dc.b	$34,$30,$83,$30,$82,$32,$83,$32
+	dc.b	$81,$32,$83,$CC,$32,$32,$C6,$32
+	dc.b	$81,$35,$82,$35,$35,$35,$81,$34
+	dc.b	$83,$34,$82,$30,$84,$30,$81,$32
+	dc.b	$82,$32,$32,$CC,$32,$32,$83,$32
+	dc.b	$32,$81,$C6,$32,$34,$82,$34,$30
+	dc.b	$84,$30,$81,$32,$32,$82,$32,$83
+	dc.b	$CC,$32,$32,$84,$2D,$2D,$C6,$2D
+	dc.b	$82,$30,$30,$81,$30,$82,$30,$32
+	dc.b	$32,$32,$83,$CC,$32,$32,$32,$32
+	dc.b	$81,$C6,$32,$34,$82,$34,$83,$30
+	dc.b	$84,$30,$82,$32,$32,$83,$32,$CC
+	dc.b	$32,$32,$84,$35,$35,$82,$C6,$35
+	dc.b	$34,$34,$83,$30,$30,$82,$32,$32
+	dc.b	$32,$83,$CC,$32,$32,$32,$32,$82
+	dc.b	$C6,$32,$34,$34,$30,$30,$32,$32
+	dc.b	$83,$32,$CC,$32,$84,$32,$83,$C6
+	dc.b	$32,$84,$CB,$C0,$32,$C4,$72,$05
+	dc.b	$41,$83,$C6,$32,$84,$C0,$32,$C6
+	dc.b	$72,$05,$3C,$82,$C3,$32,$72,$05
+	dc.b	$37,$84,$C6,$32,$82,$C1,$32,$C5
+	dc.b	$72,$05,$31,$83,$32,$C1,$72,$05
+	dc.b	$2C,$C6,$32,$84,$C2,$32,$C4,$72
+	dc.b	$05,$26,$82,$C6,$32,$84,$C0,$32
+	dc.b	$C6,$72,$05,$21,$83,$C3,$32,$72
+	dc.b	$05,$1C,$84,$C6,$32,$82,$C1,$32
+	dc.b	$C5,$72,$05,$16,$84,$32,$C1,$72
+	dc.b	$05,$11,$82,$C6,$32,$84,$C2,$32
+	dc.b	$C4,$72,$05,$0B,$82,$C6,$32,$84
+	dc.b	$C0,$32,$C6,$72,$05,$06,$83,$C5
+	dc.b	$34,$C1,$72,$05,$05,$84,$C5,$34
+	dc.b	$C1,$72,$05,$09,$82,$C5,$34,$C1
+	dc.b	$72,$05,$0C,$84,$C5,$34,$C1,$72
+	dc.b	$05,$10,$82,$C5,$34,$C1,$72,$05
+	dc.b	$13,$83,$C4,$34,$C2,$72,$05,$17
+	dc.b	$C4,$34,$C2,$72,$05,$1A,$84,$C4
+	dc.b	$34,$C2,$72,$05,$1E,$82,$C4,$34
+	dc.b	$C2,$72,$05,$21,$84,$C4,$34,$C2
+	dc.b	$72,$05,$25,$83,$C4,$34,$C2,$72
+	dc.b	$05,$28,$84,$C3,$34,$72,$05,$2C
+	dc.b	$82,$34,$72,$05,$2F,$84,$34,$72
+	dc.b	$05,$33,$82,$34,$72,$05,$37,$84
+	dc.b	$34,$72,$05,$3A,$82,$C5,$34,$C1
+	dc.b	$72,$05,$3F,$84,$C8,$EA,$34,$C4
+	dc.b	$72,$05,$41,$83,$C6,$34,$84,$C0
+	dc.b	$34,$C6,$72,$05,$3C,$82,$C3,$34
+	dc.b	$72,$05,$37,$84,$C6,$34,$82,$C1
+	dc.b	$34,$C5,$72,$05,$31,$83,$34,$C1
+	dc.b	$72,$05,$2C,$C6,$34,$84,$C2,$34
+	dc.b	$C4,$72,$05,$26,$82,$C6,$34,$84
+	dc.b	$C0,$34,$C6,$72,$05,$21,$83,$C3
+	dc.b	$34,$72,$05,$1C,$84,$C6,$34,$82
+	dc.b	$C1,$34,$C5,$72,$05,$16,$84,$34
+	dc.b	$C1,$72,$05,$11,$82,$C6,$34,$84
+	dc.b	$C2,$34,$C4,$72,$05,$0B,$82,$C6
+	dc.b	$34,$84,$C0,$34,$C6,$72,$05,$06
+	dc.b	$83,$C5,$32,$C1,$72,$05,$05,$84
+	dc.b	$C5,$32,$C1,$72,$05,$09,$82,$C5
+	dc.b	$32,$C1,$72,$05,$0C,$84,$C5,$32
+	dc.b	$C1,$72,$05,$10,$82,$C5,$32,$C1
+	dc.b	$72,$05,$13,$83,$C4,$32,$C2,$72
+	dc.b	$05,$17,$C4,$32,$C2,$72,$05,$1A
+	dc.b	$84,$C4,$32,$C2,$72,$05,$1E,$82
+	dc.b	$C4,$32,$C2,$72,$05,$21,$84,$C4
+	dc.b	$32,$C2,$72,$05,$25,$83,$C4,$32
+	dc.b	$C2,$72,$05,$28,$84,$C3,$32,$72
+	dc.b	$05,$2C,$82,$32,$72,$05,$2F,$84
+	dc.b	$32,$72,$05,$33,$82,$32,$72,$05
+	dc.b	$37,$84,$32,$72,$05,$3A,$82,$C5
+	dc.b	$32,$C1,$72,$05,$3F,$84,$C8,$EA
+	dc.b	$32,$C4,$72,$05,$41,$83,$C6,$30
+	dc.b	$84,$C0,$30,$C6,$72,$05,$3C,$82
+	dc.b	$C3,$30,$72,$05,$37,$84,$C6,$30
+	dc.b	$82,$C1,$30,$C5,$72,$05,$31,$83
+	dc.b	$30,$C1,$72,$05,$2C,$C6,$30,$84
+	dc.b	$C2,$30,$C4,$72,$05,$26,$82,$C6
+	dc.b	$30,$84,$C0,$30,$C6,$72,$05,$21
+	dc.b	$83,$C3,$30,$72,$05,$1C,$84,$C6
+	dc.b	$30,$82,$C1,$30,$C5,$72,$05,$16
+	dc.b	$84,$30,$C1,$72,$05,$11,$82,$C6
+	dc.b	$30,$84,$C2,$30,$C4,$72,$05,$0B
+	dc.b	$82,$C6,$30,$84,$C0,$30,$C6,$72
+	dc.b	$05,$06,$C0,$65,$60
 ; Sequence 0, Channel 6:
-	dc.b	$C0,$61,$1B,$64,$7F,$C0,$63,$83
-	dc.b	$F0,$17,$17,$EB,$17,$D0,$17,$CD
-	dc.b	$17,$C0,$65,$60
-; Sequence 0, Channel 7:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 0, Channel 8:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 0, Channel 9:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 0, Channel 10:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 0, Channel 11:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 0, Channel 12:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 0, Channel 13:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 0, Channel 14:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 0, Channel 15:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
+	dc.b	$C0,$61,$33,$6A,$0A,$CC,$C0,$72
+	dc.b	$05,$00,$8B,$B1,$2B,$64,$7F,$C0
+	dc.b	$63,$82,$8F,$C2,$D0,$2B,$98,$D8
+	dc.b	$2E,$9B,$2D,$82,$BA,$C3,$C0,$2B
+	dc.b	$82,$93,$C2,$D0,$2B,$99,$D8,$2E
+	dc.b	$9D,$2D,$82,$8D,$C2,$D0,$2B,$B4
+	dc.b	$F0,$29,$82,$AA,$C2,$E8,$2B,$98
+	dc.b	$D8,$2E,$82,$A9,$C2,$E8,$2B,$9A
+	dc.b	$D8,$29,$82,$AB,$C2,$E8,$2B,$99
+	dc.b	$D8,$2E,$82,$95,$C2,$D0,$2B,$B0
+	dc.b	$F0,$2C,$82,$8F,$C2,$D0,$2D,$9C
+	dc.b	$D8,$30,$9B,$2F,$82,$91,$C2,$D0
+	dc.b	$2D,$98,$D8,$2F,$9B,$2B,$82,$91
+	dc.b	$C2,$D0,$2D,$9C,$D8,$30,$9A,$2F
+	dc.b	$82,$97,$C2,$D0,$2D,$83,$D2,$2E
+	dc.b	$AC,$DE,$2F,$82,$95,$C2,$D0,$2B
+	dc.b	$99,$D8,$2E,$9B,$2D,$82,$BA,$C3
+	dc.b	$C0,$2B,$82,$81,$C2,$CA,$2B,$86
+	dc.b	$C6,$2B,$88,$C0,$2D,$98,$D8,$2E
+	dc.b	$9A,$2D,$82,$B7,$C3,$C0,$2B,$85
+	dc.b	$BE,$C6,$C0,$2B,$85,$B8,$2B,$85
+	dc.b	$BE,$2D,$85,$B8,$2D,$85,$BE,$2B
+	dc.b	$85,$B8,$2B,$C0,$65,$60
 ; Sequence 1, Channel 0:
-	dc.b	$C0,$68,$48,$61,$1C,$64,$7F,$C1
-	dc.b	$E0,$63,$87,$CB,$1B,$89,$CD,$1B
-	dc.b	$86,$C7,$20,$85,$C4,$22,$CD,$25
-	dc.b	$84,$D3,$25,$CC,$24,$83,$C4,$24
-	dc.b	$8C,$CD,$20,$87,$CB,$1B,$8A,$CD
-	dc.b	$1B,$86,$C7,$20,$85,$C4,$22,$84
-	dc.b	$CD,$25,$83,$D3,$25,$82,$C5,$25
-	dc.b	$85,$C7,$22,$8E,$D1,$20,$87,$CB
-	dc.b	$1B,$89,$CD,$1B,$86,$C7,$20,$85
-	dc.b	$C4,$22,$84,$CD,$25,$83,$D3,$25
-	dc.b	$84,$CC,$24,$C4,$24,$8D,$CD,$20
-	dc.b	$87,$CB,$1B,$89,$CD,$1B,$85,$C7
-	dc.b	$20,$C4,$22,$84,$CD,$25,$83,$D3
-	dc.b	$25,$82,$C5,$25,$81,$C7,$1E,$8F
-	dc.b	$D1,$1D,$87,$CB,$20,$89,$CD,$20
-	dc.b	$86,$C7,$25,$85,$C4,$27,$CD,$2A
-	dc.b	$84,$D3,$2A,$CC,$29,$83,$C4,$29
-	dc.b	$8C,$CD,$25,$87,$CB,$20,$8A,$CD
-	dc.b	$20,$86,$C7,$25,$85,$C4,$27,$84
-	dc.b	$CD,$2A,$83,$D3,$2A,$82,$C5,$2A
-	dc.b	$85,$C7,$27,$8E,$D1,$25,$87,$CB
-	dc.b	$20,$89,$CD,$20,$86,$C7,$25,$85
-	dc.b	$C4,$27,$84,$CD,$2A,$83,$D3,$2A
-	dc.b	$84,$CC,$29,$C4,$29,$8C,$CD,$25
-	dc.b	$87,$CB,$1B,$88,$CD,$1B,$85,$CB
-	dc.b	$20,$86,$CD,$22,$83,$D3,$25,$CC
-	dc.b	$24,$C4,$24,$8C,$C0,$20,$83,$CD
-	dc.b	$25,$87,$CB,$1B,$88,$CD,$1B,$85
-	dc.b	$C7,$20,$C4,$22,$84,$CD,$25,$83
-	dc.b	$D3,$25,$85,$C5,$25,$84,$C7,$27
-	dc.b	$8E,$D1,$1E,$86,$CB,$1B,$89,$CD
-	dc.b	$1B,$86,$C7,$20,$85,$C4,$22,$CD
-	dc.b	$25,$83,$D3,$25,$CC,$24,$81,$C4
-	dc.b	$24,$8C,$CD,$20,$87,$CB,$1B,$89
-	dc.b	$CD,$1B,$CB,$1D,$CD,$1D,$C7,$1E
-	dc.b	$84,$C4,$20,$85,$CD,$20,$84,$CB
-	dc.b	$20,$86,$C8,$1E,$84,$C3,$C5,$27
-	dc.b	$87,$CB,$1B,$89,$CD,$1B,$86,$C7
-	dc.b	$20,$85,$C4,$22,$CD,$25,$84,$D3
-	dc.b	$25,$CC,$24,$83,$C4,$24,$8C,$CD
-	dc.b	$20,$87,$CB,$1B,$8A,$CD,$1B,$86
-	dc.b	$C7,$20,$85,$C4,$22,$84,$CD,$25
-	dc.b	$83,$D3,$25,$82,$C5,$25,$85,$C7
-	dc.b	$22,$8E,$D1,$20,$87,$CB,$1B,$89
-	dc.b	$CD,$1B,$86,$C7,$20,$85,$C4,$22
-	dc.b	$84,$CD,$25,$83,$D3,$25,$84,$CC
-	dc.b	$24,$C4,$24,$8D,$CD,$20,$87,$CB
-	dc.b	$1B,$89,$CD,$1B,$85,$C7,$20,$C4
-	dc.b	$22,$84,$CD,$25,$83,$D3,$25,$82
-	dc.b	$C5,$25,$81,$C7,$1E,$8F,$D1,$1D
-	dc.b	$87,$CB,$20,$89,$CD,$20,$86,$C7
-	dc.b	$25,$85,$C4,$27,$CD,$2A,$84,$D3
-	dc.b	$2A,$CC,$29,$83,$C4,$29,$8C,$CD
-	dc.b	$25,$87,$CB,$20,$8A,$CD,$20,$86
-	dc.b	$C7,$25,$85,$C4,$27,$84,$CD,$2A
-	dc.b	$83,$D3,$2A,$82,$C5,$2A,$85,$C7
-	dc.b	$27,$8E,$D1,$25,$87,$CB,$20,$89
-	dc.b	$CD,$20,$86,$C7,$25,$85,$C4,$27
-	dc.b	$84,$CD,$2A,$83,$D3,$2A,$84,$CC
-	dc.b	$29,$C4,$29,$8D,$CD,$25,$87,$CB
-	dc.b	$20,$89,$CD,$20,$85,$C7,$25,$C4
-	dc.b	$27,$84,$CD,$2A,$83,$D3,$2A,$82
-	dc.b	$C5,$2A,$81,$C7,$23,$8F,$D1,$22
-	dc.b	$87,$CB,$1B,$88,$CD,$1B,$85,$CB
-	dc.b	$20,$86,$CD,$22,$83,$D3,$25,$CC
-	dc.b	$24,$C4,$24,$8C,$C0,$20,$83,$CD
-	dc.b	$25,$87,$CB,$1B,$88,$CD,$1B,$85
-	dc.b	$C7,$20,$C4,$22,$84,$CD,$25,$83
-	dc.b	$D3,$25,$85,$C5,$25,$84,$C7,$27
-	dc.b	$8E,$D1,$1E,$86,$CB,$1B,$89,$CD
-	dc.b	$1B,$86,$C7,$20,$85,$C4,$22,$CD
-	dc.b	$25,$83,$D3,$25,$CC,$24,$81,$C4
-	dc.b	$24,$8C,$CD,$20,$87,$CB,$1B,$89
-	dc.b	$CD,$1B,$CB,$1D,$CD,$1D,$C7,$1E
-	dc.b	$84,$C4,$20,$85,$CD,$20,$84,$CB
-	dc.b	$20,$86,$C8,$1E,$84,$C3,$C5,$27
-	dc.b	$C0,$65,$60
+	dc.b	$C0,$61,$69,$68,$65,$80,$3C,$64
+	dc.b	$7F,$C1,$E0,$63,$81,$A0,$3C,$3C
+	dc.b	$B0,$F0,$3C,$3C,$81,$A0,$C1,$E0
+	dc.b	$3C,$3C,$C3,$C0,$3C,$C1,$E0,$3C
+	dc.b	$B0,$F0,$3C,$3C,$81,$A0,$C1,$E0
+	dc.b	$3C,$3C,$3C,$B0,$F0,$3C,$3C,$81
+	dc.b	$A0,$C3,$C0,$3C,$80,$C1,$E0,$3C
+	dc.b	$81,$A0,$3C,$3C,$B0,$F0,$3C,$3C
+	dc.b	$81,$A0,$C1,$E0,$3C,$3C,$3C,$3C
+	dc.b	$80,$3C,$81,$A0,$3C,$3C,$B0,$F0
+	dc.b	$3C,$3C,$81,$A0,$C1,$E0,$3C,$3C
+	dc.b	$C3,$C0,$3C,$3C,$3C,$3C,$3C,$80
+	dc.b	$C0,$3C,$C1,$E0,$65,$81,$A0,$3C
+	dc.b	$3C,$B0,$F0,$3C,$3C,$81,$A0,$C1
+	dc.b	$E0,$3C,$3C,$3C,$60
 ; Sequence 1, Channel 1:
-	dc.b	$C0,$61,$32,$64,$7F,$C3,$C0,$63
-	dc.b	$86,$C7,$31,$84,$CC,$33,$86,$36
-	dc.b	$83,$C4,$31,$9C,$D9,$33,$85,$CD
-	dc.b	$31,$C6,$38,$C4,$F1,$36,$86,$C8
-	dc.b	$31,$85,$CC,$33,$38,$B0,$F3,$36
-	dc.b	$84,$CC,$33,$87,$D1,$3A,$85,$38
-	dc.b	$86,$CF,$36,$87,$D2,$38,$9D,$C1
-	dc.b	$FE,$36,$86,$C7,$31,$84,$CC,$33
-	dc.b	$86,$36,$83,$C4,$31,$9C,$D9,$33
-	dc.b	$85,$CD,$31,$C6,$38,$DB,$D1,$36
-	dc.b	$C0,$65,$60
+	dc.b	$C0,$61,$68,$8A,$1D,$64,$7F,$D2
+	dc.b	$63,$89,$1D,$90,$D8,$1E,$8C,$CC
+	dc.b	$1E,$85,$1B,$88,$1B,$8B,$D2,$1D
+	dc.b	$1D,$8E,$D8,$1E,$8D,$CC,$1E,$86
+	dc.b	$1B,$88,$1B,$8B,$D2,$1D,$8A,$1D
+	dc.b	$8D,$D8,$1E,$CC,$1E,$85,$1B,$88
+	dc.b	$1B,$8D,$D8,$1D,$8F,$CC,$1D,$8D
+	dc.b	$D8,$18,$8B,$CC,$18,$85,$1B,$88
+	dc.b	$1B,$8A,$D2,$1D,$89,$1D,$90,$D8
+	dc.b	$1E,$8C,$CC,$1E,$85,$1B,$88,$1B
+	dc.b	$8B,$D2,$1D,$1D,$8E,$D8,$1E,$8D
+	dc.b	$CC,$1E,$86,$1B,$88,$1B,$8B,$D2
+	dc.b	$1D,$8A,$1D,$8D,$D8,$1E,$CC,$1E
+	dc.b	$85,$1B,$88,$1B,$8D,$C1,$E0,$1D
+	dc.b	$8A,$D2,$1D,$89,$1D,$90,$D8,$1E
+	dc.b	$8C,$CC,$1E,$85,$1B,$88,$1B,$8B
+	dc.b	$D2,$1D,$1D,$8E,$D8,$1E,$8D,$CC
+	dc.b	$1E,$86,$1B,$88,$1B,$8B,$D2,$1D
+	dc.b	$8A,$1D,$8D,$D8,$1E,$CC,$1E,$85
+	dc.b	$1B,$88,$1B,$8D,$D8,$1D,$8F,$CC
+	dc.b	$1D,$8D,$D8,$18,$8B,$CC,$18,$85
+	dc.b	$1B,$88,$1B,$8A,$D2,$1D,$89,$1D
+	dc.b	$90,$D8,$1E,$8C,$CC,$1E,$85,$1B
+	dc.b	$88,$1B,$8B,$D2,$1D,$1D,$8E,$D8
+	dc.b	$1E,$8D,$CC,$1E,$86,$1B,$88,$1B
+	dc.b	$8B,$D2,$1D,$8A,$1D,$8D,$D8,$1E
+	dc.b	$CC,$1E,$85,$1B,$88,$1B,$8D,$C1
+	dc.b	$E0,$1D,$8A,$D2,$1D,$89,$1D,$90
+	dc.b	$D8,$1E,$8C,$CC,$1E,$85,$1B,$88
+	dc.b	$1B,$8B,$D2,$1D,$1D,$8E,$D8,$1E
+	dc.b	$8D,$CC,$1E,$86,$1B,$88,$1B,$8B
+	dc.b	$D2,$1D,$8A,$1D,$8D,$D8,$1E,$CC
+	dc.b	$1E,$85,$1B,$88,$1B,$8D,$D8,$1D
+	dc.b	$8F,$CC,$1D,$8D,$D8,$18,$8B,$CC
+	dc.b	$18,$85,$1B,$88,$1B,$8A,$D2,$1D
+	dc.b	$89,$1D,$90,$D8,$1E,$8C,$CC,$1E
+	dc.b	$85,$1B,$88,$1B,$8B,$D2,$1D,$1D
+	dc.b	$8E,$D8,$1E,$8D,$CC,$1E,$86,$1B
+	dc.b	$88,$1B,$8B,$D2,$1D,$8A,$1D,$8D
+	dc.b	$D8,$1E,$CC,$1E,$85,$1B,$88,$1B
+	dc.b	$8D,$C1,$E0,$1D,$8A,$D2,$1D,$89
+	dc.b	$1D,$90,$D8,$1E,$8C,$CC,$1E,$85
+	dc.b	$1B,$88,$1B,$8B,$D2,$1D,$1D,$8E
+	dc.b	$D8,$1E,$8D,$CC,$1E,$86,$1B,$88
+	dc.b	$1B,$8B,$D2,$1D,$8A,$1D,$8D,$D8
+	dc.b	$1E,$CC,$1E,$85,$1B,$88,$1B,$8D
+	dc.b	$D8,$1D,$8F,$CC,$1D,$8D,$D8,$18
+	dc.b	$8B,$CC,$18,$85,$1B,$88,$1B,$8A
+	dc.b	$D2,$1D,$89,$1D,$90,$D8,$1E,$8C
+	dc.b	$CC,$1E,$85,$1B,$88,$1B,$8B,$D2
+	dc.b	$1D,$1D,$8E,$D8,$1E,$8D,$CC,$1E
+	dc.b	$86,$1B,$88,$1B,$8B,$D2,$1D,$8A
+	dc.b	$1D,$8D,$D8,$1E,$CC,$1E,$85,$1B
+	dc.b	$88,$1B,$8D,$C1,$E0,$1D,$8A,$D2
+	dc.b	$1D,$89,$1D,$90,$D8,$1E,$8C,$CC
+	dc.b	$1E,$85,$1B,$88,$1B,$8B,$D2,$1D
+	dc.b	$1D,$8E,$D8,$1E,$8D,$CC,$1E,$86
+	dc.b	$1B,$88,$1B,$8B,$D2,$1D,$8A,$1D
+	dc.b	$8D,$D8,$1E,$CC,$1E,$85,$1B,$88
+	dc.b	$1B,$8D,$D8,$1D,$8F,$CC,$1D,$8D
+	dc.b	$D8,$18,$8B,$CC,$18,$85,$1B,$88
+	dc.b	$1B,$8A,$D2,$1D,$89,$1D,$90,$D8
+	dc.b	$1E,$8C,$CC,$1E,$85,$1B,$88,$1B
+	dc.b	$8B,$D2,$1D,$1D,$8E,$D8,$1E,$8D
+	dc.b	$CC,$1E,$86,$1B,$88,$1B,$8B,$D2
+	dc.b	$1D,$8A,$1D,$8D,$D8,$1E,$CC,$1E
+	dc.b	$85,$1B,$88,$1B,$8D,$C1,$E0,$1D
+	dc.b	$8A,$C0,$1D,$D2,$65,$89,$1D,$90
+	dc.b	$D8,$1E,$8C,$CC,$1E,$85,$1B,$88
+	dc.b	$1B,$8B,$D2,$1D,$1D,$8E,$D8,$1E
+	dc.b	$8D,$CC,$1E,$86,$1B,$88,$1B,$8B
+	dc.b	$D2,$1D,$8A,$1D,$8D,$D8,$1E,$CC
+	dc.b	$1E,$85,$1B,$88,$1B,$8D,$D8,$1D
+	dc.b	$8F,$CC,$1D,$8D,$D8,$18,$8B,$CC
+	dc.b	$18,$85,$1B,$88,$1B,$8A,$D2,$1D
+	dc.b	$89,$1D,$90,$D8,$1E,$8C,$CC,$1E
+	dc.b	$85,$1B,$88,$1B,$8B,$D2,$1D,$1D
+	dc.b	$8E,$D8,$1E,$8D,$CC,$1E,$86,$1B
+	dc.b	$88,$1B,$8B,$D2,$1D,$8A,$1D,$8D
+	dc.b	$D8,$1E,$CC,$1E,$85,$1B,$88,$1B
+	dc.b	$8D,$CD,$1D,$60
 ; Sequence 1, Channel 2:
-	dc.b	$C0,$61,$7F,$64,$7F,$D5,$C1,$63
-	dc.b	$84,$C6,$4B,$C5,$4B,$CD,$4B,$CC
-	dc.b	$4B,$4B,$4B,$C6,$50,$DE,$4E,$C6
-	dc.b	$4B,$C5,$4B,$CD,$4B,$CC,$4B,$4B
-	dc.b	$4B,$C6,$50,$DE,$4E,$C6,$4B,$C5
-	dc.b	$4B,$CD,$4B,$CC,$4B,$4B,$4B,$C6
-	dc.b	$50,$DE,$4E,$C6,$4B,$C5,$4B,$CD
-	dc.b	$4B,$CC,$4B,$4B,$4B,$C6,$50,$DE
-	dc.b	$4E,$C6,$4B,$C5,$4B,$CD,$4B,$CC
-	dc.b	$4B,$4B,$4B,$C6,$50,$DE,$4E,$C6
-	dc.b	$4B,$C5,$4B,$CD,$4B,$CC,$4B,$4B
-	dc.b	$4B,$C6,$50,$DE,$4E,$C6,$4B,$C5
-	dc.b	$4B,$CD,$4B,$CC,$4B,$4B,$4B,$C6
-	dc.b	$50,$DE,$4E,$C6,$4B,$C5,$4B,$CD
-	dc.b	$4B,$CC,$4B,$4B,$4B,$C6,$50,$DE
-	dc.b	$4E,$C6,$4B,$C5,$4B,$CD,$4B,$CC
-	dc.b	$4B,$4B,$4B,$C6,$50,$DE,$4E,$C6
-	dc.b	$4B,$C5,$4B,$CD,$4B,$CC,$4B,$4B
-	dc.b	$4B,$C6,$50,$DE,$4E,$C6,$4B,$C5
-	dc.b	$4B,$CD,$4B,$CC,$4B,$4B,$4B,$C6
-	dc.b	$50,$DE,$4E,$C6,$4B,$C5,$4B,$CD
-	dc.b	$4B,$CC,$4B,$4B,$4B,$C6,$50,$C3
-	dc.b	$DD,$4E,$C0,$65,$60
+	dc.b	$C0,$61,$70,$64,$7F,$CA,$E0,$63
+	dc.b	$84,$BF,$CC,$C0,$29,$84,$BE,$35
+	dc.b	$84,$BF,$29,$CD,$E0,$29,$C0,$65
+	dc.b	$60
 ; Sequence 1, Channel 3:
-	dc.b	$C0,$61,$10,$64,$7F,$C1,$F3,$63
-	dc.b	$84,$C5,$38,$83,$CB,$3A,$82,$CD
-	dc.b	$38,$83,$CB,$38,$C8,$38,$82,$F0
-	dc.b	$3A,$83,$C5,$38,$CB,$3A,$82,$CD
-	dc.b	$38,$81,$CB,$38,$83,$C8,$38,$82
-	dc.b	$F0,$3A,$83,$C5,$38,$CB,$3A,$82
-	dc.b	$CD,$38,$81,$CB,$38,$83,$C8,$38
-	dc.b	$82,$F0,$3A,$83,$C5,$38,$82,$CB
-	dc.b	$3A,$CD,$38,$83,$CB,$3A,$84,$C8
-	dc.b	$38,$82,$CC,$3A,$81,$38,$82,$D8
-	dc.b	$36,$84,$C5,$3D,$83,$CB,$3F,$82
-	dc.b	$CD,$3D,$83,$CB,$3D,$C8,$3D,$82
-	dc.b	$F0,$3F,$C5,$3D,$CB,$3F,$CD,$3D
-	dc.b	$83,$CB,$3F,$C8,$3F,$82,$CC,$3D
-	dc.b	$81,$3D,$82,$D8,$3F,$83,$C5,$3D
-	dc.b	$CB,$3F,$82,$CD,$3D,$81,$CB,$3D
-	dc.b	$83,$C8,$3D,$82,$F0,$3F,$83,$C5
-	dc.b	$38,$CB,$3A,$CD,$38,$82,$CB,$38
-	dc.b	$83,$C8,$38,$82,$F0,$3A,$C5,$38
-	dc.b	$CB,$3A,$84,$CD,$38,$83,$CB,$3A
-	dc.b	$82,$C8,$38,$CC,$3A,$38,$D8,$36
-	dc.b	$83,$C5,$38,$CB,$3A,$82,$CD,$38
-	dc.b	$83,$CB,$38,$C8,$38,$82,$DD,$3A
-	dc.b	$85,$C7,$36,$C4,$38,$86,$C8,$36
-	dc.b	$84,$C5,$38,$C7,$36,$C4,$38,$85
-	dc.b	$C8,$36,$C5,$38,$83,$C7,$36,$C4
-	dc.b	$38,$84,$CD,$38,$83,$CB,$38,$84
-	dc.b	$C3,$E0,$36,$C5,$38,$83,$CB,$3A
-	dc.b	$82,$CD,$38,$83,$CB,$38,$C8,$38
-	dc.b	$82,$F0,$3A,$83,$C5,$38,$CB,$3A
-	dc.b	$82,$CD,$38,$81,$CB,$38,$83,$C8
-	dc.b	$38,$82,$F0,$3A,$83,$C5,$38,$CB
-	dc.b	$3A,$82,$CD,$38,$81,$CB,$38,$83
-	dc.b	$C8,$38,$82,$F0,$3A,$83,$C5,$38
-	dc.b	$82,$CB,$3A,$CD,$38,$83,$CB,$3A
-	dc.b	$84,$C8,$38,$82,$CC,$3A,$81,$38
-	dc.b	$82,$D8,$36,$84,$C5,$3D,$83,$CB
-	dc.b	$3F,$82,$CD,$3D,$83,$CB,$3D,$C8
-	dc.b	$3D,$82,$F0,$3F,$C5,$3D,$CB,$3F
-	dc.b	$CD,$3D,$83,$CB,$3F,$C8,$3F,$82
-	dc.b	$CC,$3D,$81,$3D,$82,$D8,$3F,$83
-	dc.b	$C5,$3D,$CB,$3F,$82,$CD,$3D,$81
-	dc.b	$CB,$3D,$83,$C8,$3D,$82,$F0,$3F
-	dc.b	$83,$C5,$3D,$82,$CB,$3F,$CD,$3D
-	dc.b	$83,$CB,$3F,$84,$C8,$3D,$82,$CC
-	dc.b	$3F,$81,$3D,$82,$D8,$3B,$83,$C5
-	dc.b	$38,$CB,$3A,$CD,$38,$82,$CB,$38
-	dc.b	$83,$C8,$38,$82,$F0,$3A,$C5,$38
-	dc.b	$CB,$3A,$84,$CD,$38,$83,$CB,$3A
-	dc.b	$82,$C8,$38,$CC,$3A,$38,$D8,$36
-	dc.b	$83,$C5,$38,$CB,$3A,$82,$CD,$38
-	dc.b	$83,$CB,$38,$C8,$38,$82,$DD,$3A
-	dc.b	$85,$C7,$36,$C4,$38,$86,$C8,$36
-	dc.b	$84,$C5,$38,$C7,$36,$C4,$38,$85
-	dc.b	$C8,$36,$C5,$38,$83,$C7,$36,$C4
-	dc.b	$38,$84,$CD,$38,$83,$CB,$38,$84
-	dc.b	$C3,$CD,$36,$C0,$65,$60
+	dc.b	$C0,$6A,$0A,$61,$78,$64,$7F,$D8
+	dc.b	$C4,$63,$82,$90,$C2,$CA,$30,$B6
+	dc.b	$ED,$33,$82,$98,$C2,$D2,$30,$9E
+	dc.b	$D8,$31,$A0,$D4,$2E,$82,$A2,$C2
+	dc.b	$D4,$30,$A4,$DA,$33,$9E,$D6,$31
+	dc.b	$83,$82,$C3,$C6,$30,$82,$AD,$C2
+	dc.b	$E2,$30,$A1,$D8,$33,$82,$96,$C2
+	dc.b	$CF,$30,$A2,$DA,$31,$A1,$D9,$2E
+	dc.b	$82,$A8,$C2,$E6,$30,$9D,$D9,$2C
+	dc.b	$83,$98,$CF,$C2,$29,$C0,$65,$60
 ; Sequence 1, Channel 4:
-	dc.b	$C0,$61,$5B,$64,$7F,$C1,$C6,$63
-	dc.b	$88,$C5,$3F,$C4,$3D,$85,$3A,$86
-	dc.b	$C5,$38,$C3,$3A,$C5,$3D,$8C,$C2
-	dc.b	$FB,$3F,$89,$C2,$F4,$42,$83,$C4
-	dc.b	$3F,$C8,$3D,$88,$C4,$D4,$3B,$83
-	dc.b	$C4,$46,$C9,$44,$84,$C2,$FF,$42
-	dc.b	$8A,$C1,$E0,$42,$8D,$FC,$4B,$82
-	dc.b	$C4,$44,$84,$CD,$44,$83,$CB,$44
-	dc.b	$C0,$4B,$84,$C8,$42,$C2,$EB,$4B
-	dc.b	$88,$C5,$3F,$C4,$3D,$85,$3A,$86
-	dc.b	$C5,$38,$C3,$3A,$C5,$3D,$8C,$C2
-	dc.b	$FB,$3F,$89,$C2,$F4,$42,$83,$C4
-	dc.b	$3F,$C8,$3D,$88,$C4,$E0,$3B,$89
-	dc.b	$C1,$D4,$47,$83,$C4,$3A,$C8,$38
-	dc.b	$8D,$C3,$C0,$36,$8A,$C1,$E0,$42
-	dc.b	$8D,$FC,$4B,$82,$C4,$44,$84,$CD
-	dc.b	$44,$83,$CB,$44,$C0,$4B,$84,$C8
-	dc.b	$42,$C3,$C5,$4B,$C0,$65,$60
-; Sequence 1, Channel 5:
-	dc.b	$C0,$61,$58,$64,$7F,$D2,$C7,$63
-	dc.b	$82,$C4,$26,$84,$CD,$26,$CB,$26
-	dc.b	$82,$C8,$26,$83,$C2,$D5,$26,$C0
-	dc.b	$65,$60
-; Sequence 1, Channel 6:
-	dc.b	$C0,$61,$08,$64,$7F,$CB,$63,$83
-	dc.b	$C8,$39,$C5,$39,$C7,$39,$C4,$39
-	dc.b	$CD,$39,$CB,$39,$CD,$39,$C7,$39
-	dc.b	$C4,$39,$C8,$39,$C9,$C5,$39,$C0
-	dc.b	$65,$60
-; Sequence 1, Channel 7:
-	dc.b	$C0,$61,$18,$64,$7F,$C7,$63,$83
-	dc.b	$D1,$1A,$D3,$1A,$DD,$1A,$84,$D3
-	dc.b	$1A,$83,$CC,$1A,$D1,$1A,$84,$CB
-	dc.b	$1A,$C8,$1A,$DD,$1A,$D3,$1A,$CC
-	dc.b	$1A,$D1,$1A,$D3,$1A,$83,$DD,$1A
-	dc.b	$D3,$1A,$CC,$1A,$D1,$1A,$84,$CB
-	dc.b	$1A,$C8,$1A,$83,$DD,$1A,$D3,$1A
-	dc.b	$CC,$1A,$D1,$1A,$D3,$1A,$DD,$1A
-	dc.b	$84,$D3,$1A,$83,$CC,$1A,$D1,$1A
-	dc.b	$84,$CB,$1A,$C8,$1A,$DD,$1A,$D3
-	dc.b	$1A,$CC,$1A,$D1,$1A,$D3,$1A,$83
-	dc.b	$DD,$1A,$D3,$1A,$CC,$1A,$D1,$1A
-	dc.b	$84,$CB,$1A,$C8,$1A,$83,$DD,$1A
-	dc.b	$DF,$1A,$D1,$1A,$84,$CB,$1A,$C8
-	dc.b	$1A,$DD,$1A,$D3,$1A,$CC,$1A,$D1
-	dc.b	$1A,$D3,$1A,$83,$DD,$1A,$D3,$1A
-	dc.b	$CC,$1A,$D1,$1A,$84,$CB,$1A,$C8
-	dc.b	$1A,$83,$DD,$1A,$D3,$1A,$CC,$1A
-	dc.b	$D1,$1A,$D3,$1A,$DD,$1A,$84,$D3
-	dc.b	$1A,$83,$C1,$CD,$1A,$84,$D3,$1A
-	dc.b	$CC,$1A,$83,$D1,$1A,$D3,$1A,$DD
-	dc.b	$1A,$84,$D3,$1A,$83,$C5,$1A,$C0
-	dc.b	$65,$60
-; Sequence 1, Channel 8:
-	dc.b	$64,$7F,$C0,$63,$61,$1B,$81,$CB
-	dc.b	$18,$84,$C8,$18,$D0,$18,$83,$CD
-	dc.b	$18,$84,$CB,$18,$85,$D8,$18,$84
-	dc.b	$CD,$18,$81,$CB,$18,$82,$C8,$18
-	dc.b	$84,$CC,$18,$83,$D1,$18,$CB,$18
-	dc.b	$85,$D8,$18,$83,$CD,$18,$82,$CB
-	dc.b	$18,$84,$C8,$18,$83,$D0,$18,$CD
-	dc.b	$18,$CB,$18,$84,$D8,$18,$83,$CD
-	dc.b	$18,$84,$CB,$18,$83,$C8,$18,$CC
-	dc.b	$18,$84,$D1,$18,$83,$CB,$18,$85
-	dc.b	$D8,$18,$82,$CD,$18,$81,$CB,$18
-	dc.b	$84,$C8,$18,$D0,$18,$83,$CD,$18
-	dc.b	$84,$CB,$18,$85,$D8,$18,$84,$CD
-	dc.b	$18,$81,$CB,$18,$82,$C8,$18,$84
-	dc.b	$CC,$18,$83,$D1,$18,$CB,$18,$85
-	dc.b	$D8,$18,$83,$CD,$18,$82,$CB,$18
-	dc.b	$84,$C8,$18,$83,$D0,$18,$CD,$18
-	dc.b	$CB,$18,$84,$D8,$18,$83,$CD,$18
-	dc.b	$84,$CB,$18,$83,$C8,$18,$CC,$18
-	dc.b	$84,$D1,$18,$83,$CB,$18,$85,$D8
-	dc.b	$18,$82,$CD,$18,$81,$CB,$18,$82
-	dc.b	$C8,$18,$84,$CC,$18,$83,$D1,$18
-	dc.b	$CB,$18,$85,$D8,$18,$83,$CD,$18
-	dc.b	$82,$CB,$18,$84,$C8,$18,$83,$D0
-	dc.b	$18,$CD,$18,$CB,$18,$84,$D8,$18
-	dc.b	$83,$CD,$18,$84,$CB,$18,$83,$C8
-	dc.b	$18,$CC,$18,$84,$D1,$18,$83,$CB
-	dc.b	$18,$85,$D8,$18,$82,$CD,$18,$81
-	dc.b	$CB,$18,$84,$C8,$18,$D0,$18,$83
-	dc.b	$CD,$18,$84,$CB,$18,$85,$D8,$18
-	dc.b	$84,$C1,$C8,$18,$85,$D8,$18,$83
-	dc.b	$CD,$18,$81,$CB,$18,$84,$C8,$18
-	dc.b	$D0,$18,$83,$CD,$18,$84,$CB,$18
-	dc.b	$85,$D8,$18,$84,$CD,$18,$C0,$65
+	dc.b	$C0,$72,$05,$07,$61,$5C,$64,$7F
+	dc.b	$C0,$63,$81,$F0,$0C,$0C,$0C,$D2
+	dc.b	$0C,$C6,$0C,$CC,$0C,$0C,$F0,$0C
+	dc.b	$0C,$0C,$0C,$EA,$0C,$C6,$0C,$F0
+	dc.b	$0C,$0C,$0C,$0C,$D2,$0C,$C6,$0C
+	dc.b	$CC,$0C,$0C,$C1,$E0,$0C,$C0,$65
 	dc.b	$60
-; Sequence 1, Channel 9:
-	dc.b	$C0,$72,$05,$00,$60
-; Sequence 1, Channel 10:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 1, Channel 11:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 1, Channel 12:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 1, Channel 13:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 1, Channel 14:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 1, Channel 15:
-	dc.b	$E9,$FE,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
 ; Sequence 2, Channel 0:
-	dc.b	$C0,$68,$5C,$61,$1C,$64,$7F,$C0
-	dc.b	$63,$93,$EA,$21,$81,$C6,$21,$8C
-	dc.b	$E4,$21,$85,$C6,$2D,$82,$2D,$92
-	dc.b	$EA,$21,$82,$C6,$21,$85,$CC,$21
-	dc.b	$87,$D2,$21,$91,$28,$EA,$21,$81
-	dc.b	$C6,$21,$95,$E4,$21,$85,$C6,$2D
-	dc.b	$82,$CC,$2D,$C6,$21,$85,$CC,$21
-	dc.b	$81,$C6,$28,$87,$D2,$21,$94,$F0
-	dc.b	$21,$93,$EA,$21,$81,$C6,$21,$8C
-	dc.b	$E4,$21,$85,$C6,$2D,$82,$2D,$92
-	dc.b	$EA,$21,$82,$C6,$21,$85,$CC,$21
-	dc.b	$87,$D2,$21,$91,$28,$EA,$21,$81
-	dc.b	$C6,$21,$95,$E4,$21,$85,$C6,$2D
-	dc.b	$82,$CC,$2D,$C6,$21,$85,$CC,$21
-	dc.b	$81,$C6,$28,$87,$D2,$21,$94,$F0
-	dc.b	$21,$93,$EA,$26,$81,$C6,$26,$8C
-	dc.b	$E4,$26,$85,$C6,$32,$82,$32,$92
-	dc.b	$EA,$26,$82,$C6,$26,$85,$CC,$26
-	dc.b	$87,$D2,$26,$91,$2D,$EA,$26,$81
-	dc.b	$C6,$26,$95,$E4,$26,$85,$C6,$32
-	dc.b	$82,$CC,$32,$C6,$26,$85,$CC,$26
-	dc.b	$81,$C6,$2D,$87,$D2,$26,$94,$F0
-	dc.b	$26,$93,$EA,$21,$81,$C6,$21,$8C
-	dc.b	$E4,$21,$85,$C6,$2D,$82,$2D,$92
-	dc.b	$EA,$21,$82,$C6,$21,$85,$CC,$21
-	dc.b	$87,$D2,$21,$91,$28,$EA,$21,$81
-	dc.b	$C6,$21,$95,$E4,$21,$85,$C6,$2D
-	dc.b	$82,$CC,$2D,$C6,$21,$85,$CC,$21
-	dc.b	$81,$C6,$28,$87,$D2,$21,$94,$F0
-	dc.b	$21,$93,$EA,$26,$81,$C6,$26,$8C
-	dc.b	$E4,$26,$85,$C6,$32,$82,$32,$92
-	dc.b	$EA,$26,$82,$C6,$26,$85,$CC,$26
-	dc.b	$87,$D2,$26,$91,$2D,$EA,$26,$81
-	dc.b	$C6,$26,$95,$E4,$26,$85,$C6,$32
-	dc.b	$82,$CC,$32,$C6,$26,$85,$CC,$26
-	dc.b	$81,$C6,$2D,$87,$D2,$26,$94,$F0
-	dc.b	$26,$93,$EA,$28,$81,$C6,$28,$8C
-	dc.b	$E4,$28,$85,$C6,$34,$82,$34,$92
-	dc.b	$EA,$28,$82,$C6,$28,$85,$CC,$28
-	dc.b	$87,$D2,$28,$91,$2F,$EA,$26,$81
-	dc.b	$C6,$26,$95,$E4,$26,$85,$C6,$32
-	dc.b	$82,$CC,$32,$C6,$26,$85,$CC,$26
-	dc.b	$81,$C6,$2D,$87,$D2,$26,$94,$F0
-	dc.b	$26,$C0,$65,$60
+	dc.b	$C0,$72,$05,$00,$61,$34,$68,$73
+	dc.b	$86,$C6,$24,$18,$22,$21,$1F,$1B
+	dc.b	$20,$1D,$1C,$1E,$1F,$1B,$20,$1A
+	dc.b	$1C,$1D,$18,$1E,$19,$1C,$1B,$1D
+	dc.b	$1A,$1B,$1C,$1D,$1E,$1F,$20,$21
+	dc.b	$22,$23,$24,$24,$24,$24,$24,$24
+	dc.b	$25,$24,$24,$24,$24,$24,$25,$22
+	dc.b	$27,$25,$24,$24,$24,$24,$24,$24
+	dc.b	$25,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$29,$27,$24,$24,$24,$24,$24,$24
+	dc.b	$25,$24,$24,$24,$22,$24,$25,$24
+	dc.b	$27,$25,$24,$24,$24,$24,$24,$24
+	dc.b	$25,$24,$22,$23,$24,$25,$26,$27
+	dc.b	$28,$29,$24,$24,$24,$24,$24,$24
+	dc.b	$25,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$27,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$22,$24,$25,$24,$27,$24,$29,$24
+	dc.b	$27,$25,$24,$24,$24,$24,$24,$24
+	dc.b	$25,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$27,$24,$24,$27,$22,$2A,$2C,$20
+	dc.b	$27,$25,$21,$24,$22,$25,$23,$26
+	dc.b	$27,$28,$64,$7F,$C0,$63,$86,$C6
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$22,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$25,$24,$27,$24,$29,$27
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$22,$24,$25,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$22,$23,$24,$25,$26,$27,$28,$29
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$22,$24
+	dc.b	$25,$24,$27,$24,$29,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$C1,$C8,$24,$C6,$24,$26,$27,$29
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$22,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$25,$24,$27,$24,$29,$27
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$22,$24,$25,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$22,$23,$24,$25,$26,$27,$28,$29
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$22,$24
+	dc.b	$25,$24,$27,$24,$29,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$24,$27,$22,$2A,$2C,$20,$27,$25
+	dc.b	$21,$24,$22,$25,$23,$26,$27,$28
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$22,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$25,$24,$27,$24,$29,$27
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$22,$24,$25,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$22,$23,$24,$25,$26,$27,$28,$29
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$22,$24
+	dc.b	$25,$24,$27,$24,$29,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$C1,$E0,$24,$C6,$25,$25,$25,$25
+	dc.b	$25,$25,$26,$25,$25,$25,$25,$25
+	dc.b	$26,$23,$28,$26,$25,$25,$25,$25
+	dc.b	$25,$25,$26,$25,$25,$25,$26,$25
+	dc.b	$28,$25,$2A,$28,$25,$25,$25,$25
+	dc.b	$25,$25,$26,$25,$25,$25,$23,$25
+	dc.b	$26,$25,$28,$26,$25,$25,$25,$25
+	dc.b	$25,$25,$26,$25,$23,$24,$25,$26
+	dc.b	$27,$28,$29,$2A,$25,$25,$25,$25
+	dc.b	$25,$25,$26,$25,$25,$25,$25,$25
+	dc.b	$26,$25,$28,$25,$25,$25,$25,$25
+	dc.b	$26,$25,$23,$25,$26,$25,$28,$25
+	dc.b	$2A,$25,$28,$26,$25,$25,$25,$25
+	dc.b	$25,$25,$26,$25,$25,$25,$25,$25
+	dc.b	$26,$25,$28,$25,$C1,$E0,$25,$C6
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$22,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$25,$24,$27,$24,$29,$27
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$22,$24,$25,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$22,$23,$24,$25,$26,$27,$28,$29
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$22,$24
+	dc.b	$25,$24,$27,$24,$29,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$C1,$E0,$24,$C0,$65,$60
 ; Sequence 2, Channel 1:
-	dc.b	$C0,$61,$0F,$64,$7F,$C6,$C0,$63
-	dc.b	$97,$D8,$31,$2D,$34,$31,$36,$34
-	dc.b	$3B,$39,$31,$2D,$34,$31,$36,$34
-	dc.b	$3B,$39,$98,$43,$42,$3E,$39,$37
-	dc.b	$8C,$CC,$36,$B8,$FC,$3E,$98,$D8
-	dc.b	$43,$42,$3E,$39,$37,$8C,$CC,$36
-	dc.b	$B8,$FC,$32,$97,$D8,$31,$2D,$34
-	dc.b	$31,$36,$34,$3B,$39,$31,$2D,$34
-	dc.b	$31,$36,$34,$3B,$39,$8C,$D0,$42
-	dc.b	$8A,$D1,$43,$86,$CF,$42,$82,$85
-	dc.b	$C2,$CF,$3E,$8C,$D0,$3D,$89,$3E
-	dc.b	$87,$CF,$3D,$81,$B3,$C8,$D2,$39
-	dc.b	$C0,$65,$60
+	dc.b	$C0,$61,$46,$C9,$C0,$72,$05,$02
+	dc.b	$86,$C6,$24,$24,$24,$24,$24,$24
+	dc.b	$25,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$27,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$22,$24,$25,$24,$27,$24,$29,$24
+	dc.b	$27,$25,$24,$24,$24,$24,$24,$24
+	dc.b	$25,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$27,$24,$24,$27,$22,$2A,$2C,$20
+	dc.b	$27,$25,$21,$24,$22,$25,$23,$26
+	dc.b	$27,$28,$64,$7F,$C0,$63,$86,$C6
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$22,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$25,$24,$27,$24,$29,$27
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$22,$24,$25,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$22,$23,$24,$25,$26,$27,$28,$29
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$22,$24
+	dc.b	$25,$24,$27,$24,$29,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$C1,$C8,$24,$C6,$24,$26,$27,$29
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$22,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$25,$24,$27,$24,$29,$27
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$22,$24,$25,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$22,$23,$24,$25,$26,$27,$28,$29
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$22,$24
+	dc.b	$25,$24,$27,$24,$29,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$24,$27,$22,$2A,$2C,$20,$27,$25
+	dc.b	$21,$24,$22,$25,$23,$26,$27,$28
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$22,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$25,$24,$27,$24,$29,$27
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$22,$24,$25,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$22,$23,$24,$25,$26,$27,$28,$29
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$22,$24
+	dc.b	$25,$24,$27,$24,$29,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$C1,$E0,$24,$C6,$25,$25,$25,$25
+	dc.b	$25,$25,$26,$25,$25,$25,$25,$25
+	dc.b	$26,$23,$28,$26,$25,$25,$25,$25
+	dc.b	$25,$25,$26,$25,$25,$25,$26,$25
+	dc.b	$28,$25,$2A,$28,$25,$25,$25,$25
+	dc.b	$25,$25,$26,$25,$25,$25,$23,$25
+	dc.b	$26,$25,$28,$26,$25,$25,$25,$25
+	dc.b	$25,$25,$26,$25,$23,$24,$25,$26
+	dc.b	$27,$28,$29,$2A,$25,$25,$25,$25
+	dc.b	$25,$25,$26,$25,$25,$25,$25,$25
+	dc.b	$26,$25,$28,$25,$25,$25,$25,$25
+	dc.b	$26,$25,$23,$25,$26,$25,$28,$25
+	dc.b	$2A,$25,$28,$26,$25,$25,$25,$25
+	dc.b	$25,$25,$26,$25,$25,$25,$25,$25
+	dc.b	$26,$25,$28,$25,$C1,$E0,$25,$C6
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$22,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$25,$24,$27,$24,$29,$27
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$22,$24,$25,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$22,$23,$24,$25,$26,$27,$28,$29
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$22,$24
+	dc.b	$25,$24,$27,$24,$29,$24,$27,$25
+	dc.b	$24,$24,$24,$24,$24,$24,$25,$24
+	dc.b	$24,$24,$24,$24,$25,$24,$27,$24
+	dc.b	$C1,$E0,$24,$C0,$65,$60
 ; Sequence 2, Channel 2:
-	dc.b	$C0,$61,$78,$64,$7F,$CC,$63,$84
-	dc.b	$C6,$39,$82,$CC,$39,$83,$D2,$39
-	dc.b	$84,$C6,$39,$83,$CC,$39,$84,$D2
-	dc.b	$39,$85,$C6,$39,$84,$D2,$39,$C6
-	dc.b	$39,$CC,$39,$D2,$39,$C6,$39,$83
-	dc.b	$CC,$39,$84,$D2,$39,$85,$C6,$39
-	dc.b	$84,$D2,$39,$85,$C6,$39,$84,$CC
-	dc.b	$39,$85,$D2,$39,$C6,$39,$84,$CC
-	dc.b	$39,$39,$81,$C6,$39,$84,$39,$85
-	dc.b	$CC,$39,$82,$C6,$39,$84,$39,$CC
-	dc.b	$39,$83,$39,$82,$C1,$C2,$39,$84
-	dc.b	$C6,$39,$82,$CC,$39,$83,$D2,$39
-	dc.b	$84,$C6,$39,$83,$CC,$39,$84,$D2
-	dc.b	$39,$85,$C6,$39,$84,$D2,$39,$C6
-	dc.b	$39,$CC,$39,$D2,$39,$C6,$39,$83
-	dc.b	$CC,$39,$84,$D2,$39,$85,$C6,$39
-	dc.b	$84,$D2,$39,$85,$C6,$39,$84,$CC
-	dc.b	$39,$85,$D2,$39,$C6,$39,$84,$CC
-	dc.b	$39,$39,$81,$C6,$39,$84,$39,$85
-	dc.b	$CC,$39,$82,$C6,$39,$84,$39,$CC
-	dc.b	$39,$83,$39,$82,$C1,$C2,$39,$84
-	dc.b	$C6,$3E,$82,$CC,$3E,$83,$D2,$3E
-	dc.b	$84,$C6,$3E,$83,$CC,$3E,$84,$D2
-	dc.b	$3E,$85,$C6,$3E,$84,$D2,$3E,$C6
-	dc.b	$3E,$CC,$3E,$D2,$3E,$C6,$3E,$83
-	dc.b	$CC,$3E,$84,$D2,$3E,$85,$C6,$3E
-	dc.b	$84,$D2,$3E,$85,$C6,$3E,$84,$CC
-	dc.b	$3E,$85,$D2,$3E,$C6,$3E,$84,$CC
-	dc.b	$3E,$3E,$81,$C6,$3E,$84,$3E,$85
-	dc.b	$CC,$3E,$82,$C6,$3E,$84,$3E,$CC
-	dc.b	$3E,$83,$3E,$82,$C1,$C2,$3E,$84
-	dc.b	$C6,$39,$82,$CC,$39,$83,$D2,$39
-	dc.b	$84,$C6,$39,$83,$CC,$39,$84,$D2
-	dc.b	$39,$85,$C6,$39,$84,$D2,$39,$C6
-	dc.b	$39,$CC,$39,$D2,$39,$C6,$39,$83
-	dc.b	$CC,$39,$84,$D2,$39,$85,$C6,$39
-	dc.b	$84,$D2,$39,$85,$C6,$39,$84,$CC
-	dc.b	$39,$85,$D2,$39,$C6,$39,$84,$CC
-	dc.b	$39,$39,$81,$C6,$39,$84,$39,$85
-	dc.b	$CC,$39,$82,$C6,$39,$84,$39,$CC
-	dc.b	$39,$83,$39,$82,$C1,$C2,$39,$84
-	dc.b	$C6,$3E,$82,$CC,$3E,$83,$D2,$3E
-	dc.b	$84,$C6,$3E,$83,$CC,$3E,$84,$D2
-	dc.b	$3E,$85,$C6,$3E,$84,$D2,$3E,$C6
-	dc.b	$3E,$CC,$3E,$D2,$3E,$C6,$3E,$83
-	dc.b	$CC,$3E,$84,$D2,$3E,$85,$C6,$3E
-	dc.b	$84,$D2,$3E,$85,$C6,$3E,$84,$CC
-	dc.b	$3E,$85,$D2,$3E,$C6,$3E,$84,$CC
-	dc.b	$3E,$3E,$81,$C6,$3E,$84,$3E,$85
-	dc.b	$CC,$3E,$82,$C6,$3E,$84,$3E,$CC
-	dc.b	$3E,$83,$3E,$82,$C1,$C2,$3E,$84
-	dc.b	$C6,$40,$82,$CC,$40,$83,$D2,$40
-	dc.b	$84,$C6,$40,$83,$CC,$40,$84,$D2
-	dc.b	$40,$85,$C6,$40,$84,$D2,$40,$C6
-	dc.b	$40,$CC,$40,$D2,$40,$C6,$40,$83
-	dc.b	$CC,$40,$84,$D2,$40,$85,$C6,$40
-	dc.b	$84,$D2,$40,$85,$C6,$3E,$84,$CC
-	dc.b	$3E,$85,$D2,$3E,$C6,$3E,$84,$CC
-	dc.b	$3E,$3E,$81,$C6,$3E,$84,$3E,$85
-	dc.b	$CC,$3E,$82,$C6,$3E,$84,$3E,$CC
-	dc.b	$3E,$83,$3E,$82,$F6,$3E,$C0,$65
-	dc.b	$60
+	dc.b	$C0,$72,$05,$00,$CF,$C0,$61,$4F
+	dc.b	$64,$7F,$C0,$63,$85,$AE,$C6,$C0
+	dc.b	$30,$85,$BE,$30,$C0,$61,$4F,$85
+	dc.b	$AE,$C6,$C0,$20,$85,$BE,$20,$C0
+	dc.b	$61,$4F,$85,$AE,$C6,$C0,$30,$85
+	dc.b	$BE,$30,$C0,$61,$4F,$85,$AE,$C6
+	dc.b	$C0,$31,$85,$BE,$31,$C0,$61,$4F
+	dc.b	$85,$AE,$C6,$C0,$30,$85,$BE,$30
+	dc.b	$C0,$65,$60
 ; Sequence 2, Channel 3:
-	dc.b	$C0,$61,$1A,$64,$7F,$C0,$63,$8B
-	dc.b	$C2,$F3,$21,$8F,$CD,$20,$8C,$C2
-	dc.b	$F3,$21,$8F,$CE,$20,$8B,$C2,$F5
-	dc.b	$21,$8E,$CC,$20,$8C,$C2,$F1,$21
-	dc.b	$8B,$CE,$20,$84,$C5,$26,$CD,$26
-	dc.b	$26,$C9,$26,$C6,$26,$8A,$CC,$24
-	dc.b	$86,$C2,$C5,$26,$84,$C5,$26,$CC
-	dc.b	$26,$85,$CD,$26,$CC,$26,$84,$C5
-	dc.b	$26,$8B,$CD,$24,$85,$C1,$F8,$26
-	dc.b	$8E,$CC,$20,$8B,$C2,$F5,$21,$8F
-	dc.b	$CD,$20,$89,$C2,$F2,$21,$8B,$CE
-	dc.b	$20,$85,$C6,$26,$84,$CB,$26,$85
-	dc.b	$CC,$26,$84,$CB,$26,$C5,$26,$8C
-	dc.b	$CE,$24,$84,$C2,$C1,$26,$85,$C5
-	dc.b	$26,$CE,$26,$84,$CD,$26,$CB,$26
-	dc.b	$C5,$26,$8B,$CE,$24,$84,$C2,$C3
-	dc.b	$26,$85,$C6,$28,$86,$CC,$28,$85
-	dc.b	$CD,$28,$CC,$28,$C6,$28,$8D,$CE
-	dc.b	$26,$84,$C2,$C2,$28,$85,$C6,$26
-	dc.b	$CC,$26,$CB,$26,$CC,$26,$84,$C5
-	dc.b	$26,$8B,$CE,$24,$84,$C1,$F7,$26
-	dc.b	$8C,$CD,$20,$C0,$65,$60
+	dc.b	$C0,$72,$05,$00,$CD,$EC,$61,$69
+	dc.b	$81,$F0,$35,$E4,$36,$64,$7F,$CA
+	dc.b	$E6,$63,$81,$F1,$DA,$37,$C0,$65
+	dc.b	$60
 ; Sequence 2, Channel 4:
-	dc.b	$C0,$61,$1A,$64,$7F,$DE,$C0,$63
-	dc.b	$8C,$D8,$45,$89,$CC,$44,$8A,$D8
-	dc.b	$45,$8D,$44,$8B,$45,$44,$B2,$FC
-	dc.b	$40,$8C,$D8,$43,$89,$CC,$42,$88
-	dc.b	$D8,$43,$89,$42,$8A,$43,$42,$A3
-	dc.b	$FC,$3E,$C0,$65,$60
+	dc.b	$C0,$72,$05,$00,$CF,$C0,$61,$5C
+	dc.b	$64,$7F,$C0,$63,$86,$D8,$18,$87
+	dc.b	$18,$85,$18,$84,$18,$18,$18,$18
+	dc.b	$18,$18,$85,$18,$86,$18,$84,$18
+	dc.b	$85,$18,$18,$18,$18,$18,$18,$18
+	dc.b	$18,$86,$18,$85,$18,$86,$18,$85
+	dc.b	$18,$18,$18,$18,$18,$C1,$C8,$18
+	dc.b	$D8,$18,$86,$18,$87,$18,$85,$18
+	dc.b	$84,$18,$18,$18,$18,$18,$18,$85
+	dc.b	$18,$86,$18,$84,$18,$85,$18,$18
+	dc.b	$18,$18,$18,$18,$18,$18,$86,$18
+	dc.b	$85,$18,$86,$18,$85,$18,$18,$18
+	dc.b	$18,$18,$18,$18,$18,$18,$86,$18
+	dc.b	$87,$18,$85,$18,$84,$18,$18,$18
+	dc.b	$18,$18,$18,$85,$18,$86,$18,$84
+	dc.b	$18,$85,$18,$18,$18,$18,$18,$18
+	dc.b	$18,$18,$86,$18,$85,$18,$86,$18
+	dc.b	$85,$18,$18,$18,$18,$18,$C1,$C8
+	dc.b	$18,$D8,$18,$86,$18,$87,$18,$85
+	dc.b	$18,$84,$18,$18,$18,$18,$18,$18
+	dc.b	$85,$18,$86,$18,$84,$18,$85,$18
+	dc.b	$18,$18,$18,$18,$18,$18,$18,$86
+	dc.b	$18,$85,$18,$86,$18,$85,$18,$18
+	dc.b	$18,$18,$18,$C1,$C8,$18,$D8,$18
+	dc.b	$86,$18,$87,$18,$85,$18,$84,$18
+	dc.b	$18,$18,$18,$18,$18,$85,$18,$86
+	dc.b	$18,$84,$18,$85,$18,$18,$18,$18
+	dc.b	$18,$18,$18,$18,$86,$18,$85,$18
+	dc.b	$86,$18,$85,$18,$18,$18,$18,$18
+	dc.b	$C1,$C8,$18,$CC,$18,$86,$C6,$15
+	dc.b	$18,$C0,$65,$60
 ; Sequence 2, Channel 5:
-	dc.b	$C0,$61,$08,$64,$7F,$CC,$63,$83
-	dc.b	$C6,$2F,$82,$D1,$2F,$83,$C7,$2F
-	dc.b	$82,$D2,$2F,$83,$C6,$2F,$D2,$2F
-	dc.b	$C6,$2F,$D2,$2F,$82,$C6,$2F,$83
-	dc.b	$D2,$2F,$C6,$2F,$D2,$2F,$C6,$2F
-	dc.b	$82,$D2,$2F,$83,$C6,$2F,$D2,$2F
-	dc.b	$C6,$2F,$D2,$2F,$82,$C6,$2F,$83
-	dc.b	$D2,$2F,$C6,$2F,$D2,$2F,$C6,$2F
-	dc.b	$D2,$2F,$C6,$2F,$D2,$2F,$C6,$2F
-	dc.b	$D2,$2F,$C6,$2F,$D2,$2F,$C5,$2F
-	dc.b	$84,$D3,$2F,$83,$C6,$2F,$82,$D1
-	dc.b	$2F,$83,$C7,$2F,$82,$D2,$2F,$83
-	dc.b	$C6,$2F,$D2,$2F,$C6,$2F,$D2,$2F
-	dc.b	$82,$C6,$2F,$83,$D2,$2F,$C6,$2F
-	dc.b	$D2,$2F,$C6,$2F,$82,$D2,$2F,$83
-	dc.b	$C6,$2F,$D2,$2F,$C6,$2F,$D2,$2F
-	dc.b	$82,$C6,$2F,$83,$D2,$2F,$C6,$2F
-	dc.b	$D2,$2F,$C6,$2F,$D2,$2F,$C6,$2F
-	dc.b	$D2,$2F,$C6,$2F,$D2,$2F,$C6,$2F
-	dc.b	$D2,$2F,$C5,$2F,$84,$C7,$2F,$83
-	dc.b	$C6,$2F,$2F,$2F,$82,$CB,$2F,$84
-	dc.b	$C7,$2F,$82,$C6,$2F,$2F,$2F,$83
-	dc.b	$2F,$2F,$CC,$2F,$C6,$2F,$2F,$2F
-	dc.b	$2F,$2F,$82,$2F,$83,$CC,$2F,$C6
-	dc.b	$2F,$2F,$2F,$2F,$82,$2F,$C5,$2F
-	dc.b	$83,$CC,$2F,$84,$C7,$2F,$83,$CC
-	dc.b	$32,$C6,$2F,$2F,$2F,$82,$CB,$2F
-	dc.b	$84,$C7,$2F,$82,$C6,$2F,$2F,$2F
-	dc.b	$83,$2F,$2F,$CC,$2F,$C6,$2F,$2F
-	dc.b	$2F,$2F,$2F,$82,$2F,$83,$CC,$2F
-	dc.b	$C6,$2F,$2F,$2F,$2F,$82,$2F,$C5
-	dc.b	$2F,$83,$CC,$2F,$84,$C7,$2F,$83
-	dc.b	$CC,$32,$C0,$65,$60
+	dc.b	$C0,$72,$05,$00,$CF,$C0,$61,$60
+	dc.b	$64,$7F,$CC,$D8,$63,$86,$D2,$30
+	dc.b	$82,$CC,$30,$D2,$30,$83,$F0,$30
+	dc.b	$82,$D2,$30,$CC,$30,$D2,$30,$F0
+	dc.b	$30,$D2,$30,$CC,$30,$D2,$30,$F0
+	dc.b	$30,$84,$D2,$30,$82,$CC,$30,$83
+	dc.b	$D2,$30,$82,$CC,$30,$81,$C6,$30
+	dc.b	$82,$DE,$30,$D2,$30,$CC,$30,$D2
+	dc.b	$30,$83,$F0,$30,$82,$D2,$30,$CC
+	dc.b	$30,$D2,$30,$83,$CC,$30,$81,$C6
+	dc.b	$30,$83,$DE,$30,$82,$D2,$30,$CC
+	dc.b	$30,$D2,$30,$83,$F0,$30,$82,$C6
+	dc.b	$30,$CC,$30,$81,$C6,$30,$83,$CC
+	dc.b	$30,$81,$C6,$30,$83,$CC,$30,$81
+	dc.b	$C6,$30,$82,$30,$DE,$30,$86,$D2
+	dc.b	$30,$82,$CC,$30,$D2,$30,$83,$F0
+	dc.b	$30,$82,$D2,$30,$CC,$30,$D2,$30
+	dc.b	$F0,$30,$D2,$30,$CC,$30,$D2,$30
+	dc.b	$F0,$30,$84,$D2,$30,$82,$CC,$30
+	dc.b	$83,$D2,$30,$82,$CC,$30,$81,$C6
+	dc.b	$30,$82,$DE,$30,$D2,$30,$CC,$30
+	dc.b	$D2,$30,$83,$F0,$30,$82,$D2,$30
+	dc.b	$CC,$30,$D2,$30,$83,$CC,$30,$81
+	dc.b	$C6,$30,$83,$DE,$30,$82,$D2,$30
+	dc.b	$CC,$30,$D2,$30,$83,$F0,$30,$82
+	dc.b	$C6,$30,$CC,$30,$81,$C6,$30,$83
+	dc.b	$CC,$30,$81,$C6,$30,$83,$CC,$30
+	dc.b	$81,$C6,$30,$82,$30,$DE,$30,$86
+	dc.b	$D2,$30,$82,$CC,$30,$D2,$30,$83
+	dc.b	$F0,$30,$82,$D2,$30,$CC,$30,$D2
+	dc.b	$30,$F0,$30,$D2,$30,$CC,$30,$D2
+	dc.b	$30,$F0,$30,$84,$D2,$30,$82,$CC
+	dc.b	$30,$83,$D2,$30,$82,$CC,$30,$81
+	dc.b	$C6,$30,$82,$DE,$30,$D2,$30,$CC
+	dc.b	$30,$D2,$30,$83,$F0,$30,$82,$D2
+	dc.b	$30,$CC,$30,$D2,$30,$83,$CC,$30
+	dc.b	$81,$C6,$30,$83,$DE,$30,$82,$D2
+	dc.b	$30,$CC,$30,$D2,$30,$83,$F0,$30
+	dc.b	$82,$C6,$30,$CC,$30,$81,$C6,$30
+	dc.b	$83,$CC,$30,$81,$C6,$30,$83,$CC
+	dc.b	$30,$81,$C6,$30,$82,$30,$DE,$30
+	dc.b	$86,$D2,$30,$82,$CC,$30,$D2,$30
+	dc.b	$83,$F0,$30,$82,$D2,$30,$CC,$30
+	dc.b	$D2,$30,$F0,$30,$D2,$30,$CC,$30
+	dc.b	$D2,$30,$F0,$30,$84,$D2,$30,$82
+	dc.b	$CC,$30,$83,$D2,$30,$82,$CC,$30
+	dc.b	$81,$C6,$30,$82,$DE,$30,$D2,$30
+	dc.b	$CC,$30,$D2,$30,$83,$F0,$30,$82
+	dc.b	$D2,$30,$CC,$30,$D2,$30,$83,$CC
+	dc.b	$30,$81,$C6,$30,$83,$DE,$30,$82
+	dc.b	$D2,$30,$CC,$30,$D2,$30,$83,$C1
+	dc.b	$F8,$30,$C0,$65,$60
 ; Sequence 2, Channel 6:
-	dc.b	$C0,$61,$06,$64,$7F,$D7,$63,$83
-	dc.b	$F1,$1C,$82,$F0,$1C,$83,$1C,$D8
-	dc.b	$1C,$C0,$65,$60
-; Sequence 2, Channel 7:
-	dc.b	$C0,$61,$1B,$64,$7F,$C0,$63,$83
-	dc.b	$EA,$17,$C6,$17,$F0,$17,$EA,$17
-	dc.b	$C6,$17,$CC,$17,$D2,$17,$17,$EA
-	dc.b	$17,$C6,$17,$F6,$17,$82,$C6,$17
-	dc.b	$83,$D2,$17,$17,$82,$17,$83,$DE
-	dc.b	$17,$C0,$65,$60
+	dc.b	$C0,$72,$05,$00,$CF,$C0,$61,$57
+	dc.b	$64,$7F,$CC,$C0,$63,$86,$CC,$30
+	dc.b	$C6,$30,$30,$30,$C1,$C2,$30,$CC
+	dc.b	$30,$C6,$30,$30,$C1,$C8,$30,$CC
+	dc.b	$30,$C6,$30,$30,$30,$C1,$C2,$30
+	dc.b	$C6,$30,$30,$30,$30,$30,$30,$30
+	dc.b	$30,$30,$30,$30,$30,$30,$30,$30
+	dc.b	$30,$CC,$30,$C6,$30,$30,$30,$30
+	dc.b	$FC,$30,$CC,$30,$C6,$30,$30,$30
+	dc.b	$C1,$C2,$30,$CC,$30,$C6,$30,$30
+	dc.b	$30,$C1,$C2,$30,$CC,$30,$C6,$30
+	dc.b	$30,$30,$F6,$30,$C6,$30,$30,$CC
+	dc.b	$30,$C6,$30,$30,$30,$C1,$C2,$30
+	dc.b	$CC,$30,$C6,$30,$30,$C1,$C8,$30
+	dc.b	$CC,$30,$C6,$30,$30,$30,$C1,$C2
+	dc.b	$30,$C6,$30,$30,$30,$30,$30,$30
+	dc.b	$30,$30,$30,$30,$30,$30,$30,$30
+	dc.b	$30,$30,$CC,$30,$C6,$30,$30,$30
+	dc.b	$30,$FC,$30,$CC,$30,$C6,$30,$30
+	dc.b	$30,$C1,$C2,$30,$CC,$30,$C6,$30
+	dc.b	$30,$30,$C1,$C2,$30,$C6,$30,$30
+	dc.b	$30,$30,$30,$30,$30,$30,$30,$30
+	dc.b	$30,$30,$30,$30,$30,$30,$CC,$30
+	dc.b	$C6,$30,$30,$30,$C1,$C2,$30,$CC
+	dc.b	$30,$C6,$30,$30,$C1,$C8,$30,$CC
+	dc.b	$30,$C6,$30,$30,$30,$C1,$C2,$30
+	dc.b	$C6,$30,$30,$30,$30,$30,$30,$30
+	dc.b	$30,$30,$30,$30,$30,$30,$30,$30
+	dc.b	$30,$CC,$30,$C6,$30,$30,$30,$30
+	dc.b	$FC,$30,$CC,$30,$C6,$30,$30,$30
+	dc.b	$C1,$C2,$30,$CC,$30,$C6,$30,$30
+	dc.b	$30,$C1,$C2,$30,$CC,$30,$C6,$30
+	dc.b	$30,$30,$F6,$30,$C6,$30,$30,$CC
+	dc.b	$30,$C6,$30,$30,$30,$C1,$C2,$30
+	dc.b	$CC,$30,$C6,$30,$30,$C1,$C8,$30
+	dc.b	$CC,$30,$C6,$30,$30,$30,$C1,$C2
+	dc.b	$30,$C6,$30,$30,$30,$30,$30,$30
+	dc.b	$30,$30,$30,$30,$30,$30,$30,$30
+	dc.b	$30,$30,$CC,$30,$C6,$30,$30,$30
+	dc.b	$30,$FC,$30,$CC,$30,$C6,$30,$30
+	dc.b	$30,$C1,$C2,$30,$CC,$30,$C6,$30
+	dc.b	$30,$30,$C1,$C2,$30,$C6,$30,$30
+	dc.b	$30,$30,$30,$30,$30,$30,$30,$30
+	dc.b	$30,$30,$30,$30,$30,$30,$C0,$65
+	dc.b	$60
 ; Sequence 3, Channel 0:
-	dc.b	$C0,$68,$64,$61,$16,$83,$C6,$3C
-	dc.b	$3C,$3C,$3C,$86,$3C,$60
+	dc.b	$C0,$61,$34,$72,$05,$00,$68,$4B
+	dc.b	$64,$7F,$C0,$63,$8A,$D2,$27,$8D
+	dc.b	$20,$8A,$CC,$25,$8B,$22,$8C,$1E
+	dc.b	$C0,$65,$60
 ; Sequence 3, Channel 1:
-	dc.b	$F0,$63,$C0,$61,$01,$87,$47,$86
-	dc.b	$44,$88,$CC,$28,$8A,$C0,$4A,$89
-	dc.b	$47,$88,$D7,$2B,$8C,$CC,$2D,$60
+	dc.b	$C4,$E0,$61,$46,$64,$7F,$C0,$63
+	dc.b	$64,$0E,$C0,$63,$8C,$D2,$1B,$88
+	dc.b	$F5,$1B,$8D,$D2,$1B,$88,$F7,$1B
+	dc.b	$8C,$D2,$1B,$88,$F5,$1B,$8B,$D1
+	dc.b	$1B,$88,$D4,$1B,$97,$D8,$20,$8F
+	dc.b	$CC,$1E,$D8,$65,$C4,$C8,$69,$01
+	dc.b	$C2,$E8,$69,$11,$8B,$D2,$1B,$88
+	dc.b	$F5,$1B,$8B,$D1,$1B,$D4,$1B,$D8
+	dc.b	$20,$CC,$1E,$C0,$65,$60
 ; Sequence 3, Channel 2:
-	dc.b	$C1,$D3,$63,$C0,$61,$57,$A7,$21
-	dc.b	$49,$E7,$4C,$60
-; Sequence 4, Channel 0:
-	dc.b	$C0,$68,$64,$61,$01,$94,$28,$84
-	dc.b	$C5,$47,$C4,$44,$C5,$40,$83,$C6
-	dc.b	$44,$C0,$4A,$94,$C5,$2B,$83,$47
-	dc.b	$C4,$43,$C7,$47,$97,$C0,$4C,$98
-	dc.b	$2D,$97,$D8,$49,$60
+	dc.b	$C0,$72,$05,$0B,$61,$04,$C4,$E0
+	dc.b	$6A,$0A,$64,$7F,$D2,$C0,$63,$82
+	dc.b	$84,$C2,$C4,$2E,$82,$92,$C1,$30
+	dc.b	$C0,$6C,$10,$00,$6C,$40,$00,$C1
+	dc.b	$6C,$50,$00,$C0,$6C,$70,$00,$6C
+	dc.b	$A2,$00,$6C,$C0,$00,$C1,$6C,$C0
+	dc.b	$00,$C0,$6C,$C0,$00,$6C,$C0,$00
+	dc.b	$C1,$6C,$C0,$00,$C0,$6C,$C0,$00
+	dc.b	$6C,$C0,$00,$6C,$C0,$00,$C1,$6C
+	dc.b	$C0,$00,$C0,$6C,$C0,$00,$6C,$C0
+	dc.b	$00,$C1,$6C,$C0,$00,$6C,$C0,$00
+	dc.b	$C3,$6C,$C0,$00,$C1,$6C,$C0,$00
+	dc.b	$6C,$C0,$00,$C0,$6C,$C0,$00,$C1
+	dc.b	$6C,$C0,$00,$C0,$6C,$C0,$00,$6C
+	dc.b	$C0,$00,$C1,$6C,$C0,$00,$C0,$6C
+	dc.b	$C0,$00,$6C,$60,$00,$C2,$C2,$6C
+	dc.b	$00,$00,$8D,$CC,$2C,$84,$D2,$2E
+	dc.b	$C1,$FE,$2E,$82,$D2,$2E,$83,$C1
+	dc.b	$E6,$2E,$8C,$CC,$2A,$8D,$2C,$82
+	dc.b	$83,$C2,$C4,$2E,$82,$85,$C2,$30
+	dc.b	$C1,$6C,$10,$00,$C0,$6C,$20,$00
+	dc.b	$6C,$40,$00,$C1,$6C,$50,$00,$C0
+	dc.b	$6C,$60,$00,$6C,$70,$00,$C1,$6C
+	dc.b	$82,$00,$C0,$6C,$92,$00,$C1,$6C
+	dc.b	$A2,$00,$C4,$6C,$B2,$00,$C2,$6C
+	dc.b	$A2,$00,$C1,$6C,$92,$00,$C0,$6C
+	dc.b	$82,$00,$C1,$6C,$70,$00,$C0,$6C
+	dc.b	$60,$00,$6C,$50,$00,$C1,$6C,$40
+	dc.b	$00,$C0,$6C,$30,$00,$6C,$20,$00
+	dc.b	$6C,$10,$00,$C1,$F5,$6C,$00,$00
+	dc.b	$8B,$CC,$2E,$8D,$2C,$84,$D2,$2E
+	dc.b	$C1,$F2,$2E,$82,$CC,$2C,$D2,$2E
+	dc.b	$84,$C1,$DA,$2A,$8D,$CC,$2E,$85
+	dc.b	$D8,$31,$82,$85,$C2,$C4,$33,$81
+	dc.b	$BF,$C3,$35,$C0,$6C,$20,$00,$6C
+	dc.b	$40,$00,$C1,$6C,$50,$00,$C0,$6C
+	dc.b	$70,$00,$6C,$92,$00,$6C,$A2,$00
+	dc.b	$C1,$6C,$C0,$00,$C0,$6C,$C0,$00
+	dc.b	$C1,$6C,$C0,$00,$C0,$6C,$C0,$00
+	dc.b	$6C,$C0,$00,$6C,$C0,$00,$C1,$6C
+	dc.b	$C0,$00,$C0,$6C,$C0,$00,$6C,$C0
+	dc.b	$00,$C1,$6C,$C0,$00,$C2,$6C,$C0
+	dc.b	$00,$C1,$6C,$C0,$00,$C0,$6C,$C0
+	dc.b	$00,$C1,$6C,$C0,$00,$C0,$6C,$C0
+	dc.b	$00,$C1,$6C,$C0,$00,$C0,$6C,$C0
+	dc.b	$00,$6C,$C0,$00,$C1,$6C,$C0,$00
+	dc.b	$C0,$6C,$C0,$00,$6C,$C0,$00,$C1
+	dc.b	$6C,$B2,$00,$C0,$6C,$A2,$00,$6C
+	dc.b	$82,$00,$6C,$60,$00,$C1,$6C,$50
+	dc.b	$00,$C0,$6C,$30,$00,$6C,$20,$00
+	dc.b	$C1,$F4,$6C,$00,$00,$8E,$CC,$31
+	dc.b	$8B,$2C,$86,$D2,$2E,$C1,$E6,$2E
+	dc.b	$8D,$C6,$30,$91,$D2,$2C,$87,$2E
+	dc.b	$85,$F6,$2E,$83,$D2,$2E,$84,$F6
+	dc.b	$2A,$82,$82,$C2,$C4,$2E,$82,$84
+	dc.b	$C2,$30,$C0,$6C,$10,$00,$6C,$20
+	dc.b	$00,$C1,$6C,$30,$00,$C0,$6C,$40
+	dc.b	$00,$C1,$6C,$50,$00,$6C,$60,$00
+	dc.b	$6C,$70,$00,$C0,$6C,$82,$00,$C1
+	dc.b	$6C,$92,$00,$C4,$6C,$A2,$00,$C1
+	dc.b	$6C,$92,$00,$C0,$6C,$82,$00,$C1
+	dc.b	$6C,$70,$00,$C0,$6C,$60,$00,$C1
+	dc.b	$6C,$50,$00,$C0,$6C,$40,$00,$C1
+	dc.b	$6C,$20,$00,$C0,$6C,$00,$00,$C2
+	dc.b	$C1,$6C,$00,$00,$8E,$CC,$2A,$85
+	dc.b	$D2,$27,$84,$C1,$F2,$27,$8D,$CC
+	dc.b	$22,$86,$D2,$27,$C1,$DA,$27,$82
+	dc.b	$CC,$33,$33,$33,$81,$80,$C1,$C8
+	dc.b	$33,$82,$CC,$33,$83,$D8,$33,$84
+	dc.b	$33,$83,$CC,$35,$81,$83,$C1,$C8
+	dc.b	$35,$82,$CC,$35,$D2,$35,$83,$D8
+	dc.b	$35,$82,$CC,$36,$81,$8C,$C1,$CE
+	dc.b	$36,$B3,$F0,$35,$8E,$CC,$31,$8B
+	dc.b	$2C,$86,$D2,$2E,$C1,$FE,$2E,$82
+	dc.b	$82,$C2,$C4,$2E,$82,$84,$C2,$30
+	dc.b	$C0,$6C,$10,$00,$6C,$20,$00,$C1
+	dc.b	$6C,$30,$00,$C0,$6C,$40,$00,$C1
+	dc.b	$6C,$50,$00,$6C,$60,$00,$6C,$70
+	dc.b	$00,$C0,$6C,$82,$00,$C1,$6C,$92
+	dc.b	$00,$C4,$6C,$A2,$00,$C1,$6C,$92
+	dc.b	$00,$C0,$6C,$82,$00,$C1,$6C,$70
+	dc.b	$00,$C0,$6C,$60,$00,$C1,$6C,$50
+	dc.b	$00,$C0,$6C,$40,$00,$6C,$30,$00
+	dc.b	$C1,$6C,$20,$00,$C0,$6C,$00,$00
+	dc.b	$C2,$C1,$6C,$00,$00,$8E,$CC,$2A
+	dc.b	$85,$D2,$27,$84,$C1,$F2,$27,$8D
+	dc.b	$CC,$22,$85,$D2,$27,$86,$C1,$FE
+	dc.b	$27,$C0,$6C,$00,$00,$65,$60
+; Sequence 3, Channel 3:
+	dc.b	$C0,$61,$2B,$C4,$E0,$72,$05,$7F
+	dc.b	$64,$7F,$C4,$E0,$63,$C0,$72,$05
+	dc.b	$7D,$86,$C6,$33,$C3,$3A,$72,$05
+	dc.b	$7B,$C6,$38,$C0,$36,$C6,$72,$05
+	dc.b	$79,$C4,$3F,$C2,$72,$05,$77,$C6
+	dc.b	$3D,$C1,$3A,$C5,$72,$05,$75,$38
+	dc.b	$C1,$72,$05,$73,$C6,$36,$C2,$3F
+	dc.b	$C4,$72,$05,$71,$C6,$3D,$C0,$72
+	dc.b	$05,$6F,$C6,$42,$C3,$3F,$72,$05
+	dc.b	$6D,$C6,$44,$C0,$42,$C6,$72,$05
+	dc.b	$6B,$C4,$3F,$C2,$72,$05,$69,$C6
+	dc.b	$46,$C1,$3F,$C5,$72,$05,$67,$42
+	dc.b	$C1,$72,$05,$65,$C6,$44,$C2,$3D
+	dc.b	$C4,$72,$05,$63,$C6,$3F,$C0,$72
+	dc.b	$05,$61,$C6,$42,$C3,$3A,$72,$05
+	dc.b	$5F,$C6,$3D,$C0,$3F,$C6,$72,$05
+	dc.b	$5D,$C4,$38,$C2,$72,$05,$5B,$C6
+	dc.b	$44,$C1,$42,$C5,$72,$05,$59,$3F
+	dc.b	$C1,$72,$05,$57,$C6,$3D,$C2,$3F
+	dc.b	$C4,$72,$05,$55,$C6,$36,$C0,$72
+	dc.b	$05,$53,$C6,$38,$C3,$3A,$72,$05
+	dc.b	$51,$C6,$33,$C0,$3F,$C6,$72,$05
+	dc.b	$50,$C4,$3D,$C2,$72,$05,$4F,$C6
+	dc.b	$3A,$C1,$36,$C5,$72,$05,$4E,$44
+	dc.b	$C1,$72,$05,$4D,$C6,$3D,$C2,$3F
+	dc.b	$C4,$72,$05,$4C,$C6,$3A,$C0,$72
+	dc.b	$05,$4B,$C6,$38,$C3,$36,$72,$05
+	dc.b	$4A,$C6,$33,$C0,$31,$C6,$72,$05
+	dc.b	$49,$C4,$46,$C2,$72,$05,$47,$C6
+	dc.b	$3D,$C1,$3F,$C5,$72,$05,$46,$42
+	dc.b	$C1,$72,$05,$45,$C6,$44,$C2,$3A
+	dc.b	$C4,$72,$05,$44,$C6,$3D,$C0,$72
+	dc.b	$05,$43,$C6,$3F,$C3,$38,$72,$05
+	dc.b	$42,$C6,$3A,$C0,$3D,$C6,$72,$05
+	dc.b	$41,$C4,$3F,$C2,$72,$05,$40,$C6
+	dc.b	$36,$C1,$38,$C5,$72,$05,$3F,$3A
+	dc.b	$C1,$72,$05,$3E,$C6,$36,$C2,$3F
+	dc.b	$C4,$72,$05,$3D,$C6,$42,$C0,$72
+	dc.b	$05,$3C,$C6,$3D,$C3,$3F,$72,$05
+	dc.b	$3B,$C6,$3A,$C0,$3D,$C6,$72,$05
+	dc.b	$3A,$C4,$3F,$C2,$72,$05,$39,$C6
+	dc.b	$38,$C1,$3A,$C5,$72,$05,$38,$3D
+	dc.b	$C1,$72,$05,$37,$C6,$3F,$C2,$42
+	dc.b	$C4,$72,$05,$36,$C6,$44,$C0,$72
+	dc.b	$05,$35,$C6,$42,$C3,$3F,$72,$05
+	dc.b	$34,$C6,$3D,$C0,$46,$C6,$72,$05
+	dc.b	$33,$C4,$3D,$C2,$72,$05,$32,$C6
+	dc.b	$3F,$C1,$42,$C5,$72,$05,$31,$44
+	dc.b	$C1,$72,$05,$30,$C6,$3A,$C2,$38
+	dc.b	$C4,$72,$05,$2F,$C6,$3D,$C0,$72
+	dc.b	$05,$2E,$C6,$3F,$C3,$3A,$72,$05
+	dc.b	$2D,$C6,$42,$C0,$3D,$C6,$72,$05
+	dc.b	$2C,$C4,$3F,$C2,$72,$05,$2B,$C6
+	dc.b	$3A,$C1,$38,$C5,$72,$05,$2A,$36
+	dc.b	$C1,$72,$05,$29,$C6,$33,$C2,$3A
+	dc.b	$C4,$72,$05,$28,$C6,$38,$C0,$72
+	dc.b	$05,$27,$C6,$36,$C3,$3F,$72,$05
+	dc.b	$26,$C6,$3D,$C0,$3A,$C6,$72,$05
+	dc.b	$25,$C4,$38,$C2,$72,$05,$24,$C6
+	dc.b	$36,$C1,$3F,$C5,$72,$05,$23,$3D
+	dc.b	$C1,$72,$05,$22,$C6,$42,$C2,$3F
+	dc.b	$C4,$72,$05,$21,$C6,$44,$C0,$72
+	dc.b	$05,$20,$C6,$42,$C3,$3F,$72,$05
+	dc.b	$1F,$C6,$46,$C0,$3F,$C6,$72,$05
+	dc.b	$1E,$C4,$42,$C2,$72,$05,$1D,$C6
+	dc.b	$44,$C1,$3D,$C5,$72,$05,$1C,$3F
+	dc.b	$C1,$72,$05,$1B,$C6,$42,$C2,$3A
+	dc.b	$C4,$72,$05,$1A,$C6,$3D,$C0,$72
+	dc.b	$05,$19,$C6,$3F,$C3,$38,$72,$05
+	dc.b	$18,$C6,$44,$C0,$42,$C6,$72,$05
+	dc.b	$17,$C4,$3F,$C2,$72,$05,$16,$C6
+	dc.b	$3D,$C1,$3F,$C5,$72,$05,$15,$36
+	dc.b	$C1,$72,$05,$14,$C6,$38,$C2,$3A
+	dc.b	$C4,$72,$05,$13,$C5,$33,$C1,$72
+	dc.b	$05,$12,$C6,$3F,$3D,$3A,$36,$44
+	dc.b	$3D,$3F,$3A,$38,$36,$33,$31,$64
+	dc.b	$05,$C0,$63,$86,$C6,$46,$3D,$3F
+	dc.b	$42,$44,$3A,$3D,$3F,$38,$3A,$3D
+	dc.b	$3F,$36,$38,$3A,$36,$3F,$42,$3D
+	dc.b	$3F,$CC,$3A,$C0,$3F,$C6,$3D,$38
+	dc.b	$3A,$3D,$3F,$42,$44,$42,$3F,$3D
+	dc.b	$46,$3D,$3F,$42,$44,$3A,$38,$3D
+	dc.b	$3F,$3A,$42,$3D,$3F,$3A,$38,$36
+	dc.b	$33,$3A,$38,$36,$3F,$3D,$3A,$38
+	dc.b	$36,$3F,$3D,$42,$3F,$44,$42,$3F
+	dc.b	$46,$3F,$42,$44,$3D,$3F,$42,$3A
+	dc.b	$3D,$3F,$38,$44,$42,$3F,$3D,$3F
+	dc.b	$36,$CC,$38,$C6,$33,$C0,$3F,$C6
+	dc.b	$3A,$3D,$3A,$36,$44,$3D,$3F,$3A
+	dc.b	$38,$36,$33,$31,$D8,$65,$C8,$E8
+	dc.b	$69,$03,$D8,$69,$13,$C0,$65,$60
+; Sequence 3, Channel 4:
+	dc.b	$C0,$61,$65,$6A,$01,$C3,$F0,$72
+	dc.b	$05,$00,$84,$C4,$30,$30,$30,$86
+	dc.b	$C6,$30,$30,$30,$30,$30,$30,$64
+	dc.b	$7F,$C0,$63,$83,$C6,$31,$D2,$31
+	dc.b	$C6,$31,$D2,$31,$84,$C6,$31,$83
+	dc.b	$D2,$31,$C6,$31,$D2,$31,$C6,$31
+	dc.b	$84,$D2,$31,$83,$C6,$31,$D2,$31
+	dc.b	$C6,$31,$D2,$31,$C6,$31,$84,$D2
+	dc.b	$31,$83,$C6,$31,$84,$D2,$31,$83
+	dc.b	$C6,$31,$84,$D2,$31,$83,$C6,$31
+	dc.b	$D2,$31,$C6,$31,$D2,$31,$C6,$31
+	dc.b	$84,$D2,$31,$83,$C6,$31,$84,$D2
+	dc.b	$31,$83,$C6,$31,$84,$D2,$31,$83
+	dc.b	$C6,$31,$D2,$31,$C6,$31,$D2,$31
+	dc.b	$84,$C6,$31,$D2,$31,$83,$C6,$31
+	dc.b	$84,$D2,$31,$83,$C6,$31,$84,$D2
+	dc.b	$31,$83,$C6,$31,$84,$D2,$31,$83
+	dc.b	$C6,$31,$85,$D2,$31,$83,$C6,$31
+	dc.b	$85,$D2,$31,$84,$C6,$31,$85,$D2
+	dc.b	$31,$83,$C6,$31,$D2,$31,$C6,$31
+	dc.b	$D2,$31,$84,$C6,$31,$83,$D2,$31
+	dc.b	$C6,$31,$D2,$31,$C6,$31,$84,$D2
+	dc.b	$31,$83,$C6,$31,$D1,$31,$C1,$72
+	dc.b	$05,$01,$C6,$31,$D1,$31,$C1,$72
+	dc.b	$05,$03,$C6,$31,$84,$D1,$31,$C1
+	dc.b	$72,$05,$04,$83,$C6,$31,$84,$D1
+	dc.b	$31,$C1,$72,$05,$06,$83,$C6,$31
+	dc.b	$84,$D1,$31,$C1,$72,$05,$07,$83
+	dc.b	$C6,$31,$D1,$31,$C1,$72,$05,$09
+	dc.b	$C6,$31,$D1,$31,$C1,$72,$05,$0A
+	dc.b	$C6,$31,$84,$D1,$31,$C1,$72,$05
+	dc.b	$0C,$83,$C6,$31,$84,$D1,$31,$C1
+	dc.b	$72,$05,$0D,$83,$C6,$31,$84,$D1
+	dc.b	$31,$C1,$72,$05,$0F,$83,$C6,$31
+	dc.b	$D1,$31,$C1,$72,$05,$10,$C6,$31
+	dc.b	$D1,$31,$C1,$72,$05,$12,$84,$C6
+	dc.b	$31,$D1,$31,$C1,$72,$05,$13,$83
+	dc.b	$C6,$31,$84,$D1,$31,$C1,$72,$05
+	dc.b	$15,$83,$C6,$31,$84,$D1,$31,$C1
+	dc.b	$72,$05,$16,$83,$C6,$31,$84,$D1
+	dc.b	$31,$C1,$72,$05,$17,$83,$C6,$31
+	dc.b	$85,$D2,$31,$83,$C6,$31,$85,$D2
+	dc.b	$31,$84,$C6,$31,$85,$ED,$D2,$31
+	dc.b	$C0,$6A,$09,$72,$05,$00,$80,$C6
+	dc.b	$30,$86,$30,$30,$30,$84,$C4,$30
+	dc.b	$30,$30,$86,$C6,$30,$30,$30,$30
+	dc.b	$30,$30,$30,$30,$30,$30,$30,$30
+	dc.b	$84,$C4,$30,$30,$30,$86,$C6,$30
+	dc.b	$30,$30,$30,$30,$30,$30,$30,$84
+	dc.b	$C4,$30,$30,$30,$86,$C6,$30,$30
+	dc.b	$30,$30,$30,$30,$30,$30,$30,$30
+	dc.b	$30,$30,$84,$C4,$30,$30,$30,$86
+	dc.b	$C6,$30,$30,$30,$30,$30,$30,$30
+	dc.b	$30,$84,$C4,$30,$30,$30,$86,$C6
+	dc.b	$30,$30,$30,$30,$30,$30,$30,$30
+	dc.b	$30,$30,$30,$30,$84,$C4,$30,$30
+	dc.b	$30,$86,$C6,$30,$30,$30,$30,$83
+	dc.b	$31,$31,$31,$31,$31,$31,$31,$31
+	dc.b	$31,$D2,$31,$C6,$31,$85,$D2,$31
+	dc.b	$83,$C6,$31,$85,$D2,$31,$84,$C6
+	dc.b	$31,$85,$D2,$31,$C0,$65,$60
+; Sequence 3, Channel 5:
+	dc.b	$C4,$E0,$61,$5B,$64,$7F,$C0,$63
+	dc.b	$64,$0E,$CC,$63,$8B,$D8,$33,$33
+	dc.b	$8D,$33,$8B,$33,$33,$8D,$33,$8B
+	dc.b	$33,$8A,$33,$8B,$33,$8A,$33,$33
+	dc.b	$8B,$CC,$33,$D8,$65,$C7,$E0,$69
+	dc.b	$05,$CC,$69,$15,$D8,$33,$33,$33
+	dc.b	$CC,$33,$C0,$65,$60
+; Sequence 3, Channel 6:
+	dc.b	$C0,$72,$05,$25,$61,$04,$C4,$E0
+	dc.b	$6A,$0A,$64,$7F,$D3,$C8,$63,$82
+	dc.b	$84,$C2,$C4,$3A,$82,$92,$C1,$3C
+	dc.b	$C0,$6C,$10,$00,$6C,$40,$00,$C1
+	dc.b	$6C,$50,$00,$C0,$6C,$70,$00,$6C
+	dc.b	$A2,$00,$C1,$6C,$C0,$00,$C0,$6C
+	dc.b	$C0,$00,$6C,$C0,$00,$C1,$6C,$C0
+	dc.b	$00,$C0,$6C,$C0,$00,$6C,$C0,$00
+	dc.b	$C1,$6C,$C0,$00,$C0,$6C,$C0,$00
+	dc.b	$6C,$C0,$00,$C1,$6C,$C0,$00,$6C
+	dc.b	$C0,$00,$C3,$6C,$C0,$00,$C1,$6C
+	dc.b	$C0,$00,$6C,$C0,$00,$C0,$6C,$C0
+	dc.b	$00,$C1,$6C,$C0,$00,$C0,$6C,$C0
+	dc.b	$00,$6C,$C0,$00,$C1,$6C,$C0,$00
+	dc.b	$C0,$6C,$C0,$00,$6C,$60,$00,$C2
+	dc.b	$C2,$6C,$00,$00,$8D,$CC,$38,$84
+	dc.b	$D2,$3A,$C1,$FE,$3A,$82,$D2,$3A
+	dc.b	$83,$C1,$E6,$3A,$8C,$CC,$36,$8D
+	dc.b	$38,$82,$83,$C2,$C4,$3A,$82,$85
+	dc.b	$C2,$3C,$C1,$6C,$10,$00,$C0,$6C
+	dc.b	$20,$00,$6C,$40,$00,$C1,$6C,$50
+	dc.b	$00,$C0,$6C,$60,$00,$6C,$70,$00
+	dc.b	$C1,$6C,$82,$00,$C0,$6C,$92,$00
+	dc.b	$C1,$6C,$A2,$00,$C4,$6C,$B2,$00
+	dc.b	$C2,$6C,$A2,$00,$C1,$6C,$92,$00
+	dc.b	$C0,$6C,$82,$00,$C1,$6C,$70,$00
+	dc.b	$C0,$6C,$60,$00,$6C,$50,$00,$C1
+	dc.b	$6C,$40,$00,$C0,$6C,$30,$00,$6C
+	dc.b	$20,$00,$6C,$10,$00,$C1,$F5,$6C
+	dc.b	$00,$00,$8B,$CC,$3A,$8D,$38,$84
+	dc.b	$D2,$3A,$C1,$F2,$3A,$82,$CC,$38
+	dc.b	$D2,$3A,$84,$C1,$DA,$36,$8D,$CC
+	dc.b	$3A,$85,$D8,$3D,$82,$85,$C2,$C4
+	dc.b	$3F,$81,$BF,$C3,$41,$C0,$6C,$00
+	dc.b	$00,$6C,$20,$00,$6C,$40,$00,$C1
+	dc.b	$6C,$50,$00,$C0,$6C,$70,$00,$6C
+	dc.b	$92,$00,$6C,$A2,$00,$C1,$6C,$C0
+	dc.b	$00,$C0,$6C,$C0,$00,$6C,$C0,$00
+	dc.b	$C1,$6C,$C0,$00,$C0,$6C,$C0,$00
+	dc.b	$6C,$C0,$00,$C1,$6C,$C0,$00,$C0
+	dc.b	$6C,$C0,$00,$6C,$C0,$00,$C1,$6C
+	dc.b	$C0,$00,$C2,$6C,$C0,$00,$C1,$6C
+	dc.b	$C0,$00,$C0,$6C,$C0,$00,$C1,$6C
+	dc.b	$C0,$00,$C0,$6C,$C0,$00,$C1,$6C
+	dc.b	$C0,$00,$C0,$6C,$C0,$00,$6C,$C0
+	dc.b	$00,$C1,$6C,$C0,$00,$C0,$6C,$C0
+	dc.b	$00,$6C,$C0,$00,$C1,$6C,$B2,$00
+	dc.b	$C0,$6C,$A2,$00,$6C,$82,$00,$6C
+	dc.b	$70,$00,$C1,$6C,$50,$00,$C0,$6C
+	dc.b	$40,$00,$6C,$20,$00,$C1,$F4,$6C
+	dc.b	$00,$00,$8E,$CC,$3D,$8B,$38,$86
+	dc.b	$D2,$3A,$C1,$E6,$3A,$8D,$C6,$3C
+	dc.b	$91,$D2,$38,$87,$3A,$85,$F6,$3A
+	dc.b	$83,$D2,$3A,$84,$F6,$36,$82,$82
+	dc.b	$C2,$C4,$3A,$82,$84,$C2,$3C,$C0
+	dc.b	$6C,$10,$00,$6C,$20,$00,$C1,$6C
+	dc.b	$30,$00,$C0,$6C,$40,$00,$C1,$6C
+	dc.b	$50,$00,$6C,$60,$00,$6C,$70,$00
+	dc.b	$C0,$6C,$82,$00,$C1,$6C,$92,$00
+	dc.b	$C4,$6C,$A2,$00,$C1,$6C,$92,$00
+	dc.b	$C0,$6C,$82,$00,$C1,$6C,$70,$00
+	dc.b	$C0,$6C,$60,$00,$C1,$6C,$50,$00
+	dc.b	$C0,$6C,$40,$00,$6C,$30,$00,$C1
+	dc.b	$6C,$20,$00,$C0,$6C,$00,$00,$C2
+	dc.b	$C1,$6C,$00,$00,$8E,$CC,$36,$85
+	dc.b	$D2,$33,$84,$C1,$F2,$33,$8D,$CC
+	dc.b	$2E,$86,$D2,$33,$C1,$DA,$33,$82
+	dc.b	$CC,$3F,$3F,$3F,$81,$80,$C1,$C8
+	dc.b	$3F,$82,$CC,$3F,$83,$D8,$3F,$84
+	dc.b	$3F,$83,$CC,$41,$81,$83,$C1,$C8
+	dc.b	$41,$82,$CC,$41,$D2,$41,$83,$D8
+	dc.b	$41,$82,$CC,$42,$81,$8C,$C1,$CE
+	dc.b	$42,$B3,$F0,$41,$8E,$CC,$3D,$8B
+	dc.b	$38,$86,$D2,$3A,$C1,$FE,$3A,$82
+	dc.b	$82,$C2,$C4,$3A,$82,$84,$C2,$3C
+	dc.b	$C0,$6C,$10,$00,$6C,$20,$00,$C1
+	dc.b	$6C,$30,$00,$C0,$6C,$40,$00,$C1
+	dc.b	$6C,$50,$00,$6C,$60,$00,$6C,$70
+	dc.b	$00,$C0,$6C,$82,$00,$C1,$6C,$92
+	dc.b	$00,$C4,$6C,$A2,$00,$C1,$6C,$92
+	dc.b	$00,$C0,$6C,$82,$00,$C1,$6C,$70
+	dc.b	$00,$6C,$60,$00,$C0,$6C,$40,$00
+	dc.b	$6C,$30,$00,$6C,$50,$00,$C1,$6C
+	dc.b	$20,$00,$C0,$6C,$00,$00,$C2,$C1
+	dc.b	$6C,$00,$00,$8E,$CC,$36,$85,$D2
+	dc.b	$33,$84,$C1,$F2,$33,$8D,$CC,$2E
+	dc.b	$85,$D2,$33,$86,$F6,$33,$C0,$6C
+	dc.b	$00,$00,$65,$60
 ; Sequence 5, Channel 0:
-	dc.b	$C0,$68,$6E,$61,$09,$86,$C5,$40
-	dc.b	$43,$C7,$45,$C6,$48,$60
+	dc.b	$C0,$61,$00,$68,$28,$C1,$72,$05
+	dc.b	$07,$86,$C7,$39,$84,$C8,$37,$85
+	dc.b	$39,$8B,$CF,$35,$85,$C8,$39,$8E
+	dc.b	$D0,$37,$86,$C9,$35,$8D,$CE,$32
+	dc.b	$83,$C8,$34,$95,$D9,$35,$86,$C8
+	dc.b	$37,$87,$35,$88,$C7,$37,$A6,$E8
+	dc.b	$39,$8A,$C9,$30,$87,$C8,$39,$86
+	dc.b	$37,$89,$CA,$39,$8F,$CE,$35,$87
+	dc.b	$C9,$39,$91,$CF,$37,$8B,$C9,$35
+	dc.b	$8E,$CE,$32,$88,$C9,$34,$99,$D9
+	dc.b	$35,$87,$C7,$37,$8A,$C8,$35,$86
+	dc.b	$37,$A6,$E8,$35,$86,$C8,$37,$8B
+	dc.b	$CF,$39,$89,$C8,$39,$91,$D0,$35
+	dc.b	$88,$C9,$39,$92,$D0,$37,$8C,$C9
+	dc.b	$35,$9A,$DA,$32,$88,$CD,$39,$8A
+	dc.b	$C9,$39,$8F,$CE,$37,$8B,$CA,$35
+	dc.b	$A9,$E8,$37,$89,$C9,$30,$88,$C7
+	dc.b	$39,$C8,$37,$89,$39,$91,$CF,$35
+	dc.b	$8B,$C9,$39,$91,$D0,$37,$89,$C8
+	dc.b	$35,$99,$D7,$32,$9B,$D9,$35,$87
+	dc.b	$C7,$37,$89,$C8,$35,$C7,$37,$AD
+	dc.b	$ED,$35,$60
 ; Sequence 5, Channel 1:
-	dc.b	$E7,$61,$01,$89,$C6,$40,$8A,$C8
-	dc.b	$43,$89,$45,$96,$D6,$48,$60
+	dc.b	$C0,$61,$08,$72,$05,$07,$B0,$F0
+	dc.b	$29,$26,$22,$24,$29,$26,$98,$D8
+	dc.b	$22,$24,$B0,$F0,$1D,$26,$24,$22
+	dc.b	$24,$29,$26,$98,$D8,$22,$24,$B0
+	dc.b	$F0,$1D,$60
+; Sequence 5, Channel 2:
+	dc.b	$C0,$61,$39,$88,$C8,$3C,$41,$43
+	dc.b	$45,$43,$41,$3E,$41,$43,$45,$43
+	dc.b	$41,$3A,$3E,$41,$46,$41,$3E,$3C
+	dc.b	$40,$41,$43,$3C,$40,$3C,$41,$43
+	dc.b	$45,$43,$41,$3E,$41,$43,$45,$43
+	dc.b	$41,$3A,$3E,$41,$3C,$40,$43,$41
+	dc.b	$3C,$41,$45,$43,$41,$3E,$41,$43
+	dc.b	$45,$48,$45,$3C,$40,$41,$43,$41
+	dc.b	$40,$3E,$41,$43,$45,$43,$41,$40
+	dc.b	$3C,$40,$41,$43,$40,$41,$3C,$43
+	dc.b	$45,$43,$41,$3E,$41,$43,$45,$43
+	dc.b	$41,$3A,$3E,$41,$3C,$40,$43,$41
+	dc.b	$45,$48,$98,$D8,$4D,$60
 ; Sequence 6, Channel 0:
-	dc.b	$C0,$68,$55,$61,$12,$64,$7F,$CB
-	dc.b	$63,$83,$C0,$3E,$82,$43,$83,$C6
-	dc.b	$46,$C1,$3E,$82,$C0,$43,$C4,$46
-	dc.b	$91,$C1,$3E,$C0,$43,$90,$D6,$46
-	dc.b	$83,$C1,$46,$82,$C0,$3F,$C6,$3E
-	dc.b	$C0,$3E,$3F,$C6,$46,$A8,$C0,$3E
-	dc.b	$A6,$C1,$3F,$A5,$F0,$46,$82,$C0
-	dc.b	$3E,$C1,$43,$81,$C5,$46,$83,$C0
-	dc.b	$3E,$82,$C1,$46,$81,$C4,$43,$92
-	dc.b	$C1,$3E,$91,$C0,$43,$90,$DA,$46
-	dc.b	$86,$C0,$3C,$85,$C1,$41,$C9,$45
-	dc.b	$94,$C1,$3C,$92,$C0,$41,$94,$D7
-	dc.b	$45,$8D,$C0,$45,$3C,$D8,$41,$82
-	dc.b	$C0,$3F,$83,$3E,$C6,$46,$C0,$3E
-	dc.b	$C1,$3F,$82,$C4,$46,$91,$C1,$3E
-	dc.b	$C0,$3F,$90,$D6,$46,$83,$C1,$46
-	dc.b	$82,$C0,$3E,$81,$C6,$43,$82,$C0
-	dc.b	$3E,$43,$C6,$46,$A6,$C1,$3E,$A5
-	dc.b	$C0,$43,$E5,$46,$81,$CD,$3E,$82
-	dc.b	$C0,$3E,$C1,$3F,$81,$C4,$46,$83
-	dc.b	$C0,$3E,$C1,$3F,$82,$C5,$46,$8B
-	dc.b	$C0,$46,$3E,$8A,$CD,$3F,$86,$C0
-	dc.b	$3E,$C1,$3F,$84,$CB,$46,$91,$C1
-	dc.b	$41,$90,$C0,$45,$92,$D6,$3C,$90
-	dc.b	$C0,$3C,$40,$91,$E3,$43,$83,$C0
-	dc.b	$3E,$82,$43,$83,$C6,$46,$C1,$3E
-	dc.b	$82,$C0,$43,$C4,$46,$91,$C1,$3E
-	dc.b	$C0,$43,$90,$D6,$46,$83,$C1,$46
-	dc.b	$82,$C0,$3F,$C6,$3E,$C0,$3E,$3F
-	dc.b	$C6,$46,$A8,$C0,$3E,$A6,$C1,$3F
-	dc.b	$A5,$F0,$46,$82,$C0,$3E,$C1,$43
-	dc.b	$81,$C5,$46,$83,$C0,$3E,$82,$C1
-	dc.b	$46,$81,$C4,$43,$92,$C1,$3E,$91
-	dc.b	$C0,$43,$90,$DA,$46,$86,$C0,$3C
-	dc.b	$85,$C1,$41,$C9,$45,$94,$C1,$3C
-	dc.b	$92,$C0,$41,$94,$D7,$45,$8D,$C0
-	dc.b	$45,$3C,$D8,$41,$82,$C0,$3F,$83
-	dc.b	$3E,$C6,$46,$C0,$3E,$C1,$3F,$82
-	dc.b	$C4,$46,$91,$C1,$3E,$C0,$3F,$90
-	dc.b	$D6,$46,$83,$C1,$46,$82,$C0,$3E
-	dc.b	$81,$C6,$43,$82,$C0,$3E,$43,$C6
-	dc.b	$46,$A6,$C1,$3E,$A5,$C0,$43,$E5
-	dc.b	$46,$81,$CD,$3E,$82,$C0,$3E,$C1
-	dc.b	$3F,$81,$C4,$46,$83,$C0,$3E,$C1
-	dc.b	$3F,$82,$C5,$46,$8B,$C0,$46,$3E
-	dc.b	$8A,$CD,$3F,$86,$C0,$3E,$C1,$3F
-	dc.b	$84,$CB,$46,$91,$C1,$41,$90,$C0
-	dc.b	$45,$92,$D6,$3C,$90,$C0,$3C,$40
-	dc.b	$91,$E3,$43,$83,$C0,$41,$82,$46
-	dc.b	$83,$C6,$49,$C1,$41,$82,$C0,$46
-	dc.b	$C4,$49,$91,$C1,$41,$C0,$46,$90
-	dc.b	$D6,$49,$83,$C1,$49,$82,$C0,$42
-	dc.b	$C6,$41,$C0,$41,$42,$C6,$49,$A8
-	dc.b	$C0,$41,$A6,$C1,$42,$A5,$F0,$49
-	dc.b	$82,$C0,$41,$C1,$46,$81,$C5,$49
-	dc.b	$83,$C0,$41,$82,$C1,$49,$81,$C4
-	dc.b	$46,$92,$C1,$41,$91,$C0,$46,$90
-	dc.b	$DA,$49,$86,$C0,$3F,$85,$C1,$44
-	dc.b	$C9,$48,$94,$C1,$3F,$92,$C0,$44
-	dc.b	$94,$D7,$48,$8D,$C0,$48,$3F,$D8
-	dc.b	$44,$82,$C0,$42,$83,$41,$C6,$49
-	dc.b	$C0,$41,$C1,$42,$82,$C4,$49,$91
-	dc.b	$C1,$41,$C0,$42,$90,$D6,$49,$83
-	dc.b	$C1,$49,$82,$C0,$41,$81,$C6,$46
-	dc.b	$82,$C0,$41,$46,$C6,$49,$A6,$C1
-	dc.b	$41,$A5,$C0,$46,$E5,$49,$81,$CD
-	dc.b	$41,$82,$C0,$41,$C1,$42,$81,$C4
-	dc.b	$49,$83,$C0,$41,$C1,$42,$82,$C5
-	dc.b	$49,$8B,$C0,$49,$41,$8A,$CD,$42
-	dc.b	$86,$C0,$41,$C1,$42,$84,$CB,$49
-	dc.b	$91,$C1,$44,$90,$C0,$48,$92,$D6
-	dc.b	$3F,$90,$C0,$3F,$43,$91,$D8,$46
-	dc.b	$C0,$65,$60
+	dc.b	$C0,$61,$69,$68,$5B,$64,$7F,$C0
+	dc.b	$63,$81,$A0,$C1,$E0,$32,$32,$32
+	dc.b	$F0,$32,$98,$32,$C0,$65,$60
 ; Sequence 6, Channel 1:
-	dc.b	$C0,$61,$1C,$64,$7F,$C6,$C0,$63
-	dc.b	$88,$CC,$24,$D8,$24,$8A,$24,$86
-	dc.b	$CC,$24,$8B,$27,$8A,$D8,$29,$87
-	dc.b	$CC,$30,$89,$30,$84,$29,$85,$2E
-	dc.b	$2E,$8B,$27,$87,$29,$88,$24,$8A
-	dc.b	$D8,$24,$8B,$22,$87,$CC,$1F,$85
-	dc.b	$27,$8A,$D8,$27,$86,$CC,$27,$89
-	dc.b	$26,$87,$22,$24,$8C,$1D,$8B,$1F
-	dc.b	$89,$22,$88,$27,$D8,$27,$8A,$27
-	dc.b	$86,$CC,$27,$8B,$2A,$8A,$D8,$2C
-	dc.b	$87,$CC,$33,$89,$33,$84,$2C,$85
-	dc.b	$31,$31,$8B,$2A,$87,$2C,$88,$27
-	dc.b	$8A,$D8,$27,$8B,$25,$87,$CC,$22
-	dc.b	$85,$2A,$8A,$D8,$2A,$86,$CC,$2A
-	dc.b	$89,$29,$87,$25,$27,$8C,$20,$8B
-	dc.b	$22,$89,$25,$C0,$65,$60
+	dc.b	$C6,$C0,$63,$C0,$61,$48,$86,$D2
+	dc.b	$24,$90,$24,$8A,$CC,$1F,$89,$22
+	dc.b	$8C,$1F,$8B,$22,$8D,$23,$85,$D2
+	dc.b	$24,$92,$24,$8A,$CC,$1F,$89,$22
+	dc.b	$8A,$1F,$22,$8E,$23,$86,$D2,$24
+	dc.b	$92,$24,$8A,$CC,$1F,$87,$22,$8B
+	dc.b	$1F,$8A,$22,$8D,$23,$86,$D2,$24
+	dc.b	$92,$24,$8D,$CC,$1F,$8A,$22,$8F
+	dc.b	$1F,$8C,$1E,$1F,$86,$D2,$24,$94
+	dc.b	$24,$8A,$CC,$1F,$89,$22,$8A,$1F
+	dc.b	$89,$22,$8F,$23,$86,$D2,$24,$92
+	dc.b	$24,$8B,$CC,$1F,$89,$22,$8C,$1F
+	dc.b	$8A,$22,$8F,$23,$86,$D2,$24,$93
+	dc.b	$24,$8B,$CC,$1F,$89,$22,$8A,$1F
+	dc.b	$89,$22,$8F,$23,$86,$D2,$24,$90
+	dc.b	$D1,$24,$C1,$6C,$D6,$FD,$C0,$6C
+	dc.b	$F0,$FD,$8A,$2B,$6C,$58,$FE,$6C
+	dc.b	$D8,$FE,$6C,$40,$FF,$6C,$C2,$FF
+	dc.b	$CC,$6C,$00,$00,$8B,$29,$27,$8E
+	dc.b	$24,$89,$22,$C0,$6C,$00,$00,$64
+	dc.b	$7F,$C0,$63,$64,$03,$C0,$63,$86
+	dc.b	$D2,$24,$90,$24,$8A,$CC,$1F,$89
+	dc.b	$22,$8C,$1F,$8B,$22,$8D,$23,$85
+	dc.b	$D2,$24,$92,$24,$8A,$CC,$1F,$89
+	dc.b	$22,$8A,$1F,$22,$8E,$23,$86,$D2
+	dc.b	$24,$92,$24,$8A,$CC,$1F,$87,$22
+	dc.b	$8B,$1F,$8A,$22,$8D,$23,$86,$D2
+	dc.b	$24,$92,$24,$8D,$CC,$1F,$8A,$22
+	dc.b	$8F,$1F,$8C,$1E,$1F,$86,$D2,$24
+	dc.b	$94,$24,$8A,$CC,$1F,$89,$22,$8A
+	dc.b	$1F,$89,$22,$8F,$23,$86,$D2,$24
+	dc.b	$92,$24,$8B,$CC,$1F,$89,$22,$8C
+	dc.b	$1F,$8A,$22,$8F,$23,$86,$D2,$24
+	dc.b	$93,$24,$8B,$CC,$1F,$89,$22,$8A
+	dc.b	$1F,$89,$22,$8F,$23,$86,$D2,$24
+	dc.b	$90,$D1,$24,$C1,$6C,$F0,$FD,$8A
+	dc.b	$C0,$2B,$6C,$0A,$FE,$6C,$8C,$FE
+	dc.b	$6C,$D8,$FE,$6C,$5A,$FF,$C1,$6C
+	dc.b	$DC,$FF,$CB,$6C,$00,$00,$8B,$CC
+	dc.b	$29,$27,$8E,$24,$89,$22,$D8,$C0
+	dc.b	$65,$C0,$6C,$00,$00,$86,$D2,$25
+	dc.b	$90,$25,$8A,$CC,$20,$89,$23,$8C
+	dc.b	$20,$8B,$23,$8D,$24,$85,$D2,$25
+	dc.b	$92,$25,$8A,$CC,$20,$89,$23,$8A
+	dc.b	$20,$23,$8E,$24,$86,$D2,$25,$92
+	dc.b	$25,$8A,$CC,$20,$87,$23,$8B,$20
+	dc.b	$8A,$23,$8D,$24,$86,$D2,$25,$92
+	dc.b	$25,$8D,$CC,$20,$8A,$23,$8F,$20
+	dc.b	$8C,$1F,$20,$86,$D2,$24,$90,$24
+	dc.b	$8A,$CC,$1F,$89,$22,$8C,$1F,$8B
+	dc.b	$22,$8D,$23,$85,$D2,$24,$92,$24
+	dc.b	$8A,$CC,$1F,$89,$22,$8A,$1F,$22
+	dc.b	$8E,$23,$86,$D2,$24,$92,$24,$8A
+	dc.b	$CC,$1F,$87,$22,$8B,$1F,$8A,$22
+	dc.b	$8D,$23,$86,$D2,$24,$92,$24,$8D
+	dc.b	$CC,$1F,$8A,$22,$8F,$1F,$8C,$1E
+	dc.b	$1F,$C0,$6C,$00,$00,$65,$60
 ; Sequence 6, Channel 2:
-	dc.b	$C0,$61,$2F,$64,$7F,$C6,$C1,$63
-	dc.b	$81,$A9,$C1,$ED,$3A,$8A,$CC,$37
-	dc.b	$8B,$CA,$3A,$86,$CC,$3C,$8E,$3C
-	dc.b	$85,$CD,$3A,$8B,$3A,$88,$CC,$37
-	dc.b	$A2,$E4,$3A,$81,$98,$C2,$DA,$37
-	dc.b	$81,$A4,$C1,$EA,$3D,$8B,$CE,$3A
-	dc.b	$8C,$CB,$3D,$8B,$CE,$3F,$D1,$41
-	dc.b	$D0,$3F,$89,$CF,$3D,$8D,$D2,$3F
-	dc.b	$8B,$D3,$3D,$82,$91,$C2,$DA,$3A
-	dc.b	$82,$83,$C2,$CE,$3C,$99,$DA,$3A
-	dc.b	$8B,$CC,$37,$86,$3A,$90,$CE,$3C
-	dc.b	$8B,$D7,$3A,$81,$AE,$C1,$F8,$37
-	dc.b	$89,$CB,$37,$88,$3A,$85,$CD,$3C
-	dc.b	$97,$D9,$3C,$8B,$CD,$3A,$86,$D6
-	dc.b	$37,$8B,$D8,$3A,$AC,$F1,$3C,$88
-	dc.b	$CB,$3A,$87,$CC,$3C,$88,$CD,$3F
-	dc.b	$89,$CB,$3C,$86,$CD,$3A,$93,$D7
-	dc.b	$3C,$89,$CC,$3A,$81,$82,$C1,$C9
-	dc.b	$37,$89,$CB,$37,$CC,$3A,$85,$3C
-	dc.b	$8D,$CB,$3C,$CE,$3A,$8A,$CB,$37
-	dc.b	$85,$CD,$3A,$8E,$3D,$8A,$CB,$3A
-	dc.b	$88,$CD,$3D,$81,$88,$C1,$C7,$3F
-	dc.b	$89,$CC,$3D,$8A,$CB,$3A,$89,$CC
-	dc.b	$3D,$8F,$D0,$41,$93,$D4,$3F,$85
-	dc.b	$CD,$3D,$8A,$CB,$3D,$8B,$CC,$3A
-	dc.b	$87,$CD,$3D,$90,$D6,$3F,$89,$CE
-	dc.b	$3D,$85,$CC,$3A,$81,$86,$C1,$EB
-	dc.b	$3D,$C0,$65,$60
-; Sequence 6, Channel 3:
-	dc.b	$C0,$61,$30,$64,$7F,$C6,$C7,$63
-	dc.b	$81,$A9,$C1,$ED,$3A,$8A,$CC,$37
-	dc.b	$8B,$CA,$3A,$86,$CC,$3C,$8E,$3C
-	dc.b	$85,$CD,$3A,$8B,$3A,$88,$CC,$37
-	dc.b	$A2,$E4,$3A,$81,$98,$C2,$DA,$37
-	dc.b	$81,$A4,$C1,$EA,$3D,$8B,$CE,$3A
-	dc.b	$8C,$CB,$3D,$8B,$CE,$3F,$D1,$41
-	dc.b	$D0,$3F,$89,$CF,$3D,$8D,$D2,$3F
-	dc.b	$8B,$D3,$3D,$82,$91,$C2,$DA,$3A
-	dc.b	$82,$83,$C2,$CE,$3C,$99,$DA,$3A
-	dc.b	$8B,$CC,$37,$86,$3A,$90,$CE,$3C
-	dc.b	$8B,$D7,$3A,$81,$AE,$C1,$F8,$37
-	dc.b	$89,$CB,$37,$88,$3A,$85,$CD,$3C
-	dc.b	$97,$D9,$3C,$8B,$CD,$3A,$86,$D6
-	dc.b	$37,$8B,$D8,$3A,$AC,$F1,$3C,$88
-	dc.b	$CB,$3A,$87,$CC,$3C,$88,$CD,$3F
-	dc.b	$89,$CB,$3C,$86,$CD,$3A,$93,$D7
-	dc.b	$3C,$89,$CC,$3A,$81,$82,$C1,$C9
-	dc.b	$37,$89,$CB,$37,$CC,$3A,$85,$3C
-	dc.b	$8D,$CB,$3C,$CE,$3A,$8A,$CB,$37
-	dc.b	$85,$CD,$3A,$8E,$3D,$8A,$CB,$3A
-	dc.b	$88,$CD,$3D,$81,$88,$C1,$C7,$3F
-	dc.b	$89,$CC,$3D,$8A,$CB,$3A,$89,$CC
-	dc.b	$3D,$8F,$D0,$41,$93,$D4,$3F,$85
-	dc.b	$CD,$3D,$8A,$CB,$3D,$8B,$CC,$3A
-	dc.b	$87,$CD,$3D,$90,$D6,$3F,$89,$CE
-	dc.b	$3D,$85,$CC,$3A,$81,$86,$C1,$E5
-	dc.b	$3D,$C0,$65,$60
-; Sequence 6, Channel 4:
-	dc.b	$C0,$61,$58,$64,$7F,$C5,$DC,$63
-	dc.b	$86,$CC,$2F,$2D,$2B,$C0,$65,$60
-; Sequence 6, Channel 5:
-	dc.b	$C0,$61,$09,$64,$7F,$C0,$63,$86
-	dc.b	$CC,$4C,$4C,$4C,$4C,$4C,$4C,$4C
-	dc.b	$4C,$C0,$65,$60
-; Sequence 6, Channel 6:
-	dc.b	$C0,$61,$06,$64,$7F,$D8,$63,$88
-	dc.b	$FC,$1C,$86,$E4,$1C,$D2,$1C,$84
-	dc.b	$DE,$1C,$86,$F0,$1C,$87,$1C,$1C
-	dc.b	$86,$C1,$C8,$1C,$C0,$65,$60
-; Sequence 6, Channel 7:
-	dc.b	$C0,$61,$1B,$64,$7F,$C0,$63,$87
-	dc.b	$FC,$17,$86,$E4,$17,$87,$F0,$17
-	dc.b	$85,$CC,$17,$89,$D8,$17,$84,$CC
-	dc.b	$17,$85,$E4,$17,$86,$F0,$17,$85
-	dc.b	$CC,$17,$F0,$17,$84,$CC,$17,$86
-	dc.b	$E4,$17,$C0,$65,$60
-; Sequence 7, Channel 0:
-	dc.b	$C0,$68,$5C,$61,$19,$64,$7F,$C0
-	dc.b	$63,$8B,$D8,$24,$87,$C8,$30,$24
-	dc.b	$30,$8B,$D8,$24,$87,$C8,$30,$24
-	dc.b	$30,$8B,$D8,$24,$87,$C8,$30,$24
-	dc.b	$30,$30,$24,$30,$30,$24,$30,$8B
-	dc.b	$D8,$24,$87,$C8,$30,$24,$30,$8B
-	dc.b	$D8,$24,$87,$C8,$30,$24,$30,$8B
-	dc.b	$D8,$24,$87,$C8,$30,$24,$30,$30
-	dc.b	$24,$30,$30,$24,$30,$8B,$D8,$24
-	dc.b	$87,$C8,$30,$24,$30,$8B,$D8,$24
-	dc.b	$87,$C8,$30,$24,$30,$8B,$D8,$24
-	dc.b	$87,$C8,$30,$24,$30,$30,$24,$30
-	dc.b	$30,$24,$30,$8B,$D8,$24,$87,$C8
-	dc.b	$30,$24,$30,$8B,$D8,$24,$87,$C8
-	dc.b	$30,$24,$30,$8B,$D8,$24,$87,$C8
-	dc.b	$30,$24,$30,$30,$24,$30,$30,$24
-	dc.b	$30,$8B,$D8,$24,$87,$C8,$30,$24
-	dc.b	$30,$8B,$D8,$24,$87,$C8,$30,$24
-	dc.b	$30,$8B,$D8,$24,$87,$C8,$30,$24
-	dc.b	$30,$30,$24,$30,$30,$24,$30,$8B
-	dc.b	$D8,$27,$87,$C8,$33,$27,$33,$8B
-	dc.b	$D8,$27,$87,$C8,$33,$27,$33,$8B
-	dc.b	$D8,$27,$87,$C8,$33,$27,$33,$33
-	dc.b	$27,$33,$33,$27,$33,$8B,$D8,$27
-	dc.b	$87,$C8,$33,$27,$33,$8B,$D8,$27
-	dc.b	$87,$C8,$33,$27,$33,$8B,$D8,$27
-	dc.b	$87,$C8,$33,$27,$33,$33,$27,$33
-	dc.b	$33,$27,$33,$8B,$D8,$27,$87,$C8
-	dc.b	$33,$27,$33,$8B,$D8,$27,$87,$C8
-	dc.b	$33,$27,$33,$8B,$D8,$27,$87,$C8
-	dc.b	$33,$27,$33,$33,$27,$33,$33,$27
-	dc.b	$33,$8B,$D8,$27,$87,$C8,$33,$27
-	dc.b	$33,$8B,$D8,$27,$87,$C8,$33,$27
-	dc.b	$33,$8B,$D8,$27,$87,$C8,$33,$27
-	dc.b	$33,$33,$27,$33,$33,$27,$33,$8B
-	dc.b	$D8,$24,$87,$C8,$30,$24,$30,$8B
-	dc.b	$D8,$24,$87,$C8,$30,$24,$30,$8B
-	dc.b	$D8,$24,$87,$C8,$30,$24,$30,$30
-	dc.b	$24,$30,$30,$24,$30,$C0,$65,$60
-; Sequence 7, Channel 1:
-	dc.b	$C0,$61,$00,$64,$7F,$C0,$63,$B6
-	dc.b	$3C,$FC,$37,$98,$C0,$3C,$E4,$37
-	dc.b	$81,$9B,$C0,$3C,$C1,$E0,$37,$B0
-	dc.b	$C0,$3C,$FC,$37,$98,$C0,$3C,$E4
-	dc.b	$37,$81,$A0,$C0,$3C,$C1,$E0,$37
-	dc.b	$B6,$C0,$3C,$FC,$37,$98,$C0,$3C
-	dc.b	$E4,$37,$81,$9B,$C0,$3C,$C1,$E0
-	dc.b	$37,$B6,$C0,$3C,$FC,$37,$98,$C0
-	dc.b	$3C,$E4,$37,$81,$9B,$C0,$3C,$C1
-	dc.b	$E0,$37,$84,$C1,$48,$B6,$C4,$37
-	dc.b	$84,$C8,$46,$CA,$4B,$AA,$E6,$48
-	dc.b	$98,$CC,$37,$89,$D0,$46,$83,$C7
-	dc.b	$48,$BA,$C1,$48,$81,$9B,$C1,$DF
-	dc.b	$37,$B6,$C0,$3F,$FC,$3A,$98,$C0
-	dc.b	$3F,$E4,$3A,$81,$9B,$C0,$3F,$C1
-	dc.b	$E0,$3A,$B0,$C0,$3F,$FC,$3A,$98
-	dc.b	$C0,$3F,$E4,$3A,$81,$A0,$C0,$3F
-	dc.b	$C1,$E0,$3A,$B6,$C0,$3F,$FC,$3A
-	dc.b	$98,$C0,$3F,$E4,$3A,$81,$A0,$D4
-	dc.b	$3A,$86,$D2,$4B,$C6,$49,$A4,$E8
-	dc.b	$4B,$86,$CC,$4B,$B6,$C0,$3F,$FC
-	dc.b	$3A,$98,$C0,$3F,$E4,$3A,$81,$9B
-	dc.b	$C0,$3F,$C1,$E0,$3A,$B0,$C0,$3C
-	dc.b	$FC,$37,$98,$C0,$3C,$E4,$37,$81
-	dc.b	$9F,$C0,$3C,$C1,$E0,$37,$C0,$65
-	dc.b	$60
-; Sequence 7, Channel 2:
-	dc.b	$C0,$61,$0F,$64,$7F,$C2,$F7,$63
-	dc.b	$86,$CA,$24,$A6,$EC,$2E,$95,$D8
-	dc.b	$2D,$8E,$D1,$2B,$84,$C6,$29,$D0
-	dc.b	$2B,$85,$C8,$24,$B9,$C1,$C0,$24
-	dc.b	$86,$CD,$24,$A7,$EE,$2E,$90,$D7
-	dc.b	$2D,$8C,$D1,$2B,$84,$C6,$29,$85
-	dc.b	$D9,$2B,$B3,$FD,$30,$87,$CD,$30
-	dc.b	$A2,$ED,$3A,$8E,$D9,$39,$D0,$37
-	dc.b	$85,$C6,$35,$D8,$37,$86,$D2,$3C
-	dc.b	$C6,$3A,$A4,$E9,$3C,$83,$C9,$30
-	dc.b	$86,$C7,$30,$84,$C8,$2E,$CA,$33
-	dc.b	$AA,$F2,$30,$89,$D0,$2E,$83,$C7
-	dc.b	$30,$BA,$C4,$D7,$30,$86,$CA,$27
-	dc.b	$A6,$EC,$31,$95,$D8,$30,$8E,$D1
-	dc.b	$2E,$84,$C6,$2C,$D9,$2E,$BA,$FF
-	dc.b	$27,$86,$CD,$27,$A7,$EE,$31,$90
-	dc.b	$D7,$30,$8C,$D1,$2E,$84,$C6,$2C
-	dc.b	$86,$D7,$2E,$D2,$33,$C6,$31,$A4
-	dc.b	$E8,$33,$86,$CC,$33,$A1,$ED,$3D
-	dc.b	$8E,$D9,$3C,$D0,$3A,$85,$C6,$38
-	dc.b	$D9,$3A,$B7,$C1,$C0,$33,$83,$C9
-	dc.b	$33,$86,$C7,$33,$84,$C8,$2E,$CA
-	dc.b	$33,$AA,$F2,$30,$89,$D0,$2E,$83
-	dc.b	$C7,$30,$BA,$C1,$E0,$30,$C0,$65
-	dc.b	$60
-; Sequence 7, Channel 3:
-	dc.b	$C0,$61,$4E,$64,$7F,$C0,$63,$83
-	dc.b	$C3,$C0,$19,$C0,$65,$60
-; Sequence 7, Channel 4:
-	dc.b	$C0,$61,$18,$64,$7F,$D8,$63,$85
-	dc.b	$C8,$1A,$1A,$1A,$88,$D8,$1A,$85
-	dc.b	$C8,$1A,$1A,$1A,$88,$D8,$1A,$85
-	dc.b	$C8,$1A,$1A,$1A,$1A,$1A,$1A,$1A
-	dc.b	$1A,$1A,$C0,$65,$60
-; Sequence 7, Channel 5:
-	dc.b	$C0,$61,$4F,$64,$7F,$D8,$63,$84
-	dc.b	$18,$18,$18,$18,$18,$18,$18,$C0
-	dc.b	$65,$60
-; Sequence 8, Channel 0:
-	dc.b	$C0,$61,$57,$68,$71,$64,$7F,$C0
-	dc.b	$63,$8C,$29,$D2,$22,$8A,$C0,$29
-	dc.b	$D2,$22,$C0,$29,$CC,$22,$8E,$C0
-	dc.b	$2C,$D2,$25,$8B,$C0,$27,$D2,$20
-	dc.b	$88,$C0,$27,$CC,$20,$8A,$C0,$29
-	dc.b	$D2,$22,$88,$C0,$29,$D2,$22,$86
-	dc.b	$C0,$29,$CC,$22,$8B,$C0,$2F,$D2
-	dc.b	$28,$8C,$C0,$2E,$D2,$27,$87,$C0
-	dc.b	$2C,$CC,$25,$8C,$C0,$29,$D2,$22
-	dc.b	$8A,$C0,$29,$D2,$22,$86,$C0,$29
-	dc.b	$CC,$22,$8E,$C0,$2C,$D2,$25,$8A
-	dc.b	$C0,$27,$D2,$20,$88,$C0,$27,$CC
-	dc.b	$20,$8C,$C0,$29,$D2,$22,$89,$C0
-	dc.b	$29,$D2,$22,$87,$C0,$29,$CC,$22
-	dc.b	$8B,$C0,$2F,$D2,$28,$8C,$C0,$2E
-	dc.b	$D2,$27,$86,$C0,$2C,$CC,$25,$8C
-	dc.b	$C0,$29,$D2,$22,$8A,$C0,$29,$D2
-	dc.b	$22,$C0,$29,$CC,$22,$8E,$C0,$2C
-	dc.b	$D2,$25,$8B,$C0,$27,$D2,$20,$88
-	dc.b	$C0,$27,$CC,$20,$8A,$C0,$29,$D2
-	dc.b	$22,$88,$C0,$29,$D2,$22,$86,$C0
-	dc.b	$29,$CC,$22,$8B,$C0,$2F,$D2,$28
-	dc.b	$8C,$C0,$2E,$D2,$27,$87,$C0,$2C
-	dc.b	$CC,$25,$8C,$C0,$29,$D2,$22,$8A
-	dc.b	$C0,$29,$D2,$22,$86,$C0,$29,$CC
-	dc.b	$22,$8E,$C0,$2C,$D2,$25,$8A,$C0
-	dc.b	$27,$D2,$20,$88,$C0,$27,$CC,$20
-	dc.b	$8C,$C0,$29,$D2,$22,$89,$C0,$29
-	dc.b	$D2,$22,$87,$C0,$29,$CC,$22,$8B
-	dc.b	$C0,$2F,$D2,$28,$8C,$C0,$2E,$D2
-	dc.b	$27,$86,$C0,$2C,$CC,$25,$8C,$C0
-	dc.b	$22,$84,$C6,$35,$35,$35,$8A,$C0
-	dc.b	$22,$84,$C6,$35,$38,$35,$8A,$C0
-	dc.b	$22,$84,$C6,$35,$35,$8E,$C0,$25
-	dc.b	$84,$C6,$35,$35,$3A,$8B,$C0,$20
-	dc.b	$84,$C6,$35,$35,$35,$88,$C0,$20
-	dc.b	$84,$C6,$3B,$3A,$8A,$C0,$22,$84
-	dc.b	$C6,$35,$35,$35,$88,$C0,$22,$84
-	dc.b	$C6,$35,$38,$35,$86,$C0,$22,$84
-	dc.b	$C6,$35,$35,$8B,$C0,$28,$84,$C6
-	dc.b	$35,$35,$3A,$8C,$C0,$27,$84,$C6
-	dc.b	$35,$35,$35,$87,$C0,$25,$84,$C6
-	dc.b	$3B,$3A,$8C,$C0,$22,$84,$C6,$35
-	dc.b	$35,$35,$8A,$C0,$22,$84,$C6,$35
-	dc.b	$38,$35,$86,$C0,$22,$84,$C6,$35
-	dc.b	$35,$8E,$C0,$25,$84,$C6,$35,$35
-	dc.b	$3A,$8A,$C0,$20,$84,$C6,$35,$35
-	dc.b	$35,$88,$C0,$20,$84,$C6,$3B,$3A
-	dc.b	$8C,$C0,$22,$84,$C6,$35,$35,$35
-	dc.b	$89,$C0,$22,$84,$C6,$35,$38,$35
-	dc.b	$87,$C0,$22,$84,$C6,$35,$35,$8B
-	dc.b	$C0,$28,$84,$C6,$35,$35,$3A,$8C
-	dc.b	$C0,$27,$84,$C6,$35,$35,$35,$86
-	dc.b	$C0,$25,$84,$C6,$3B,$3A,$8C,$C0
-	dc.b	$29,$D2,$22,$8A,$C0,$29,$D2,$22
-	dc.b	$C0,$29,$CC,$22,$8E,$C0,$2C,$D2
-	dc.b	$25,$8B,$C0,$27,$D2,$20,$88,$C0
-	dc.b	$27,$CC,$20,$8A,$C0,$29,$D2,$22
-	dc.b	$88,$C0,$29,$D2,$22,$86,$C0,$29
-	dc.b	$CC,$22,$8B,$C0,$2F,$D2,$28,$8C
-	dc.b	$C0,$2E,$D2,$27,$87,$C0,$2C,$CC
-	dc.b	$25,$8C,$C0,$29,$D2,$22,$8A,$C0
-	dc.b	$29,$D2,$22,$86,$C0,$29,$CC,$22
-	dc.b	$8E,$C0,$2C,$D2,$25,$8A,$C0,$27
-	dc.b	$D2,$20,$88,$C0,$27,$CC,$20,$8C
-	dc.b	$C0,$29,$D2,$22,$89,$C0,$29,$D2
-	dc.b	$22,$87,$C0,$29,$CC,$22,$8B,$C0
-	dc.b	$2F,$D2,$28,$8C,$C0,$2E,$D2,$27
-	dc.b	$86,$C0,$2C,$CC,$25,$8C,$C0,$22
-	dc.b	$84,$C6,$41,$41,$41,$8A,$C0,$22
-	dc.b	$84,$C6,$41,$44,$41,$8A,$C0,$22
-	dc.b	$84,$C6,$41,$41,$8E,$C0,$25,$84
-	dc.b	$C6,$41,$41,$46,$8B,$C0,$20,$84
-	dc.b	$C6,$41,$41,$41,$88,$C0,$20,$84
-	dc.b	$C6,$47,$46,$8A,$C0,$22,$84,$C6
-	dc.b	$41,$41,$41,$88,$C0,$22,$84,$C6
-	dc.b	$41,$44,$41,$86,$C0,$22,$84,$C6
-	dc.b	$41,$41,$8B,$C0,$28,$84,$C6,$41
-	dc.b	$41,$46,$8C,$C0,$27,$84,$C6,$41
-	dc.b	$41,$41,$87,$C0,$25,$84,$C6,$47
-	dc.b	$46,$8C,$C0,$22,$84,$C6,$41,$41
-	dc.b	$41,$8A,$C0,$22,$84,$C6,$41,$44
-	dc.b	$41,$86,$C0,$22,$84,$C6,$41,$41
-	dc.b	$8E,$C0,$25,$84,$C6,$41,$41,$46
-	dc.b	$8A,$C0,$20,$84,$C6,$41,$41,$41
-	dc.b	$88,$C0,$20,$84,$C6,$47,$46,$8C
-	dc.b	$C0,$22,$84,$C6,$41,$41,$41,$89
-	dc.b	$C0,$22,$84,$C6,$41,$44,$41,$87
-	dc.b	$C0,$22,$84,$C6,$41,$41,$8B,$C0
-	dc.b	$28,$84,$C6,$41,$41,$46,$8C,$C0
-	dc.b	$27,$84,$C6,$41,$41,$41,$86,$C0
-	dc.b	$25,$84,$C6,$47,$C6,$C6,$46,$C6
-	dc.b	$41,$41,$41,$41,$44,$41,$41,$41
-	dc.b	$41,$41,$46,$41,$41,$41,$47,$46
-	dc.b	$41,$41,$41,$41,$44,$41,$41,$41
-	dc.b	$41,$41,$46,$41,$41,$41,$47,$46
-	dc.b	$41,$41,$41,$41,$44,$41,$41,$41
-	dc.b	$41,$41,$46,$41,$41,$41,$47,$46
-	dc.b	$41,$41,$41,$41,$44,$41,$41,$41
-	dc.b	$41,$41,$46,$41,$41,$41,$47,$46
-	dc.b	$8C,$C0,$29,$84,$C6,$41,$41,$41
-	dc.b	$8A,$C0,$29,$84,$C6,$41,$44,$41
-	dc.b	$86,$C0,$29,$84,$C6,$41,$41,$8E
-	dc.b	$C0,$2C,$84,$C6,$41,$41,$46,$8A
-	dc.b	$C0,$27,$84,$C6,$41,$41,$41,$88
-	dc.b	$C0,$27,$84,$C6,$47,$46,$8C,$C0
-	dc.b	$29,$84,$C6,$41,$41,$41,$89,$C0
-	dc.b	$29,$84,$C6,$41,$44,$41,$87,$C0
-	dc.b	$29,$84,$C6,$41,$41,$8B,$C0,$2F
-	dc.b	$84,$C6,$41,$41,$46,$8C,$C0,$2E
-	dc.b	$84,$C6,$41,$41,$41,$86,$C0,$2C
-	dc.b	$84,$C6,$47,$46,$C0,$65,$60
-; Sequence 8, Channel 1:
-	dc.b	$C0,$61,$79,$64,$7F,$C6,$C0,$63
-	dc.b	$AC,$F0,$54,$B2,$5F,$B0,$54,$AF
-	dc.b	$5F,$AE,$54,$AF,$5F,$AE,$54,$5F
-	dc.b	$AC,$54,$B2,$5F,$B0,$54,$AF,$5F
-	dc.b	$AE,$54,$AF,$5F,$AE,$54,$5F,$AC
-	dc.b	$54,$B2,$5F,$B0,$54,$AF,$5F,$AE
-	dc.b	$54,$AF,$5F,$AE,$54,$D5,$F0,$5F
-	dc.b	$C0,$65,$60
-; Sequence 8, Channel 2:
-	dc.b	$C0,$61,$07,$64,$7F,$DE,$C0,$63
-	dc.b	$C2,$68,$74,$90,$C0,$30,$94,$D3
-	dc.b	$1D,$8B,$C0,$33,$8E,$D1,$20,$91
-	dc.b	$C0,$30,$95,$D4,$1D,$88,$C0,$33
-	dc.b	$8A,$CD,$20,$88,$C0,$36,$8A,$CC
-	dc.b	$23,$87,$C0,$35,$89,$CE,$22,$8F
-	dc.b	$C0,$30,$93,$D3,$1D,$8A,$C0,$33
-	dc.b	$8D,$D0,$20,$92,$C0,$30,$96,$D5
-	dc.b	$1D,$8A,$C0,$33,$8D,$CD,$20,$89
-	dc.b	$C0,$35,$8B,$CD,$22,$88,$C0,$33
-	dc.b	$8A,$CD,$20,$90,$C0,$30,$94,$D4
-	dc.b	$1D,$89,$C0,$33,$8C,$CF,$20,$92
-	dc.b	$C0,$30,$97,$D7,$1D,$88,$C0,$33
-	dc.b	$8B,$CC,$20,$88,$C0,$36,$8A,$CC
-	dc.b	$23,$87,$C0,$35,$89,$CD,$22,$91
-	dc.b	$C0,$30,$96,$D6,$1D,$89,$C0,$33
-	dc.b	$8B,$CE,$20,$93,$C0,$30,$98,$D8
-	dc.b	$1D,$89,$C0,$33,$8C,$CD,$20,$88
-	dc.b	$C0,$35,$8A,$CB,$22,$87,$C0,$33
-	dc.b	$88,$CF,$20,$94,$D3,$1D,$8E,$D1
-	dc.b	$20,$95,$D4,$1D,$8A,$CD,$20,$CC
-	dc.b	$23,$89,$CE,$22,$93,$D3,$1D,$8D
-	dc.b	$D0,$20,$96,$D5,$1D,$8D,$CD,$20
-	dc.b	$8B,$22,$8A,$20,$94,$D4,$1D,$8C
-	dc.b	$CF,$20,$97,$D7,$1D,$8B,$CC,$20
-	dc.b	$8A,$23,$89,$CD,$22,$96,$D6,$1D
-	dc.b	$8B,$CE,$20,$98,$D8,$1D,$8C,$CD
-	dc.b	$20,$8A,$CB,$22,$88,$CD,$20,$94
-	dc.b	$D4,$1D,$8C,$CF,$20,$97,$D7,$1D
-	dc.b	$8B,$CC,$20,$8A,$23,$89,$CD,$22
-	dc.b	$96,$D6,$1D,$8B,$CE,$20,$98,$D8
-	dc.b	$1D,$8C,$CD,$20,$8A,$CB,$22,$88
-	dc.b	$CD,$20,$C0,$65,$60
-; Sequence 8, Channel 3:
-	dc.b	$C0,$61,$4E,$64,$7F,$C6,$C0,$63
-	dc.b	$81,$C6,$1E,$1E,$1E,$1E,$CC,$22
-	dc.b	$C6,$1E,$1E,$1E,$1E,$1E,$1E,$20
-	dc.b	$20,$20,$20,$1E,$1E,$1E,$1E,$CC
-	dc.b	$22,$C6,$1E,$1E,$1E,$1E,$1E,$1E
-	dc.b	$20,$20,$20,$20,$1E,$1E,$1E,$1E
-	dc.b	$CC,$22,$C6,$1E,$1E,$1E,$1E,$1E
-	dc.b	$1E,$20,$20,$20,$20,$1E,$1E,$1E
-	dc.b	$1E,$CC,$22,$C6,$1E,$1E,$1E,$1E
-	dc.b	$1E,$1E,$20,$20,$20,$20,$1E,$1E
-	dc.b	$1E,$1E,$CC,$22,$C6,$1E,$1E,$1E
-	dc.b	$1E,$1E,$1E,$20,$20,$20,$20,$1E
-	dc.b	$1E,$1E,$1E,$CC,$22,$C6,$1E,$1E
-	dc.b	$1E,$1E,$1E,$1E,$20,$20,$20,$20
-	dc.b	$1E,$1E,$1E,$1E,$CC,$22,$C6,$1E
-	dc.b	$1E,$1E,$1E,$1E,$1E,$20,$20,$20
-	dc.b	$20,$1E,$1E,$1E,$1E,$CC,$22,$C6
-	dc.b	$1E,$1E,$1E,$1E,$1E,$1E,$20,$20
-	dc.b	$20,$20,$1E,$1E,$1E,$1E,$CC,$22
-	dc.b	$C6,$1E,$1E,$1E,$1E,$1E,$1E,$20
-	dc.b	$20,$20,$20,$1E,$1E,$1E,$1E,$CC
-	dc.b	$22,$C6,$1E,$1E,$1E,$1E,$1E,$1E
-	dc.b	$20,$20,$20,$20,$1E,$1E,$1E,$1E
-	dc.b	$CC,$22,$C6,$1E,$1E,$1E,$1E,$1E
-	dc.b	$1E,$20,$20,$20,$20,$1E,$1E,$1E
-	dc.b	$1E,$CC,$22,$C6,$1E,$1E,$1E,$1E
-	dc.b	$1E,$1E,$20,$20,$20,$20,$1E,$1E
-	dc.b	$1E,$1E,$CC,$22,$C6,$1E,$1E,$1E
-	dc.b	$1E,$1E,$1E,$20,$20,$20,$20,$1E
-	dc.b	$1E,$1E,$1E,$CC,$22,$C6,$1E,$1E
-	dc.b	$1E,$1E,$1E,$1E,$20,$20,$20,$20
-	dc.b	$1E,$1E,$1E,$1E,$CC,$22,$C6,$1E
-	dc.b	$1E,$1E,$1E,$1E,$1E,$20,$20,$20
-	dc.b	$20,$1E,$1E,$1E,$1E,$CC,$22,$C6
-	dc.b	$1E,$1E,$1E,$1E,$1E,$1E,$20,$20
-	dc.b	$20,$C6,$C6,$20,$C6,$1E,$1E,$1E
-	dc.b	$1E,$CC,$22,$C6,$1E,$1E,$1E,$1E
-	dc.b	$1E,$1E,$20,$20,$20,$20,$1E,$1E
-	dc.b	$1E,$1E,$CC,$22,$C6,$1E,$1E,$1E
-	dc.b	$1E,$1E,$1E,$20,$20,$20,$20,$1E
-	dc.b	$1E,$1E,$1E,$CC,$22,$C6,$1E,$1E
-	dc.b	$1E,$1E,$1E,$1E,$20,$20,$20,$20
-	dc.b	$1E,$1E,$1E,$1E,$CC,$22,$C6,$1E
-	dc.b	$1E,$1E,$1E,$1E,$1E,$20,$20,$20
-	dc.b	$20,$1E,$1E,$1E,$1E,$CC,$22,$C6
-	dc.b	$1E,$1E,$1E,$1E,$1E,$1E,$20,$20
-	dc.b	$20,$20,$1E,$1E,$1E,$1E,$CC,$22
-	dc.b	$C6,$1E,$1E,$1E,$1E,$1E,$1E,$20
-	dc.b	$20,$20,$20,$C0,$65,$60
-; Sequence 8, Channel 4:
-	dc.b	$C0,$61,$06,$64,$7F,$C5,$D0,$63
-	dc.b	$81,$C6,$1A,$1A,$1A,$1A,$1A,$1A
-	dc.b	$1A,$CB,$D6,$1A,$C6,$1A,$1A,$1A
-	dc.b	$1A,$1A,$1A,$1A,$C5,$D6,$1A,$C6
-	dc.b	$1A,$1A,$1A,$1A,$1A,$1A,$1A,$DE
-	dc.b	$1A,$86,$F0,$1A,$1A,$1A,$1A,$1A
-	dc.b	$1A,$D8,$1A,$81,$C6,$1A,$1A,$1A
-	dc.b	$1A,$1A,$1A,$1A,$CB,$D6,$1A,$C6
-	dc.b	$1A,$1A,$1A,$1A,$1A,$1A,$1A,$C2
-	dc.b	$D6,$1A,$C6,$1A,$1A,$1A,$1A,$1A
-	dc.b	$1A,$1A,$1A,$C0,$65,$60
-; Sequence 8, Channel 5:
-	dc.b	$C0,$61,$4F,$64,$7F,$C6,$C0,$63
-	dc.b	$84,$D8,$0D,$0D,$0D,$0D,$0D,$0D
-	dc.b	$0D,$0D,$0D,$0D,$0D,$0D,$0D,$0D
-	dc.b	$0D,$0D,$0D,$0D,$0D,$0D,$0D,$0D
-	dc.b	$0D,$0D,$0D,$0D,$0D,$0D,$0D,$0D
-	dc.b	$0D,$0D,$0D,$0D,$0D,$0D,$0D,$0D
-	dc.b	$0D,$0D,$0D,$0D,$0D,$0D,$0D,$0D
-	dc.b	$0D,$0D,$0D,$0D,$0D,$0D,$0D,$0D
-	dc.b	$0D,$0D,$0D,$0D,$0D,$0D,$0D,$0D
-	dc.b	$0D,$C3,$D8,$0D,$C0,$68,$71,$D8
-	dc.b	$0D,$0D,$0D,$0D,$0D,$0D,$0D,$0D
-	dc.b	$0D,$0D,$0D,$0D,$0D,$0D,$0D,$0D
-	dc.b	$0D,$0D,$0D,$0D,$0D,$0D,$0D,$0D
-	dc.b	$0D,$0D,$0D,$0D,$0D,$0D,$0D,$0D
-	dc.b	$C0,$65,$60
-; Sequence 9, Channel 0:
-	dc.b	$C0,$68,$32,$61,$36,$64,$7F,$C3
-	dc.b	$CD,$63,$86,$C7,$30,$87,$C5,$33
-	dc.b	$88,$C7,$36,$86,$D1,$37,$85,$C6
-	dc.b	$30,$87,$33,$36,$86,$EA,$37,$C7
-	dc.b	$30,$C5,$33,$88,$C6,$36,$86,$D0
-	dc.b	$37,$85,$CD,$3C,$89,$C7,$36,$88
-	dc.b	$EA,$37,$85,$C6,$30,$86,$C5,$33
-	dc.b	$88,$C7,$36,$85,$D2,$37,$C7,$30
-	dc.b	$86,$C4,$33,$88,$C6,$36,$86,$EA
-	dc.b	$37,$85,$C7,$30,$C4,$33,$89,$C6
-	dc.b	$36,$86,$D2,$37,$84,$C7,$3C,$86
-	dc.b	$C5,$36,$C8,$37,$85,$CC,$33,$DE
-	dc.b	$30,$86,$C7,$35,$87,$C5,$38,$88
-	dc.b	$C7,$3B,$86,$D1,$3C,$85,$C6,$35
-	dc.b	$87,$38,$3B,$86,$EA,$3C,$C7,$35
-	dc.b	$C5,$38,$88,$C6,$3B,$86,$D0,$3C
-	dc.b	$85,$CD,$41,$89,$C7,$3B,$88,$EA
-	dc.b	$3C,$86,$C7,$30,$87,$C5,$33,$88
-	dc.b	$C7,$36,$86,$D1,$37,$85,$C6,$30
-	dc.b	$87,$33,$36,$86,$EA,$37,$C7,$30
-	dc.b	$C5,$33,$88,$C6,$36,$86,$D0,$37
-	dc.b	$85,$CD,$3C,$89,$C7,$36,$88,$EA
-	dc.b	$37,$85,$C6,$37,$86,$C5,$3A,$88
-	dc.b	$C7,$3D,$85,$D2,$3E,$C7,$37,$86
-	dc.b	$C4,$3A,$88,$C6,$3D,$86,$EA,$3E
-	dc.b	$85,$C7,$35,$C4,$38,$89,$C6,$3B
-	dc.b	$86,$D2,$3C,$84,$C7,$41,$86,$C5
-	dc.b	$3B,$C8,$3C,$85,$CC,$38,$D1,$35
-	dc.b	$C0,$65,$60
-; Sequence 9, Channel 1:
-	dc.b	$C0,$61,$1C,$64,$7F,$C0,$63,$8B
-	dc.b	$CC,$24,$8C,$CB,$23,$8B,$CD,$22
-	dc.b	$89,$CC,$1F,$8A,$24,$8B,$CB,$23
-	dc.b	$8A,$CD,$22,$83,$C9,$1F,$C3,$1F
-	dc.b	$8B,$CC,$24,$23,$8A,$22,$84,$C6
-	dc.b	$1F,$90,$D2,$24,$8A,$CB,$23,$CD
-	dc.b	$22,$84,$CC,$1F,$8A,$24,$8C,$23
-	dc.b	$89,$22,$83,$C9,$1F,$82,$C3,$1F
-	dc.b	$8B,$CB,$24,$8C,$CD,$23,$8A,$CB
-	dc.b	$22,$87,$CD,$1F,$8B,$CB,$24,$8C
-	dc.b	$CC,$23,$8B,$CD,$22,$84,$C9,$1F
-	dc.b	$8F,$CE,$24,$8B,$CD,$23,$8A,$CB
-	dc.b	$22,$84,$CD,$1F,$8B,$CC,$24,$8A
-	dc.b	$23,$22,$85,$C9,$1F,$24,$C5,$24
-	dc.b	$8B,$CD,$23,$89,$CC,$22,$87,$1F
-	dc.b	$8B,$24,$CB,$23,$CC,$22,$87,$C6
-	dc.b	$1F,$CF,$24,$85,$C3,$24,$8B,$CD
-	dc.b	$23,$8A,$CB,$22,$84,$CD,$1F,$8B
-	dc.b	$CC,$29,$CD,$28,$8A,$CB,$27,$89
-	dc.b	$CD,$24,$8A,$CB,$29,$8B,$CC,$28
-	dc.b	$89,$27,$83,$C9,$24,$C3,$24,$8B
-	dc.b	$CC,$29,$28,$8A,$CB,$27,$85,$C8
-	dc.b	$24,$90,$D2,$29,$8A,$CB,$28,$89
-	dc.b	$CC,$27,$84,$CB,$24,$8B,$CC,$24
-	dc.b	$8D,$CD,$23,$8A,$CC,$22,$83,$C8
-	dc.b	$1F,$C4,$1F,$8B,$CB,$24,$8C,$CD
-	dc.b	$23,$8A,$CC,$22,$87,$CB,$1F,$8C
-	dc.b	$CD,$24,$CC,$23,$8B,$22,$85,$C9
-	dc.b	$1F,$8F,$CE,$24,$8B,$CD,$23,$8A
-	dc.b	$CB,$22,$84,$CE,$1F,$8B,$CC,$2B
-	dc.b	$CB,$2A,$29,$85,$C9,$26,$86,$CB
-	dc.b	$2B,$85,$C5,$2B,$8B,$CC,$2A,$89
-	dc.b	$CB,$29,$88,$CC,$26,$8B,$29,$28
-	dc.b	$27,$87,$C8,$24,$CD,$29,$85,$C4
-	dc.b	$29,$8B,$CB,$28,$8A,$CD,$27,$84
-	dc.b	$CC,$24,$C0,$65,$60
-; Sequence 9, Channel 2:
-	dc.b	$C0,$61,$51,$64,$7F,$D4,$F1,$63
-	dc.b	$88,$D0,$3C,$BC,$C1,$C6,$3C,$8B
-	dc.b	$CC,$3A,$86,$C8,$37,$88,$CD,$3A
-	dc.b	$81,$83,$C1,$C8,$3C,$86,$D1,$3C
-	dc.b	$81,$82,$C1,$C8,$3C,$8A,$CB,$3A
-	dc.b	$86,$C8,$37,$CC,$3A,$81,$84,$C1
-	dc.b	$C9,$3C,$88,$CF,$41,$81,$81,$C1
-	dc.b	$C8,$41,$8B,$CC,$3C,$86,$3F,$84
-	dc.b	$C6,$41,$C5,$42,$85,$C7,$41,$84
-	dc.b	$C5,$3F,$85,$C6,$41,$C7,$3F,$84
-	dc.b	$C5,$41,$85,$C6,$3F,$3C,$CD,$3A
-	dc.b	$86,$CF,$3C,$89,$3C,$BD,$C1,$C8
-	dc.b	$3C,$8B,$CB,$3A,$87,$C8,$37,$86
-	dc.b	$CC,$3A,$81,$91,$C1,$D9,$3C,$84
-	dc.b	$C6,$43,$46,$48,$46,$43,$C5,$46
-	dc.b	$85,$C7,$43,$84,$D1,$41,$85,$C7
-	dc.b	$41,$84,$C6,$43,$CB,$41,$85,$CD
-	dc.b	$3F,$84,$C5,$3F,$85,$C6,$41,$C7
-	dc.b	$3F,$84,$C5,$3C,$85,$C6,$3F,$C7
-	dc.b	$3C,$84,$C6,$3A,$D2,$3C,$C5,$3A
-	dc.b	$85,$C7,$37,$84,$CB,$3A,$85,$CD
-	dc.b	$3C,$C0,$65,$60
-; Sequence 9, Channel 3:
-	dc.b	$C0,$61,$4E,$64,$7F,$C0,$63,$82
-	dc.b	$D4,$1E,$81,$C5,$1E,$D2,$1E,$C5
-	dc.b	$1E,$D4,$1E,$C5,$1E,$D7,$1E,$C0
-	dc.b	$65,$60
-; Sequence 9, Channel 4:
-	dc.b	$C0,$61,$06,$64,$7F,$CC,$63,$82
-	dc.b	$D8,$1C,$1C,$1C,$CC,$1C,$C0,$65
-	dc.b	$60
-; Sequence 9, Channel 5:
-	dc.b	$C0,$61,$4F,$64,$7F,$C0,$63,$8C
-	dc.b	$D8,$18,$18,$18,$18,$C0,$65,$60
-; Sequence 9, Channel 6:
-	dc.b	$E3,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 9, Channel 7:
-	dc.b	$E3,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 9, Channel 8:
-	dc.b	$E3,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 9, Channel 9:
-	dc.b	$E3,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 9, Channel 10:
-	dc.b	$E3,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 9, Channel 11:
-	dc.b	$E3,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 9, Channel 12:
-	dc.b	$E3,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 9, Channel 13:
-	dc.b	$E3,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 9, Channel 14:
-	dc.b	$E3,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 9, Channel 15:
-	dc.b	$E3,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 10, Channel 0:
-	dc.b	$C0,$68,$5D,$61,$19,$64,$7F,$C0
-	dc.b	$63,$83,$C6,$2B,$84,$2B,$DB,$2B
-	dc.b	$85,$C6,$2B,$84,$2B,$85,$D5,$2B
-	dc.b	$84,$CC,$29,$26,$8C,$E4,$2B,$D8
-	dc.b	$37,$32,$EA,$31,$D2,$2E,$CC,$30
-	dc.b	$2E,$30,$2E,$E4,$2B,$D8,$37,$32
-	dc.b	$EA,$31,$D2,$2E,$D8,$31,$32,$85
-	dc.b	$CC,$1F,$84,$2B,$1C,$28,$1D,$85
-	dc.b	$29,$84,$1E,$2A,$1F,$2B,$1C,$28
-	dc.b	$1D,$29,$1E,$2A,$1F,$2B,$1C,$28
-	dc.b	$85,$1D,$84,$29,$85,$1E,$84,$2A
-	dc.b	$85,$1F,$84,$2B,$85,$1C,$84,$28
-	dc.b	$85,$1D,$29,$84,$1E,$2A,$8C,$E4
-	dc.b	$24,$D8,$30,$2B,$EA,$2A,$D2,$27
-	dc.b	$CC,$29,$27,$29,$27,$E4,$24,$D8
-	dc.b	$30,$2B,$C1,$EC,$30,$E4,$2B,$D8
-	dc.b	$37,$32,$EA,$31,$D2,$2E,$CC,$30
-	dc.b	$2E,$30,$2E,$E4,$2B,$D8,$37,$32
-	dc.b	$EA,$31,$D2,$2E,$D8,$31,$32,$83
-	dc.b	$C6,$2B,$84,$2B,$DB,$2B,$85,$C6
-	dc.b	$2B,$84,$2B,$85,$D5,$2B,$84,$CC
-	dc.b	$29,$26,$8C,$E4,$2B,$D8,$37,$32
-	dc.b	$EA,$31,$D2,$2E,$CC,$30,$2E,$30
-	dc.b	$2E,$E4,$2B,$D8,$37,$32,$EA,$31
-	dc.b	$D2,$2E,$D8,$31,$32,$E4,$24,$D8
-	dc.b	$30,$2B,$EA,$2A,$D2,$27,$CC,$29
-	dc.b	$27,$29,$27,$E4,$24,$D8,$30,$2B
-	dc.b	$EA,$2A,$D2,$27,$D8,$2A,$2B,$E4
-	dc.b	$2B,$D8,$37,$32,$EA,$31,$D2,$2E
-	dc.b	$CC,$30,$2E,$30,$2E,$E4,$2B,$D8
-	dc.b	$37,$32,$EA,$31,$D2,$2E,$D8,$31
-	dc.b	$C6,$D8,$32,$C0,$65,$60
-; Sequence 10, Channel 1:
-	dc.b	$C0,$61,$36,$64,$7F,$C0,$63,$83
-	dc.b	$C6,$1F,$84,$1F,$DB,$1F,$85,$C6
-	dc.b	$1F,$84,$1F,$85,$D5,$1F,$84,$CC
-	dc.b	$1D,$C6,$CC,$1A,$8A,$CC,$2B,$87
-	dc.b	$32,$88,$31,$85,$C6,$2E,$87,$CC
-	dc.b	$31,$89,$EA,$2E,$8A,$CC,$2B,$86
-	dc.b	$32,$89,$31,$84,$C6,$2E,$88,$F6
-	dc.b	$31,$89,$CC,$2B,$85,$32,$88,$31
-	dc.b	$85,$C6,$2E,$86,$CC,$31,$87,$EA
-	dc.b	$2E,$86,$C6,$2B,$2E,$31,$32,$31
-	dc.b	$2E,$31,$2E,$37,$3A,$3D,$3E,$3D
-	dc.b	$3A,$3D,$3A,$8A,$CC,$30,$87,$37
-	dc.b	$88,$36,$85,$C6,$33,$87,$CC,$36
-	dc.b	$89,$EA,$33,$8A,$CC,$30,$86,$37
-	dc.b	$89,$36,$84,$C6,$33,$88,$F6,$36
-	dc.b	$89,$CC,$30,$85,$37,$88,$36,$85
-	dc.b	$C6,$33,$86,$CC,$36,$87,$E7,$33
-	dc.b	$86,$C6,$30,$C7,$33,$C6,$36,$C7
-	dc.b	$37,$C6,$36,$33,$C7,$36,$C6,$33
-	dc.b	$F0,$3C,$8A,$CC,$2B,$87,$32,$88
-	dc.b	$31,$85,$C6,$2E,$87,$CC,$31,$89
-	dc.b	$EA,$2E,$8A,$CC,$2B,$86,$32,$89
-	dc.b	$31,$84,$C6,$2E,$88,$F6,$31,$89
-	dc.b	$CC,$2B,$85,$32,$88,$31,$85,$C6
-	dc.b	$2E,$86,$CC,$31,$87,$E7,$2E,$86
-	dc.b	$C6,$2B,$C7,$2E,$C6,$31,$C7,$32
-	dc.b	$C6,$31,$2E,$C7,$31,$C6,$2E,$F0
-	dc.b	$2B,$83,$C6,$1F,$84,$1F,$DB,$1F
-	dc.b	$85,$C6,$1F,$84,$1F,$85,$D5,$1F
-	dc.b	$84,$CC,$1D,$C1,$EC,$1A,$8A,$CC
-	dc.b	$2B,$86,$32,$89,$31,$84,$C6,$2E
-	dc.b	$88,$C2,$D6,$31,$83,$C3,$2B,$86
-	dc.b	$C7,$2E,$C6,$31,$C7,$32,$C6,$31
-	dc.b	$2E,$C7,$31,$C6,$2E,$F0,$2B,$8A
-	dc.b	$CC,$30,$87,$37,$88,$36,$85,$C6
-	dc.b	$33,$87,$CC,$36,$89,$EA,$33,$8A
-	dc.b	$CC,$30,$86,$37,$89,$36,$84,$C6
-	dc.b	$33,$88,$F6,$36,$89,$CC,$30,$85
-	dc.b	$37,$88,$36,$85,$C6,$33,$86,$CC
-	dc.b	$36,$87,$E7,$33,$86,$C6,$30,$C7
-	dc.b	$33,$C6,$36,$C7,$37,$C6,$36,$33
-	dc.b	$C7,$36,$C6,$33,$F0,$30,$8A,$CC
-	dc.b	$2B,$87,$32,$88,$31,$85,$C6,$2E
-	dc.b	$87,$CC,$31,$89,$EA,$2E,$8A,$CC
-	dc.b	$2B,$86,$32,$89,$31,$84,$C6,$2E
-	dc.b	$88,$F6,$31,$89,$CC,$2B,$85,$32
-	dc.b	$88,$31,$85,$C6,$2E,$86,$CC,$31
-	dc.b	$87,$E7,$2E,$86,$C6,$2B,$C7,$2E
-	dc.b	$C6,$31,$C7,$32,$C6,$31,$2E,$C7
-	dc.b	$31,$C6,$2E,$C6,$F0,$2B,$C0,$65
-	dc.b	$60
-; Sequence 10, Channel 2:
-	dc.b	$C0,$61,$2A,$64,$7F,$C0,$63,$83
-	dc.b	$C6,$1F,$84,$1F,$DB,$1F,$85,$C6
-	dc.b	$1F,$84,$1F,$85,$D5,$1F,$84,$CC
-	dc.b	$1D,$1A,$85,$1F,$84,$2B,$1C,$28
-	dc.b	$1D,$85,$29,$84,$1E,$2A,$1F,$2B
-	dc.b	$1C,$28,$1D,$29,$1E,$2A,$1F,$2B
-	dc.b	$1C,$28,$85,$1D,$84,$29,$85,$1E
-	dc.b	$84,$2A,$85,$1F,$84,$2B,$85,$1C
-	dc.b	$84,$28,$85,$1D,$29,$84,$1E,$C6
-	dc.b	$CC,$2A,$85,$CC,$24,$84,$30,$21
-	dc.b	$2D,$22,$85,$2E,$84,$23,$C1,$EC
-	dc.b	$2F,$85,$CC,$24,$84,$30,$21,$2D
-	dc.b	$22,$85,$2E,$84,$23,$C6,$CC,$2F
-	dc.b	$85,$CC,$1F,$84,$2B,$85,$1C,$84
-	dc.b	$28,$85,$1D,$29,$84,$1E,$2A,$83
-	dc.b	$C6,$1F,$84,$1F,$DB,$1F,$85,$C6
-	dc.b	$1F,$84,$1F,$85,$D5,$1F,$84,$CC
-	dc.b	$1D,$1A,$85,$1F,$84,$2B,$1C,$28
-	dc.b	$1D,$85,$29,$84,$1E,$2A,$1F,$2B
-	dc.b	$1C,$28,$1D,$29,$1E,$2A,$1F,$2B
-	dc.b	$1C,$28,$85,$1D,$84,$29,$85,$1E
-	dc.b	$84,$2A,$85,$1F,$84,$2B,$85,$1C
-	dc.b	$84,$28,$85,$1D,$29,$84,$1E,$C4
-	dc.b	$EC,$2A,$85,$CC,$24,$84,$30,$85
-	dc.b	$21,$84,$2D,$85,$22,$2E,$84,$23
-	dc.b	$2F,$85,$1F,$84,$2B,$1C,$28,$1D
-	dc.b	$85,$29,$84,$1E,$2A,$1F,$2B,$1C
-	dc.b	$28,$1D,$29,$1E,$2A,$1F,$2B,$1C
-	dc.b	$28,$85,$1D,$84,$29,$85,$1E,$84
-	dc.b	$2A,$85,$1F,$84,$2B,$85,$1C,$84
-	dc.b	$28,$85,$1D,$29,$84,$1E,$C6,$CC
-	dc.b	$2A,$C0,$65,$60
-; Sequence 10, Channel 3:
-	dc.b	$C0,$61,$10,$64,$7F,$C0,$63,$83
-	dc.b	$C6,$1F,$84,$1F,$DB,$1F,$85,$C6
-	dc.b	$1F,$84,$1F,$85,$D5,$1F,$84,$CC
-	dc.b	$1D,$D8,$CC,$1A,$83,$C6,$1F,$84
-	dc.b	$1F,$DB,$1F,$85,$C6,$1F,$84,$1F
-	dc.b	$85,$D5,$1F,$84,$CC,$1D,$D2,$CC
-	dc.b	$1A,$8C,$E4,$1F,$D8,$2B,$26,$C1
-	dc.b	$EC,$25,$E4,$1F,$D8,$2B,$26,$C1
-	dc.b	$EC,$25,$C0,$65,$60
-; Sequence 10, Channel 4:
-	dc.b	$C0,$61,$1A,$64,$7F,$D3,$E0,$63
-	dc.b	$84,$C6,$37,$37,$37,$83,$37,$85
-	dc.b	$CC,$37,$83,$C6,$37,$84,$CC,$37
-	dc.b	$82,$C6,$37,$84,$CC,$37,$3A,$3C
-	dc.b	$C6,$37,$37,$37,$83,$37,$84,$CC
-	dc.b	$37,$83,$C6,$37,$86,$CC,$37,$83
-	dc.b	$C6,$37,$85,$CC,$37,$35,$84,$32
-	dc.b	$C6,$37,$37,$37,$83,$37,$85,$CC
-	dc.b	$37,$83,$C6,$37,$84,$CC,$37,$82
-	dc.b	$C6,$37,$84,$CC,$37,$3A,$C9,$CC
-	dc.b	$3C,$C6,$30,$30,$30,$83,$30,$85
-	dc.b	$CC,$30,$83,$C6,$30,$84,$CC,$30
-	dc.b	$82,$C6,$30,$84,$CC,$30,$33,$35
-	dc.b	$C6,$30,$30,$30,$83,$30,$84,$CC
-	dc.b	$30,$83,$C6,$30,$86,$CC,$30,$83
-	dc.b	$C6,$30,$85,$CC,$30,$2E,$84,$2B
-	dc.b	$C6,$30,$30,$30,$83,$30,$85,$CC
-	dc.b	$30,$83,$C6,$30,$84,$CC,$30,$82
-	dc.b	$C6,$30,$84,$CC,$30,$33,$C1,$EC
-	dc.b	$35,$C6,$37,$37,$37,$83,$37,$85
-	dc.b	$CC,$37,$83,$C6,$37,$84,$CC,$37
-	dc.b	$82,$C6,$37,$84,$CC,$37,$3A,$C1
-	dc.b	$EC,$3C,$C6,$37,$37,$37,$83,$37
-	dc.b	$85,$CC,$37,$83,$C6,$37,$84,$CC
-	dc.b	$37,$82,$C6,$37,$84,$CC,$37,$3A
-	dc.b	$C7,$EC,$3C,$C0,$65,$60
-; Sequence 10, Channel 5:
-	dc.b	$C0,$61,$08,$64,$7F,$C1,$E0,$63
-	dc.b	$83,$C6,$3A,$84,$3A,$83,$3A,$84
-	dc.b	$3A,$85,$CC,$3A,$83,$C6,$3A,$86
-	dc.b	$CC,$3A,$83,$C6,$3A,$84,$3A,$83
-	dc.b	$3A,$84,$3A,$83,$3A,$85,$CC,$3A
-	dc.b	$84,$C6,$3A,$3A,$3A,$3A,$85,$CC
-	dc.b	$3A,$84,$C6,$3A,$85,$CC,$3A,$84
-	dc.b	$C6,$3A,$85,$3A,$86,$D2,$3A,$84
-	dc.b	$CC,$3A,$83,$C6,$3A,$84,$3A,$83
-	dc.b	$3A,$84,$3A,$85,$CC,$3A,$83,$C6
-	dc.b	$3A,$86,$CC,$3A,$83,$C6,$3A,$84
-	dc.b	$3A,$83,$3A,$84,$3A,$83,$3A,$85
-	dc.b	$CC,$3A,$84,$C6,$3A,$3A,$3A,$3A
-	dc.b	$85,$CC,$3A,$84,$C6,$3A,$85,$CC
-	dc.b	$3A,$84,$C6,$3A,$85,$3A,$86,$D2
-	dc.b	$3A,$84,$CC,$3A,$83,$C6,$3A,$84
-	dc.b	$3A,$83,$3A,$84,$3A,$85,$CC,$3A
-	dc.b	$83,$C6,$3A,$86,$CC,$3A,$83,$C6
-	dc.b	$3A,$84,$3A,$83,$3A,$84,$3A,$83
-	dc.b	$3A,$85,$CC,$3A,$84,$C6,$3A,$3A
-	dc.b	$3A,$3A,$85,$CC,$3A,$84,$C6,$3A
-	dc.b	$85,$CC,$3A,$84,$C6,$3A,$85,$3A
-	dc.b	$86,$D2,$3A,$84,$CC,$3A,$83,$C6
-	dc.b	$3A,$84,$3A,$83,$3A,$84,$3A,$85
-	dc.b	$CC,$3A,$83,$C6,$3A,$86,$CC,$3A
-	dc.b	$83,$C6,$3A,$84,$3A,$83,$3A,$84
-	dc.b	$3A,$83,$3A,$85,$CC,$3A,$84,$C6
-	dc.b	$3A,$3A,$3A,$3A,$85,$CC,$3A,$84
-	dc.b	$C6,$3A,$85,$CC,$3A,$84,$C6,$3A
-	dc.b	$85,$3A,$86,$D2,$3A,$84,$CC,$3A
-	dc.b	$89,$3A,$3A,$3A,$3A,$3A,$3A,$3A
-	dc.b	$3A,$3A,$3A,$3A,$3A,$3A,$3A,$3A
-	dc.b	$3A,$3A,$3A,$3A,$3A,$3A,$3A,$3A
-	dc.b	$3A,$3A,$3A,$3A,$3A,$3A,$3A,$3A
-	dc.b	$3A,$83,$C6,$3A,$84,$3A,$83,$3A
-	dc.b	$84,$3A,$85,$CC,$3A,$83,$C6,$3A
-	dc.b	$86,$CC,$3A,$83,$C6,$3A,$84,$3A
-	dc.b	$83,$3A,$84,$3A,$83,$3A,$85,$CC
-	dc.b	$3A,$84,$C6,$3A,$3A,$3A,$3A,$85
-	dc.b	$CC,$3A,$84,$C6,$3A,$85,$CC,$3A
-	dc.b	$84,$C6,$3A,$85,$3A,$86,$D2,$3A
-	dc.b	$84,$CC,$3A,$83,$C6,$3A,$84,$3A
-	dc.b	$83,$3A,$84,$3A,$85,$CC,$3A,$83
-	dc.b	$C6,$3A,$86,$CC,$3A,$83,$C6,$3A
-	dc.b	$84,$3A,$83,$3A,$84,$3A,$83,$3A
-	dc.b	$85,$CC,$3A,$84,$C6,$3A,$3A,$3A
-	dc.b	$3A,$85,$CC,$3A,$84,$C6,$3A,$85
-	dc.b	$CC,$3A,$84,$C6,$3A,$85,$3A,$86
-	dc.b	$D2,$3A,$84,$CC,$3A,$C0,$65,$60
-; Sequence 10, Channel 6:
-	dc.b	$C0,$61,$06,$64,$7F,$C0,$63,$83
-	dc.b	$C6,$1C,$84,$1C,$DB,$1C,$85,$C6
-	dc.b	$1C,$84,$1C,$85,$D5,$1C,$84,$CC
-	dc.b	$1C,$D0,$1C,$D4,$61,$05,$D2,$1C
-	dc.b	$DE,$1C,$DA,$1C,$D6,$61,$06,$D2
-	dc.b	$1C,$CC,$1C,$D2,$1C,$DA,$1C,$D6
-	dc.b	$61,$05,$83,$D2,$1C,$84,$DE,$1C
-	dc.b	$DA,$1C,$D6,$61,$06,$D2,$1C,$CC
-	dc.b	$1C,$D2,$1C,$DC,$1C,$D4,$61,$05
-	dc.b	$D2,$1C,$DE,$1C,$DA,$1C,$D6,$61
-	dc.b	$06,$D2,$1C,$CC,$1C,$D2,$1C,$DA
-	dc.b	$1C,$D6,$61,$05,$83,$D2,$1C,$84
-	dc.b	$DE,$1C,$DA,$1C,$D6,$61,$06,$D2
-	dc.b	$1C,$CC,$1C,$D2,$1C,$DC,$1C,$D4
-	dc.b	$61,$05,$D2,$1C,$DE,$1C,$DA,$1C
-	dc.b	$D6,$61,$06,$D2,$1C,$CC,$1C,$D2
-	dc.b	$1C,$DA,$1C,$D6,$61,$05,$83,$D2
-	dc.b	$1C,$84,$DE,$1C,$DA,$1C,$D6,$61
-	dc.b	$06,$D2,$1C,$CC,$1C,$D2,$1C,$DC
-	dc.b	$1C,$D4,$61,$05,$D2,$1C,$DE,$1C
-	dc.b	$DA,$1C,$D6,$61,$06,$D2,$1C,$CC
-	dc.b	$1C,$D2,$1C,$DA,$1C,$D6,$61,$05
-	dc.b	$83,$D2,$1C,$84,$DE,$1C,$DA,$1C
-	dc.b	$D6,$61,$06,$D2,$1C,$CC,$1C,$D2
-	dc.b	$1C,$D8,$1C,$C0,$65,$60
-; Sequence 10, Channel 7:
-	dc.b	$C0,$61,$1B,$64,$7F,$C1,$E0,$63
-	dc.b	$84,$D7,$18,$85,$D9,$18,$84,$D8
-	dc.b	$18,$18,$18,$18,$18,$18,$18,$18
-	dc.b	$18,$18,$18,$18,$18,$18,$D7,$18
-	dc.b	$85,$D9,$18,$84,$D8,$18,$18,$18
-	dc.b	$18,$18,$18,$18,$18,$18,$18,$18
-	dc.b	$18,$18,$18,$D7,$18,$85,$D9,$18
-	dc.b	$84,$D8,$18,$18,$18,$18,$18,$18
-	dc.b	$18,$18,$18,$18,$18,$18,$18,$18
-	dc.b	$D7,$18,$85,$D9,$18,$84,$D8,$18
-	dc.b	$18,$18,$18,$18,$18,$18,$18,$18
-	dc.b	$18,$18,$18,$18,$18,$C0,$65,$60
-; Sequence 10, Channel 8:
-	dc.b	$F2,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 10, Channel 9:
-	dc.b	$F2,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 10, Channel 10:
-	dc.b	$F2,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 10, Channel 11:
-	dc.b	$F2,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 10, Channel 12:
-	dc.b	$F2,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 10, Channel 13:
-	dc.b	$F2,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 10, Channel 14:
-	dc.b	$F2,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 10, Channel 15:
-	dc.b	$F2,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 11, Channel 0:
-	dc.b	$C0,$68,$5F,$61,$10,$64,$7F,$C0
-	dc.b	$63,$89,$D8,$2B,$35,$37,$CC,$2B
-	dc.b	$D8,$35,$37,$2B,$CC,$35,$D8,$37
-	dc.b	$30,$3A,$3C,$CC,$30,$D8,$3A,$3C
-	dc.b	$30,$CC,$3A,$D8,$3C,$C0,$65,$60
-; Sequence 11, Channel 1:
-	dc.b	$C0,$61,$1C,$64,$7F,$C6,$C0,$63
-	dc.b	$86,$CC,$1F,$8B,$1F,$89,$2B,$86
-	dc.b	$1F,$8A,$1F,$2B,$1F,$86,$2B,$1F
-	dc.b	$8A,$1F,$2B,$86,$1F,$8B,$1F,$88
-	dc.b	$2B,$8A,$1F,$85,$2B,$97,$D8,$24
-	dc.b	$89,$CC,$30,$8F,$D8,$24,$8C,$CC
-	dc.b	$24,$8A,$30,$87,$24,$96,$D8,$24
-	dc.b	$8B,$CC,$30,$8C,$D8,$24,$CC,$24
-	dc.b	$8A,$30,$86,$24,$1F,$8B,$1F,$89
-	dc.b	$2B,$86,$1F,$8A,$1F,$2B,$1F,$86
-	dc.b	$2B,$1F,$8A,$1F,$2B,$86,$1F,$8B
-	dc.b	$1F,$88,$2B,$8A,$1F,$85,$2B,$97
-	dc.b	$D8,$24,$89,$CC,$30,$8F,$D8,$24
-	dc.b	$8C,$CC,$24,$8A,$30,$87,$24,$96
-	dc.b	$D8,$24,$8B,$CC,$30,$8C,$D8,$24
-	dc.b	$CC,$24,$8A,$30,$86,$24,$1F,$8B
-	dc.b	$1F,$89,$2B,$86,$1F,$8A,$1F,$2B
-	dc.b	$1F,$86,$2B,$1F,$8A,$1F,$2B,$86
-	dc.b	$1F,$8B,$1F,$88,$2B,$8A,$1F,$85
-	dc.b	$2B,$97,$D8,$24,$89,$CC,$30,$8F
-	dc.b	$D8,$24,$8C,$CC,$24,$8A,$30,$87
-	dc.b	$24,$96,$D8,$24,$8B,$CC,$30,$8C
-	dc.b	$D8,$24,$CC,$24,$8A,$30,$86,$24
-	dc.b	$C0,$65,$60
-; Sequence 11, Channel 2:
-	dc.b	$C0,$61,$04,$64,$7F,$CC,$CC,$63
-	dc.b	$88,$CC,$43,$86,$46,$85,$48,$89
-	dc.b	$48,$85,$46,$8A,$48,$84,$46,$88
-	dc.b	$48,$85,$46,$88,$48,$84,$46,$8A
-	dc.b	$48,$84,$46,$86,$43,$96,$D8,$46
-	dc.b	$A7,$C3,$C0,$48,$87,$CC,$43,$86
-	dc.b	$46,$84,$48,$8B,$48,$86,$46,$89
-	dc.b	$48,$85,$46,$8A,$48,$85,$46,$88
-	dc.b	$48,$85,$46,$8B,$48,$88,$46,$86
-	dc.b	$43,$97,$D8,$46,$A7,$C2,$D1,$43
-	dc.b	$88,$CB,$48,$87,$CC,$4A,$86,$4D
-	dc.b	$90,$D8,$4F,$89,$CC,$4D,$87,$CD
-	dc.b	$4F,$8B,$CB,$4F,$87,$CD,$4D,$85
-	dc.b	$CC,$4F,$8D,$D8,$4F,$89,$D9,$4D
-	dc.b	$88,$CB,$4A,$92,$D8,$4D,$89,$CC
-	dc.b	$4A,$48,$81,$82,$C1,$C5,$4A,$89
-	dc.b	$CD,$4D,$8C,$C1,$C9,$4F,$89,$CC
-	dc.b	$48,$87,$4A,$4D,$8C,$D8,$4F,$89
-	dc.b	$CC,$4D,$86,$4A,$8B,$4D,$88,$D8
-	dc.b	$4A,$8B,$4A,$8D,$48,$87,$CC,$46
-	dc.b	$95,$D8,$48,$8A,$CC,$46,$86,$43
-	dc.b	$A9,$F0,$46,$88,$CC,$46,$8C,$D8
-	dc.b	$48,$8B,$CC,$43,$C0,$65,$60
-; Sequence 11, Channel 3:
-	dc.b	$C0,$61,$2B,$64,$7F,$D0,$D4,$63
-	dc.b	$86,$C3,$48,$87,$C5,$49,$92,$D2
-	dc.b	$4A,$81,$8A,$C5,$E1,$4D,$89,$C4
-	dc.b	$48,$87,$C5,$49,$95,$D5,$4A,$B8
-	dc.b	$C1,$D3,$48,$86,$CC,$1F,$8B,$1F
-	dc.b	$89,$2B,$86,$1F,$8A,$1F,$2B,$1F
-	dc.b	$86,$2B,$1F,$8A,$1F,$2B,$86,$1F
-	dc.b	$8B,$1F,$88,$2B,$8A,$1F,$85,$2B
-	dc.b	$97,$D8,$24,$89,$CC,$30,$8F,$D8
-	dc.b	$24,$8C,$CC,$24,$8A,$30,$87,$24
-	dc.b	$96,$D8,$24,$8B,$CC,$30,$8C,$D8
-	dc.b	$24,$CC,$24,$8A,$30,$86,$C4,$EC
-	dc.b	$24,$C0,$65,$60
-; Sequence 11, Channel 4:
-	dc.b	$C0,$61,$08,$64,$7F,$C0,$63,$85
-	dc.b	$CC,$1E,$84,$1E,$1E,$1E,$1E,$1E
-	dc.b	$85,$1E,$89,$22,$C0,$65,$60
-; Sequence 11, Channel 5:
-	dc.b	$C0,$61,$18,$64,$7F,$D8,$63,$83
-	dc.b	$FC,$1A,$82,$CC,$1A,$C0,$65,$60
-; Sequence 11, Channel 6:
-	dc.b	$C0,$61,$1B,$64,$7F,$C0,$63,$86
-	dc.b	$F0,$18,$84,$CC,$18,$E4,$18,$C0
-	dc.b	$65,$60
-; Sequence 11, Channel 7:
-	dc.b	$E2,$DF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 11, Channel 8:
-	dc.b	$E2,$DF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 11, Channel 9:
-	dc.b	$E2,$DF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 11, Channel 10:
-	dc.b	$E2,$DF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 11, Channel 11:
-	dc.b	$E2,$DF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 11, Channel 12:
-	dc.b	$E2,$DF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 11, Channel 13:
-	dc.b	$E2,$DF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 11, Channel 14:
-	dc.b	$E2,$DF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 11, Channel 15:
-	dc.b	$E2,$DF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 12, Channel 0:
-	dc.b	$C0,$68,$3C,$61,$78,$64,$7F,$CC
-	dc.b	$63,$87,$C0,$30,$88,$37,$87,$CC
-	dc.b	$34,$95,$C0,$35,$94,$30,$D8,$39
-	dc.b	$87,$C0,$30,$88,$37,$87,$CC,$34
-	dc.b	$83,$C0,$35,$39,$82,$C6,$30,$87
-	dc.b	$C0,$30,$88,$35,$87,$CC,$39,$8D
-	dc.b	$C0,$30,$8E,$37,$8D,$D2,$34,$81
-	dc.b	$9A,$CC,$27,$87,$C0,$3A,$86,$37
-	dc.b	$87,$CC,$33,$92,$C0,$33,$38,$91
-	dc.b	$D8,$3C,$88,$C0,$33,$89,$3A,$88
-	dc.b	$CC,$37,$83,$C0,$33,$38,$C6,$3C
-	dc.b	$88,$C0,$33,$38,$87,$CC,$3C,$8D
-	dc.b	$C0,$33,$3A,$8C,$D2,$37,$81,$9B
-	dc.b	$CC,$24,$86,$C0,$30,$87,$43,$86
-	dc.b	$CC,$40,$94,$C0,$30,$45,$D8,$41
-	dc.b	$87,$C0,$30,$88,$43,$87,$CC,$40
-	dc.b	$82,$C0,$30,$83,$45,$C6,$41,$87
-	dc.b	$C0,$30,$45,$88,$CC,$41,$8A,$C0
-	dc.b	$30,$8B,$43,$8A,$D2,$40,$81,$97
-	dc.b	$CC,$27,$86,$C0,$33,$87,$46,$86
-	dc.b	$CC,$43,$94,$C0,$33,$93,$48,$D8
-	dc.b	$44,$88,$C0,$33,$89,$46,$88,$CC
-	dc.b	$43,$82,$C0,$33,$48,$C6,$44,$87
-	dc.b	$C0,$33,$86,$48,$87,$CC,$44,$C0
-	dc.b	$33,$88,$46,$86,$D2,$43,$81,$9B
-	dc.b	$C0,$3C,$87,$29,$81,$9C,$39,$81
-	dc.b	$9A,$CC,$35,$87,$24,$26,$88,$28
-	dc.b	$86,$29,$84,$24,$85,$26,$28,$81
-	dc.b	$9C,$C0,$37,$3B,$3E,$85,$CC,$2B
-	dc.b	$26,$84,$28,$85,$2A,$86,$2B,$85
-	dc.b	$26,$28,$84,$2A,$87,$C0,$29,$81
-	dc.b	$9A,$35,$81,$9C,$45,$81,$9B,$CC
-	dc.b	$48,$87,$24,$26,$88,$28,$86,$29
-	dc.b	$84,$24,$85,$26,$28,$81,$9C,$C0
-	dc.b	$37,$3B,$3E,$85,$CC,$2B,$26,$84
-	dc.b	$28,$85,$2A,$86,$2B,$85,$26,$28
-	dc.b	$84,$C3,$CC,$2A,$C0,$65,$60
-; Sequence 12, Channel 1:
-	dc.b	$C0,$61,$78,$64,$7F,$DB,$C0,$63
-	dc.b	$8C,$C0,$2B,$C9,$1F,$88,$C0,$37
-	dc.b	$89,$3E,$CF,$3B,$94,$C0,$40,$3C
-	dc.b	$D8,$37,$87,$C0,$37,$A9,$2B,$88
-	dc.b	$3E,$87,$CC,$3B,$83,$C0,$40,$37
-	dc.b	$C6,$3C,$86,$C0,$37,$87,$3C,$86
-	dc.b	$CC,$40,$8A,$C0,$3E,$37,$89,$D3
-	dc.b	$3B,$86,$C1,$2B,$84,$C4,$37,$87
-	dc.b	$C1,$30,$85,$C5,$3C,$87,$C0,$34
-	dc.b	$85,$C6,$40,$C0,$37,$CB,$43,$C1
-	dc.b	$34,$84,$C5,$40,$BA,$C0,$37,$FD
-	dc.b	$43,$C0,$65,$60
-; Sequence 12, Channel 2:
-	dc.b	$C0,$61,$4E,$64,$7F,$C0,$63,$82
-	dc.b	$C1,$E0,$41,$C0,$65,$60
-; Sequence 12, Channel 3:
-	dc.b	$C0,$61,$16,$64,$7F,$D9,$63,$83
-	dc.b	$CC,$2C,$2C,$2C,$2C,$2C,$CB,$2C
-	dc.b	$C0,$65,$60
-; Sequence 12, Channel 4:
-	dc.b	$C0,$61,$1D,$64,$7F,$CD,$63,$81
-	dc.b	$D8,$1A,$1A,$1A,$CB,$1A,$C0,$65
-	dc.b	$60
-; Sequence 12, Channel 5:
-	dc.b	$C0,$61,$1B,$64,$7F,$C0,$63,$83
-	dc.b	$DF,$18,$CC,$18,$C6,$18,$DD,$18
-	dc.b	$D2,$18,$C0,$65,$60
-; Sequence 12, Channel 6:
-	dc.b	$DD,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 12, Channel 7:
-	dc.b	$DD,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 12, Channel 8:
-	dc.b	$DD,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 12, Channel 9:
-	dc.b	$DD,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 12, Channel 10:
-	dc.b	$DD,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 12, Channel 11:
-	dc.b	$DD,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 12, Channel 12:
-	dc.b	$DD,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 12, Channel 13:
-	dc.b	$DD,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 12, Channel 14:
-	dc.b	$DD,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 12, Channel 15:
-	dc.b	$DD,$FF,$63,$C0,$6C,$00,$00,$67
-	dc.b	$00,$60
-; Sequence 13, Channel 0:
-	dc.b	$C0,$68,$64,$61,$16,$83,$C6,$3C
-	dc.b	$3C,$3C,$3C,$86,$3C,$60
-; Sequence 13, Channel 1:
-	dc.b	$F0,$61,$01,$87,$C0,$47,$86,$44
-	dc.b	$88,$CC,$28,$8A,$C0,$4A,$89,$47
-	dc.b	$88,$D3,$2B,$C0,$2B,$89,$47,$8A
-	dc.b	$D2,$4A,$8C,$CC,$2D,$60
-; Sequence 13, Channel 2:
-	dc.b	$C1,$63,$C1,$E0,$61,$57,$A8,$C0
-	dc.b	$49,$C1,$4C,$A7,$E7,$21,$60
-; Sequence 14, Channel 0:
-	dc.b	$C0,$68,$64,$61,$16,$83,$C6,$3C
-	dc.b	$3C,$3C,$3C,$86,$3C,$60
-; Sequence 14, Channel 1:
-	dc.b	$F0,$61,$01,$87,$C0,$47,$86,$44
-	dc.b	$88,$CC,$28,$8A,$C0,$4A,$89,$47
-	dc.b	$88,$D3,$2B,$8A,$C0,$4C,$89,$49
-	dc.b	$88,$D2,$2D,$97,$D7,$40,$60
-; Sequence 14, Channel 2:
-	dc.b	$C1,$63,$C1,$E0,$61,$57,$A8,$C0
-	dc.b	$1C,$47,$E8,$44,$60
-; Sequence 15, Channel 0:
-	dc.b	$C0,$68,$64,$61,$16,$83,$C6,$3C
-	dc.b	$3C,$3C,$3C,$86,$3C,$60
-; Sequence 15, Channel 1:
-	dc.b	$C1,$63,$EF,$61,$01,$87,$C0,$47
-	dc.b	$86,$44,$88,$CC,$28,$8A,$C0,$4A
-	dc.b	$89,$47,$88,$D3,$2B,$8A,$C0,$4C
-	dc.b	$89,$49,$88,$D3,$2D,$8C,$CC,$18
-	dc.b	$60
-; Sequence 15, Channel 2:
-	dc.b	$C1,$63,$C1,$E0,$61,$57,$A8,$C0
-	dc.b	$43,$4C,$E8,$24,$60
-; Sequence 16, Channel 0:
-	dc.b	$C0,$68,$53,$61,$1F,$64,$7F,$C0
-	dc.b	$63,$85,$B8,$C6,$C0,$35,$86,$85
-	dc.b	$41,$85,$AC,$2E,$85,$AF,$3A,$C0
-	dc.b	$65,$60
-; Sequence 16, Channel 1:
-	dc.b	$C0,$61,$20,$64,$7F,$C3,$E4,$63
-	dc.b	$90,$D8,$35,$A3,$E4,$3F,$92,$D8
-	dc.b	$3D,$82,$9E,$C2,$F4,$3C,$91,$D8
-	dc.b	$35,$A8,$F0,$3F,$90,$DE,$3D,$A2
-	dc.b	$EA,$3C,$82,$87,$C2,$E8,$35,$93
-	dc.b	$D8,$35,$AB,$F0,$3A,$82,$BC,$C3
-	dc.b	$D2,$37,$96,$D8,$3F,$81,$A8,$C2
-	dc.b	$D0,$41,$95,$D8,$3A,$81,$9D,$C1
-	dc.b	$FE,$3C,$96,$DE,$38,$98,$E2,$3A
-	dc.b	$81,$83,$C1,$C4,$37,$C0,$65,$60
-; Sequence 16, Channel 2:
-	dc.b	$C0,$61,$21,$64,$7F,$C3,$F0,$63
-	dc.b	$90,$D8,$35,$A3,$E4,$3F,$92,$D8
-	dc.b	$3D,$82,$9E,$C2,$F4,$3C,$91,$D8
-	dc.b	$35,$A8,$F0,$3F,$90,$DE,$3D,$A2
-	dc.b	$EA,$3C,$82,$87,$C2,$E8,$35,$93
-	dc.b	$D8,$35,$AB,$F0,$3A,$82,$BC,$C3
-	dc.b	$D2,$37,$96,$D8,$3F,$81,$A8,$C2
-	dc.b	$D0,$41,$95,$D8,$3A,$81,$9D,$C1
-	dc.b	$FE,$3C,$96,$DE,$38,$98,$E2,$3A
-	dc.b	$B7,$F8,$37,$C0,$65,$60
-; Sequence 16, Channel 3:
-	dc.b	$C0,$61,$22,$64,$7F,$C0,$63,$82
-	dc.b	$B0,$C3,$C0,$29,$82,$AA,$29,$2E
-	dc.b	$82,$AB,$2E,$82,$B3,$29,$82,$B2
-	dc.b	$29,$81,$9F,$C1,$E0,$33,$81,$9C
-	dc.b	$31,$82,$BB,$C3,$C0,$30,$C0,$65
-	dc.b	$60
-; Sequence 16, Channel 4:
-	dc.b	$C0,$61,$23,$64,$7F,$C0,$63,$81
-	dc.b	$C6,$1D,$22,$24,$27,$29,$22,$24
-	dc.b	$27,$1D,$22,$24,$27,$1D,$20,$22
-	dc.b	$24,$C0,$65,$60
-; Sequence 17, Channel 0:
-	dc.b	$C0,$68,$50,$61,$1C,$82,$C4,$1F
-	dc.b	$C5,$1E,$83,$1D,$C8,$1C,$82,$C2
-	dc.b	$1B,$60
-; Sequence 17, Channel 1:
-	dc.b	$E2,$61,$0E,$83,$CC,$5C,$CD,$5D
-	dc.b	$82,$C2,$5E,$60
-; Sequence 17, Channel 2:
-	dc.b	$C1,$C8,$61,$0D,$A6,$E6,$24,$60
-; Sequence 17, Channel 3:
-	dc.b	$C1,$E2,$61,$07,$99,$C0,$12,$81
-	dc.b	$C2,$3C,$82,$C3,$3C,$3C,$81,$C2
-	dc.b	$3C,$82,$C3,$3C,$CC,$3C,$60
-; Sequence 18, Channel 0:
-	dc.b	$C0,$68,$50,$61,$1C,$82,$C4,$1F
-	dc.b	$C5,$1E,$83,$1D,$C8,$1C,$82,$C2
-	dc.b	$1B,$60
-; Sequence 18, Channel 1:
-	dc.b	$E2,$61,$0E,$83,$CC,$5C,$CD,$5D
-	dc.b	$82,$C2,$5E,$60
-; Sequence 18, Channel 2:
-	dc.b	$C1,$C8,$61,$0D,$A6,$E6,$24,$60
-; Sequence 18, Channel 3:
-	dc.b	$C1,$DC,$61,$7E,$99,$D9,$30,$60
-; Sequence 19, Channel 0:
-	dc.b	$C0,$68,$45,$E4,$61,$0E,$89,$C0
-	dc.b	$50,$E4,$51,$C0,$50,$E4,$51,$C0
-	dc.b	$50,$C9,$51,$60
-; Sequence 19, Channel 1:
-	dc.b	$C0,$61,$0D,$84,$CC,$22,$2A,$85
-	dc.b	$D6,$32,$86,$CD,$2C,$85,$D7,$34
-	dc.b	$CD,$2E,$86,$C6,$36,$60
-; Sequence 20, Channel 0:
-	dc.b	$C0,$68,$45,$E4,$61,$0E,$89,$C0
-	dc.b	$50,$E4,$51,$C0,$50,$C9,$51,$60
-; Sequence 20, Channel 1:
-	dc.b	$C0,$61,$0D,$84,$CC,$22,$2A,$85
-	dc.b	$D6,$32,$86,$CD,$2C,$85,$C5,$34
-	dc.b	$60
-; Sequence 20, Channel 2:
-	dc.b	$C1,$DC,$61,$7E,$99,$D9,$30,$60
-; Sequence 21, Channel 0:
-	dc.b	$C0,$6A,$7F,$6D,$61,$0B,$83,$C3
-	dc.b	$37,$39,$3E,$43,$60
-; Sequence 22, Channel 0:
-	dc.b	$C0,$6A,$7F,$6D,$61,$0C,$82,$C2
-	dc.b	$48,$60
-; Sequence 23, Channel 0:
-	dc.b	$C0,$6A,$7F,$6D,$61,$0D,$84,$C4
-	dc.b	$4B,$60
-; Sequence 24, Channel 0:
-	dc.b	$C0,$6A,$7F,$6D,$61,$0E,$98,$D8
-	dc.b	$30,$60
-; Sequence 26, Channel 0:
-	dc.b	$C2,$D0,$6B,$11,$C0,$6B,$0D,$60
-; Sequence 27, Channel 0:
-	dc.b	$C2,$D0,$6B,$12,$C0,$6B,$0D,$60
-; Sequence 28, Channel 0:
-	dc.b	$C2,$D0,$6B,$13,$C0,$6B,$0D,$60
-; Sequence 29, Channel 0:
-	dc.b	$C2,$D0,$6B,$14,$C0,$6B,$0D,$60
+	dc.b	$D2,$C0,$61,$33,$64,$7F,$C0,$63
+	dc.b	$85,$BC,$C2,$E8,$3C,$9C,$D8,$43
+	dc.b	$85,$A8,$C2,$E8,$42,$95,$D8,$3F
+	dc.b	$85,$BE,$C6,$C0,$3C,$85,$BC,$C2
+	dc.b	$E8,$3C,$9C,$D8,$43,$85,$A8,$C2
+	dc.b	$E8,$42,$95,$D8,$3F,$85,$BE,$C6
+	dc.b	$CC,$3C,$83,$C0,$30,$82,$33,$83
+	dc.b	$CC,$37,$87,$C0,$37,$8B,$30,$8D
+	dc.b	$D2,$33,$83,$C0,$38,$82,$33,$D8
+	dc.b	$30,$83,$C0,$33,$82,$30,$83,$D2
+	dc.b	$38,$82,$C0,$33,$83,$38,$82,$D8
+	dc.b	$30,$C0,$37,$30,$81,$CC,$33,$8C
+	dc.b	$C0,$33,$30,$8B,$D2,$37,$83,$C0
+	dc.b	$30,$82,$33,$84,$D8,$38,$82,$C0
+	dc.b	$30,$33,$83,$D2,$38,$82,$C0,$30
+	dc.b	$84,$38,$82,$D8,$33,$C0,$30,$37
+	dc.b	$CC,$33,$8B,$C0,$30,$8A,$37,$8B
+	dc.b	$D2,$33,$83,$C0,$38,$82,$33,$D8
+	dc.b	$30,$83,$C0,$38,$82,$33,$D2,$30
+	dc.b	$83,$C0,$38,$82,$30,$D8,$33,$C0
+	dc.b	$30,$83,$37,$81,$CC,$33,$8C,$C0
+	dc.b	$30,$8A,$37,$8C,$D2,$33,$84,$C0
+	dc.b	$35,$83,$30,$82,$D2,$33,$84,$C0
+	dc.b	$35,$83,$30,$82,$D8,$33,$84,$C0
+	dc.b	$30,$35,$83,$D8,$33,$82,$C0,$33
+	dc.b	$30,$83,$CC,$37,$8B,$C0,$30,$8A
+	dc.b	$37,$8B,$33,$88,$D2,$35,$82,$C0
+	dc.b	$30,$33,$83,$D2,$38,$C0,$30,$33
+	dc.b	$84,$D8,$38,$C0,$30,$85,$38,$84
+	dc.b	$D8,$33,$83,$C0,$37,$82,$33,$CC
+	dc.b	$30,$8D,$C0,$30,$8C,$37,$D2,$33
+	dc.b	$84,$C0,$38,$82,$33,$81,$D8,$30
+	dc.b	$83,$C0,$30,$33,$84,$D2,$38,$83
+	dc.b	$C0,$30,$33,$85,$D8,$38,$83,$C0
+	dc.b	$30,$82,$33,$83,$CC,$37,$8A,$C0
+	dc.b	$30,$88,$37,$8A,$D2,$33,$84,$C0
+	dc.b	$38,$82,$33,$D8,$30,$83,$C0,$38
+	dc.b	$82,$30,$D2,$33,$C0,$30,$33,$84
+	dc.b	$D8,$38,$83,$C0,$30,$37,$82,$CC
+	dc.b	$33,$8B,$C0,$30,$89,$37,$8B,$D2
+	dc.b	$33,$84,$C0,$30,$85,$35,$84,$D2
+	dc.b	$33,$C0,$30,$35,$83,$CC,$33,$C0
+	dc.b	$30,$84,$37,$82,$CC,$33,$84,$C0
+	dc.b	$30,$33,$85,$D8,$37,$83,$C0,$31
+	dc.b	$82,$34,$83,$CC,$38,$87,$C0,$38
+	dc.b	$8B,$31,$8D,$D2,$34,$83,$C0,$39
+	dc.b	$82,$34,$D8,$31,$83,$C0,$34,$82
+	dc.b	$31,$83,$D2,$39,$82,$C0,$34,$83
+	dc.b	$39,$82,$D8,$31,$C0,$38,$31,$81
+	dc.b	$CC,$34,$8C,$C0,$34,$31,$8B,$D2
+	dc.b	$38,$83,$C0,$31,$82,$34,$84,$D8
+	dc.b	$39,$82,$C0,$31,$34,$83,$D2,$39
+	dc.b	$82,$C0,$31,$84,$39,$82,$D8,$34
+	dc.b	$C0,$31,$38,$CC,$34,$8B,$C0,$31
+	dc.b	$8A,$38,$8B,$D2,$34,$83,$C0,$39
+	dc.b	$82,$34,$D8,$31,$83,$C0,$39,$82
+	dc.b	$34,$D2,$31,$83,$C0,$39,$82,$31
+	dc.b	$D8,$34,$C0,$31,$83,$38,$81,$CC
+	dc.b	$34,$8C,$C0,$31,$8A,$38,$8C,$D2
+	dc.b	$34,$84,$C0,$36,$83,$31,$82,$D2
+	dc.b	$34,$84,$C0,$36,$83,$31,$82,$D8
+	dc.b	$34,$84,$C0,$31,$36,$83,$D8,$34
+	dc.b	$C0,$30,$82,$33,$83,$CC,$37,$87
+	dc.b	$C0,$37,$8B,$30,$8D,$D2,$33,$83
+	dc.b	$C0,$38,$82,$33,$D8,$30,$83,$C0
+	dc.b	$33,$82,$30,$83,$D2,$38,$82,$C0
+	dc.b	$33,$83,$38,$82,$D8,$30,$C0,$37
+	dc.b	$30,$81,$CC,$33,$8C,$C0,$33,$30
+	dc.b	$8B,$D2,$37,$83,$C0,$30,$82,$33
+	dc.b	$84,$D8,$38,$82,$C0,$30,$33,$83
+	dc.b	$D2,$38,$82,$C0,$30,$84,$38,$82
+	dc.b	$D8,$33,$C0,$30,$37,$CC,$33,$8B
+	dc.b	$C0,$30,$8A,$37,$8B,$D2,$33,$83
+	dc.b	$C0,$38,$82,$33,$D8,$30,$83,$C0
+	dc.b	$38,$82,$33,$D2,$30,$83,$C0,$38
+	dc.b	$82,$30,$D8,$33,$C0,$30,$83,$37
+	dc.b	$81,$CC,$33,$8C,$C0,$30,$8A,$37
+	dc.b	$8C,$D2,$33,$84,$C0,$35,$83,$30
+	dc.b	$82,$D2,$33,$84,$C0,$35,$83,$30
+	dc.b	$82,$D8,$33,$84,$C0,$30,$35,$83
+	dc.b	$CC,$33,$C0,$65,$60
