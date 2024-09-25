@@ -130,10 +130,10 @@ loadASCII2
 	rts
 	
 DispHex
-	btst	#7,	HEXADDR
-	beq.s	.cont
-	and.b	#$7F, HEXADDR
-.cont
+;	btst	#7,	HEXADDR
+;	beq.s	.cont
+;	and.b	#$7F, HEXADDR
+;.cont
 	moveq	#0,	d0
 	moveq	#0,	d1
 	move.b	HEXADDR,	d1
