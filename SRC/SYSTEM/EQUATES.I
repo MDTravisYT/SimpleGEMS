@@ -46,6 +46,8 @@ bitL:		equ 2
 bitDn:		equ 1
 bitUp:		equ 0
 
-HEXADDR			=	$FF0000
-JOYPAD			=	$FF0010
-JOYPADPRESS		=	$FF0011
+	rsset	$FF0000
+HEXADDR			rs.b	1
+JOYPAD			rs.b	1
+JOYPADPRESS		rs.b	1
+VSWAIT			rs.b	1
